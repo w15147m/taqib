@@ -17,7 +17,8 @@ import {
   UserIcon,
   LockClosedIcon,
   TrashIcon,
-  ChevronRightIcon
+  ChevronRightIcon,
+  SparklesIcon
 } from 'react-native-heroicons/outline';
 import ChangePasswordModal from './components/ChangePasswordModal';
 import EditProfileModal from './components/EditProfileModal';
@@ -174,11 +175,9 @@ const Profile = () => {
           <Text className="text-lg font-bold text-slate-900 dark:text-white mb-4">Achievements</Text>
           
           <View className="items-center py-4">
-            <Image 
-              source={require('../../assets/3D-Icon/Bunny-small.png')}
-              style={{ width: 110, height: 110 }}
-              resizeMode="contain"
-            />
+            <View className="w-20 h-20 bg-indigo-50 dark:bg-indigo-900/20 rounded-full items-center justify-center mb-2">
+              <SparklesIcon size={40} color={isDarkMode ? "#a5b4fc" : "#6366f1"} />
+            </View>
             <Text className="text-base font-bold text-slate-900 dark:text-white mt-2 mb-1">
               Your journey starts here.
             </Text>

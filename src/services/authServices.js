@@ -92,7 +92,7 @@ export const register = async (userData) => {
     }
 
     // Default Profile Image
-    const defaultImage = Image.resolveAssetSource(require('../assets/3D-icons-with-bg/default_profile.webp')).uri;
+    const defaultImage = Image.resolveAssetSource(require('../assets/images/default_profile.webp')).uri;
 
     // TODO: Hash password before storing (use bcrypt)
     // For now, storing plain text (NOT SECURE - just for demo)

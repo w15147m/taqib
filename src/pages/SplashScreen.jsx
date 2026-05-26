@@ -45,9 +45,10 @@ const SplashScreen = ({ onFinish }) => {
           flex: 1,
           width: '100%',
           height: '100%',
+          overflow: 'hidden',
         }}
       >
-        <SvgXml xml={taqeebatBgSvg} width="100%" height="100%" />
+        <SvgXml xml={taqeebatBgSvg} width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
       </Animated.View>
 
       {/* Subtle version indicator */}

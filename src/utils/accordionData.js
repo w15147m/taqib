@@ -1,5 +1,17 @@
 export const accordionData = [
   {
+    id: 'prayers',
+    title: 'تعقیباتِ نماز',
+    items: [
+      {id: 'dua_fajr', title: 'دعا بعد از نماز فجر'},
+      {id: 'dua_dhuhr', title: 'دعا بعد از نماز ظہر'},
+      {id: 'dua_asr', title: 'دعا بعد از نماز عصر'},
+      {id: 'dua_maghrib', title: 'دعا بعد از نماز مغرب'},
+      {id: 'dua_isha', title: 'دعا بعد از نماز عشاء'},
+    ],
+    defaultOpen: true,
+  },
+  {
     id: 'surahs',
     title: 'سورتیں',
     items: [
@@ -14,18 +26,7 @@ export const accordionData = [
     ],
     defaultOpen: false,
   },
-  {
-    id: 'prayers',
-    title: 'تعقیباتِ نماز',
-    items: [
-      {id: 'dua_fajr', title: 'دعا بعد از نماز فجر'},
-      {id: 'dua_dhuhr', title: 'دعا بعد از نماز ظہر'},
-      {id: 'dua_asr', title: 'دعا بعد از نماز عصر'},
-      {id: 'dua_maghrib', title: 'دعا بعد از نماز مغرب'},
-      {id: 'dua_isha', title: 'دعا بعد از نماز عشاء'},
-    ],
-    defaultOpen: true,
-  },
+
   {
     id: 'supplications',
     title: 'دعائیں اور مناجات',

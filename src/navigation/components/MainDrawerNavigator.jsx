@@ -4,6 +4,7 @@ import TabNavigator from './TabNavigator';
 import ProfileDrawer from './ProfileDrawer';
 import EditProfile from '../../pages/Profile/components/EditProfile';
 import Content from '../../pages/Content';
+import About from '../../pages/About';
 
 const Drawer = createDrawerNavigator();
 
@@ -35,6 +36,13 @@ const MainDrawerNavigator = () => {
       <Drawer.Screen
         name="Content"
         component={Content}
+        options={{
+          drawerItemStyle: {display: 'none'},
+        }}
+      />
+      <Drawer.Screen
+        name="About"
+        component={About}
         options={{
           drawerItemStyle: {display: 'none'},
         }}

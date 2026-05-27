@@ -30,6 +30,14 @@ const Content = () => {
   const rawText = itemData.text || '';
   const lines = rawText.split('\n');
 
+  console.log('CONTENT_PAGE_DEBUG:', {
+    id,
+    title,
+    resolvedId: itemData.id,
+    hasText: !!rawText,
+    textLength: rawText.length,
+  });
+
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
       {/* Header */}
@@ -78,7 +86,7 @@ const Content = () => {
             return (
               <Text
                 key={idx}
-                className="font-quran-content text-3xl text-right text-slate-850 dark:text-slate-200 my-4 leading-[58px]">
+                className="font-quran-content text-3xl text-right text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
                 {line}
               </Text>
             );

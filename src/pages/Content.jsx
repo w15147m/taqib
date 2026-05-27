@@ -1,22 +1,11 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  ScrollView,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
-import {useNavigation, useRoute} from '@react-navigation/native';
-import {ArrowLeftIcon} from 'react-native-heroicons/outline';
-import {useTheme} from '../context/ThemeContext';
-import HeaderText from '../common/components/HeaderText';
+import {View, Text, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
+import {useRoute} from '@react-navigation/native';
+import Header from '../common/components/Header';
 import {contentData, contentList} from '../utils/contentData';
 
 const Content = () => {
-  const navigation = useNavigation();
   const route = useRoute();
-  const {isDarkMode} = useTheme();
   const {id, title} = route.params || {};
 
   let itemData = contentData[id] || {};
@@ -40,17 +29,8 @@ const Content = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
-      {/* Header */}
-      <View className="flex-row justify-between items-center px-6 pt-4 pb-4 border-b border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-900 shadow-sm">
-        <TouchableOpacity
-          className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700"
-          onPress={() => navigation.goBack()}>
-          <ArrowLeftIcon size={20} color={isDarkMode ? '#f8fafc' : '#1e293b'} />
-        </TouchableOpacity>
-        <HeaderText className="text-2xl text-slate-900 dark:text-white text-right flex-1 pl-4">
-          {displayTitle}
-        </HeaderText>
-      </View>
+      {/* Reusable Header */}
+      <Header title={displayTitle} />
 
       {/* Content Scroll View */}
       <ScrollView

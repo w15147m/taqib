@@ -6,13 +6,12 @@ import {
   TouchableOpacity,
   Linking,
 } from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {ArrowLeftIcon, BookOpenIcon} from 'react-native-heroicons/outline';
+import {BookOpenIcon} from 'react-native-heroicons/outline';
 import {useTheme} from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
+import Header from '../common/components/Header';
 
 const About = () => {
-  const navigation = useNavigation();
   const {isDarkMode} = useTheme();
 
   const handleOpenLinkedIn = () => {
@@ -29,17 +28,8 @@ const About = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
-      {/* Header */}
-      <View className="flex-row justify-between items-center px-6 pt-4 pb-4 border-b border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-900 shadow-sm">
-        <TouchableOpacity
-          className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700"
-          onPress={() => navigation.goBack()}>
-          <ArrowLeftIcon size={20} color={isDarkMode ? '#f8fafc' : '#1e293b'} />
-        </TouchableOpacity>
-        <HeaderText className="text-2xl text-slate-900 dark:text-white text-right flex-1 pl-4">
-          تعارفِ کتاب
-        </HeaderText>
-      </View>
+      {/* Reusable Header */}
+      <Header title="تعارفِ کتاب" />
 
       {/* Content Container */}
       <View className="flex-1 px-6 justify-center items-center">
@@ -65,7 +55,7 @@ const About = () => {
 
             <View className="flex-row justify-between items-center py-4 border-b border-slate-100 dark:border-slate-800">
               <Text className="text-slate-800 dark:text-slate-100 font-semibold text-lg text-right flex-1 pr-2">
-                جامعۃ الجواد علیه السلام
+                جامعہ عروۃ الوثقیٰ
               </Text>
               <Text className="text-slate-400 dark:text-slate-500 font-medium text-sm w-16 text-left">
                 ناشر

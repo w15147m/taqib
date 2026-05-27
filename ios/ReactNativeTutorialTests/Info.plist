@@ -22,8 +22,6 @@
 	<string>1</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>ArabQuranIslamic140-vnmnZ.ttf</string>
-		<string>ArabQuranIslamic140-K7n4W.ttf</string>
 		<string>Al Mushaf Quran.ttf</string>
 	</array>
 </dict>

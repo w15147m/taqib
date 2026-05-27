@@ -5,8 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'quran-content': ['Al Mushaf Quran', 'sans-serif'],
-        'quran-header': ['ArabQuranIslamic140-K7n4W', 'sans-serif'],
-        'quran-header-alt': ['ArabQuranIslamic140-vnmnZ', 'sans-serif'],
+        'quran-header': ['Al Mushaf Quran', 'sans-serif'],
       },
     },
   },

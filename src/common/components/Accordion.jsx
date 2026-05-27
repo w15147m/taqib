@@ -1,13 +1,30 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, LayoutAnimation, Platform, UIManager } from 'react-native';
-import { ChevronDownIcon, ChevronUpIcon } from 'react-native-heroicons/solid';
+import React, {useState} from 'react';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  LayoutAnimation,
+  Platform,
+  UIManager,
+} from 'react-native';
+import {ChevronDownIcon, ChevronUpIcon} from 'react-native-heroicons/solid';
 
 // Enable layout animation for Android
-if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
+if (
+  Platform.OS === 'android' &&
+  UIManager.setLayoutAnimationEnabledExperimental
+) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-const Accordion = ({ title, items = [], defaultOpen = false, onOpen, onItemPress, className = '' }) => {
+const Accordion = ({
+  title,
+  items = [],
+  defaultOpen = false,
+  onOpen,
+  onItemPress,
+  className = '',
+}) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleAccordion = () => {
@@ -25,8 +42,7 @@ const Accordion = ({ title, items = [], defaultOpen = false, onOpen, onItemPress
       <TouchableOpacity
         onPress={toggleAccordion}
         activeOpacity={0.8}
-        className="flex-row justify-between items-center bg-indigo-50/70 dark:bg-indigo-950/20 px-6 py-4 rounded-2xl border border-indigo-100/50 dark:border-indigo-950/40"
-      >
+        className="flex-row justify-between items-center bg-indigo-50/70 dark:bg-indigo-950/20 px-6 py-4 rounded-2xl border border-indigo-100/50 dark:border-indigo-950/40">
         {/* Chevron Icon (renders on the left) */}
         {isOpen ? (
           <ChevronUpIcon size={20} color="#6366f1" />
@@ -48,10 +64,9 @@ const Accordion = ({ title, items = [], defaultOpen = false, onOpen, onItemPress
               key={index}
               activeOpacity={0.7}
               onPress={() => onItemPress && onItemPress(item)}
-              className="px-6 py-4 flex-row justify-between items-center"
-            >
+              className="px-6 py-4 flex-row justify-between items-center">
               <Text className="text-sm font-semibold text-slate-700 dark:text-slate-300 text-right flex-1">
-                {item}
+                {item.title}
               </Text>
             </TouchableOpacity>
           ))}

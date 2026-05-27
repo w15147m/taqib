@@ -1,22 +1,13 @@
 import React from 'react';
 import {
   View,
-  Text,
   SafeAreaView,
   ScrollView,
-  Image,
   TouchableOpacity,
-  Dimensions,
+  StyleSheet,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {
-  Bars3Icon,
-  FireIcon,
-  SparklesIcon,
-} from 'react-native-heroicons/outline';
-
-const {width} = Dimensions.get('window');
-
+import {Bars3Icon} from 'react-native-heroicons/outline';
 import {useTheme} from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
 import Accordion from '../common/components/Accordion';
@@ -35,7 +26,7 @@ const Home = () => {
         ref={scrollViewRef}
         className="flex-1"
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 100 }}>
+        contentContainerStyle={styles.scrollContent}>
         {/* Header */}
         <View className="flex-row justify-between items-center px-6 pt-4 mb-6">
           <View>
@@ -61,7 +52,12 @@ const Home = () => {
               items={category.items}
               defaultOpen={category.defaultOpen}
               onOpen={() => handleOpen(category.id)}
-              onItemPress={item => navigation.navigate('Content', {title: item})}
+              onItemPress={item =>
+                navigation.navigate('Content', {
+                  id: item.id,
+                  title: item.title,
+                })
+              }
             />
           </View>
         ))}
@@ -69,5 +65,11 @@ const Home = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  scrollContent: {
+    paddingBottom: 100,
+  },
+});
 
 export default Home;

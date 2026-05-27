@@ -7,7 +7,7 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-const Accordion = ({ title, items = [], defaultOpen = false, onOpen, className = '' }) => {
+const Accordion = ({ title, items = [], defaultOpen = false, onOpen, onItemPress, className = '' }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleAccordion = () => {
@@ -47,6 +47,7 @@ const Accordion = ({ title, items = [], defaultOpen = false, onOpen, className =
             <TouchableOpacity
               key={index}
               activeOpacity={0.7}
+              onPress={() => onItemPress && onItemPress(item)}
               className="px-6 py-4 flex-row justify-between items-center"
             >
               <Text className="text-sm font-semibold text-slate-700 dark:text-slate-300 text-right flex-1">

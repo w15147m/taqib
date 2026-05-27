@@ -8,26 +8,26 @@ import {
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import {
   Bars3Icon,
   FireIcon,
   SparklesIcon,
 } from 'react-native-heroicons/outline';
 
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
-import { useTheme } from '../context/ThemeContext';
+import {useTheme} from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
 import Accordion from '../common/components/Accordion';
 import useAutoScroll from '../common/hooks/useAutoScroll';
-import { accordionData } from '../utils/accordionData';
+import {accordionData} from '../utils/accordionData';
 
 const Home = () => {
   const navigation = useNavigation();
-  const { isDarkMode } = useTheme();
+  const {isDarkMode} = useTheme();
 
-  const { scrollViewRef, handleLayout, handleOpen } = useAutoScroll(12);
+  const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
@@ -61,6 +61,7 @@ const Home = () => {
               items={category.items}
               defaultOpen={category.defaultOpen}
               onOpen={() => handleOpen(category.id)}
+              onItemPress={item => navigation.navigate('Content', {title: item})}
             />
           </View>
         ))}

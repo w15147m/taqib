@@ -40,7 +40,7 @@ const Home = () => {
         <View className="flex-row justify-between items-center px-6 pt-4 mb-6">
           <View>
             <HeaderText className="text-3xl text-slate-900 dark:text-white text-right">
-              فهرست
+              تَعْقِیبَاتِ نَمَاز
             </HeaderText>
           </View>
           <TouchableOpacity

@@ -1,12 +1,12 @@
 import React from 'react';
-import {Text, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
-import {useRoute} from '@react-navigation/native';
+import { Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 import Header from '../common/components/Header';
-import {contentData, contentList} from '../utils/contentData';
+import { contentData, contentList } from '../utils/contentData';
 
 const Content = () => {
   const route = useRoute();
-  const {id, title} = route.params || {};
+  const { id, title } = route.params || {};
 
   let itemData = contentData[id] || {};
   if (!id && title) {
@@ -34,10 +34,10 @@ const Content = () => {
 
       {/* Content Scroll View */}
       <ScrollView
-        className="flex-1 px-6 pt-6"
+        className="flex-1 px-4 "
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
-        <Text className="font-quran-content text-3xl text-center text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
+        <Text className="font-quran-content text-3xl text-center text-slate-800 dark:text-slate-200  leading-[58px]">
           بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِیمِ
         </Text>
         {lines.map((line, idx) => {

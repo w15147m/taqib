@@ -1,16 +1,16 @@
 import React from 'react';
-import {View, TouchableOpacity} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {Bars3Icon} from 'react-native-heroicons/outline';
-import {useTheme} from '../../context/ThemeContext';
+import { View, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { Bars3Icon } from 'react-native-heroicons/outline';
+import { useTheme } from '../../context/ThemeContext';
 import HeaderText from './HeaderText';
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
   const navigation = useNavigation();
-  const {isDarkMode} = useTheme();
+  const { isDarkMode } = useTheme();
 
   return (
-    <View className="flex-row justify-between items-center px-6 pt-4 mb-6">
+    <View className="flex-row justify-between items-center px-6 pt-4 mb-2">
       <View>
         <HeaderText className="text-3xl text-slate-900 dark:text-white text-right">
           {title}

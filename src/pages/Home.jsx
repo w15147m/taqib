@@ -26,7 +26,7 @@ const Home = () => {
           <View
             key={category.id}
             onLayout={(e) => handleLayout(category.id, e)}
-            className={`mx-6 ${category.id === 'namaz' ? 'mb-6' : 'mb-4'}`}
+            className={`mx-6 ${category.id === 'namaz' ? 'mb-2' : 'mb-1'}`}
           >
             <Accordion
               title={category.title}

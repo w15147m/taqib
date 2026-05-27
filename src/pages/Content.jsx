@@ -1,8 +1,9 @@
 import React from 'react';
-import {Text, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import {useRoute} from '@react-navigation/native';
 import Header from '../common/components/Header';
 import ArabicText from '../common/components/ArabicText';
+import UrduText from '../common/components/UrduText';
 import {contentData, contentList} from '../utils/contentData';
 
 const Content = () => {
@@ -48,20 +49,14 @@ const Content = () => {
           }
 
           // Check if it's an explanation or translation line
-          const isExplanation =
-            trimmed.startsWith('*') ||
-            trimmed.startsWith('(*') ||
-            trimmed.endsWith('*') ||
-            trimmed.endsWith('*)');
+          const isExplanation = trimmed.startsWith('*(') && trimmed.endsWith(')*');
 
           if (isExplanation) {
             const cleanText = trimmed.replace(/[*()]/g, '').trim();
             return (
-              <Text
-                key={idx}
-                className="text-slate-500 dark:text-slate-400 text-sm font-semibold text-right my-2 leading-6 bg-slate-50 dark:bg-slate-950/40 p-4 rounded-xl border border-slate-100 dark:border-slate-800/60">
+              <UrduText key={idx}>
                 {cleanText}
-              </Text>
+              </UrduText>
             );
           }
 

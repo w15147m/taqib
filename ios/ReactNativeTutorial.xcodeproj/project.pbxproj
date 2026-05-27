@@ -14,6 +14,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ReactNativeTutorial-ReactNativeTutorialTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeTutorial-ReactNativeTutorialTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		35EFF00B1B52421485F24040 /* ArabQuranIslamic140-vnmnZ.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 610C4D3285D742E6BAB9A9FC /* ArabQuranIslamic140-vnmnZ.ttf */; };
+		8FCEF2E274544428BB7B2797 /* ArabQuranIslamic140-vnmnZ.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 610C4D3285D742E6BAB9A9FC /* ArabQuranIslamic140-vnmnZ.ttf */; };
+		A7EC89E8B1FD4BC6A0308B7A /* ArabQuranIslamic140-K7n4W.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC1E0B7898C4FD4AF2A826C /* ArabQuranIslamic140-K7n4W.ttf */; };
+		F9C47FE969684B9BB1300ED3 /* ArabQuranIslamic140-K7n4W.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC1E0B7898C4FD4AF2A826C /* ArabQuranIslamic140-K7n4W.ttf */; };
+		836749AD6FCA459DBB93AE35 /* Al Mushaf Quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B95F620C692A4FD6A6079636 /* Al Mushaf Quran.ttf */; };
+		15D9D30570C84AE6B7212BDE /* Al Mushaf Quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B95F620C692A4FD6A6079636 /* Al Mushaf Quran.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeTutorial/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeTutorial/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeTutorial/main.m; sourceTree = "<group>"; };
-	    13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReactNativeTutorial/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReactNativeTutorial/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeTutorial-ReactNativeTutorialTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTutorial-ReactNativeTutorialTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-ReactNativeTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTutorial.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTutorial/Pods-ReactNativeTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReactNativeTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTutorial.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTutorial/Pods-ReactNativeTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +51,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeTutorial/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeTutorial-ReactNativeTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTutorial-ReactNativeTutorialTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTutorial-ReactNativeTutorialTests/Pods-ReactNativeTutorial-ReactNativeTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		610C4D3285D742E6BAB9A9FC /* ArabQuranIslamic140-vnmnZ.ttf */ = {isa = PBXFileReference; name = "ArabQuranIslamic140-vnmnZ.ttf"; path = "../src/assets/fonts/ArabQuranIslamic140-vnmnZ.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7DC1E0B7898C4FD4AF2A826C /* ArabQuranIslamic140-K7n4W.ttf */ = {isa = PBXFileReference; name = "ArabQuranIslamic140-K7n4W.ttf"; path = "../src/assets/fonts/ArabQuranIslamic140-K7n4W.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B95F620C692A4FD6A6079636 /* Al Mushaf Quran.ttf */ = {isa = PBXFileReference; name = "Al Mushaf Quran.ttf"; path = "../src/assets/fonts/Al Mushaf Quran.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				78FDEC797B3945C49604FBD8 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +159,17 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		78FDEC797B3945C49604FBD8 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				610C4D3285D742E6BAB9A9FC /* ArabQuranIslamic140-vnmnZ.ttf */,
+				7DC1E0B7898C4FD4AF2A826C /* ArabQuranIslamic140-K7n4W.ttf */,
+				B95F620C692A4FD6A6079636 /* Al Mushaf Quran.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -236,6 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCEF2E274544428BB7B2797 /* ArabQuranIslamic140-vnmnZ.ttf in Resources */,
+				F9C47FE969684B9BB1300ED3 /* ArabQuranIslamic140-K7n4W.ttf in Resources */,
+				15D9D30570C84AE6B7212BDE /* Al Mushaf Quran.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +269,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				35EFF00B1B52421485F24040 /* ArabQuranIslamic140-vnmnZ.ttf in Resources */,
+				A7EC89E8B1FD4BC6A0308B7A /* ArabQuranIslamic140-K7n4W.ttf in Resources */,
+				836749AD6FCA459DBB93AE35 /* Al Mushaf Quran.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,26 +22,28 @@ const Home = () => {
         <Header title="تَعْقِیبَاتِ نَمَاز" />
 
         {/* Accordions Section */}
-        {accordionData.map((category) => (
-          <View
-            key={category.id}
-            onLayout={(e) => handleLayout(category.id, e)}
-            className={`mx-6 ${category.id === 'namaz' ? 'mb-2' : 'mb-1'}`}
-          >
-            <Accordion
-              title={category.title}
-              items={category.items}
-              defaultOpen={category.defaultOpen}
-              onOpen={() => handleOpen(category.id)}
-              onItemPress={(item) =>
-                navigation.navigate('Content', {
-                  id: item.id,
-                  title: item.title,
-                })
-              }
-            />
-          </View>
-        ))}
+        <View className="mt-4">
+          {accordionData.map((category) => (
+            <View
+              key={category.id}
+              onLayout={(e) => handleLayout(category.id, e)}
+              className={`mx-6 ${category.id === 'namaz' ? 'mb-2' : 'mb-1'}`}
+            >
+              <Accordion
+                title={category.title}
+                items={category.items}
+                defaultOpen={category.defaultOpen}
+                onOpen={() => handleOpen(category.id)}
+                onItemPress={(item) =>
+                  navigation.navigate('Content', {
+                    id: item.id,
+                    title: item.title,
+                  })
+                }
+              />
+            </View>
+          ))}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

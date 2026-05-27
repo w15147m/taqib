@@ -1,16 +1,16 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
-import {DrawerContentScrollView} from '@react-navigation/drawer';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { DrawerContentScrollView } from '@react-navigation/drawer';
 import {
   SunIcon,
   MoonIcon,
   BookOpenIcon,
   ExclamationTriangleIcon,
 } from 'react-native-heroicons/outline';
-import {useTheme} from '../../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const ProfileDrawer = props => {
-  const {theme, toggleTheme, isDarkMode} = useTheme();
+  const { theme, toggleTheme, isDarkMode } = useTheme();
 
   return (
     <View
@@ -75,7 +75,7 @@ const ProfileDrawer = props => {
               />
             </View>
             <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
-              ناشر و ڈویلپر
+              دستبرداری
             </Text>
           </TouchableOpacity>
         </View>

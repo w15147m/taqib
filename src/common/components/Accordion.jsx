@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -7,8 +7,7 @@ import {
   Platform,
   UIManager,
 } from 'react-native';
-import {ChevronDownIcon, ChevronUpIcon} from 'react-native-heroicons/solid';
-import {useTheme} from '../../context/ThemeContext';
+import { ChevronDownIcon, ChevronUpIcon } from 'react-native-heroicons/solid';
 
 // Enable layout animation for Android
 if (
@@ -27,7 +26,6 @@ const Accordion = ({
   className = '',
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-  const {isDarkMode} = useTheme();
 
   const toggleAccordion = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
@@ -47,16 +45,13 @@ const Accordion = ({
         className="flex-row justify-between items-center bg-indigo-50/70 dark:bg-indigo-950/20 px-6 py-4 rounded-2xl border border-indigo-100/50 dark:border-indigo-950/40">
         {/* Chevron Icon (renders on the left) */}
         {isOpen ? (
-          <ChevronUpIcon size={20} color={isDarkMode ? '#e2e8f0' : '#1e293b'} />
+          <ChevronUpIcon size={20} color="#6366f1" />
         ) : (
-          <ChevronDownIcon
-            size={20}
-            color={isDarkMode ? '#e2e8f0' : '#1e293b'}
-          />
+          <ChevronDownIcon size={20} color="#6366f1" />
         )}
 
         {/* Title (renders on the right) */}
-        <Text className="font-quran-header text-xl text-right text-slate-800 dark:text-slate-200 flex-1 pl-4">
+        <Text className="font-quran-header text-xl text-right text-indigo-600 dark:text-indigo-400 flex-1 pl-4">
           {title}
         </Text>
       </TouchableOpacity>

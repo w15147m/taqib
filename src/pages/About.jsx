@@ -68,31 +68,28 @@ const About = () => {
             </Text>
           </View>
           <View className="flex-row justify-between items-center py-4 border-b border-slate-100 dark:border-slate-800">
-            {/* <Text className="text-slate-800 dark:text-slate-100 font-semibold text-lg text-right flex-1 pr-2">
-              جامعہ عروۃ الوثقیٰ
-            </Text> */}
-            <TouchableOpacity onPress={handleOpenLinkedIn}>
-              <Text className="text-indigo-600 dark:text-indigo-400 font-semibold text-lg text-left pr-2">
-                LinkedIn Profile
+            <TouchableOpacity className="flex-1" onPress={handleOpenLinkedIn}>
+              <Text className="text-indigo-600 dark:text-indigo-400 font-semibold text-lg text-right pr-2">
+                لنکڈ ان پروفائل
               </Text>
             </TouchableOpacity>
             <Text className="text-slate-400 dark:text-slate-500 font-medium text-sm w-16 text-left">
               ناشر
             </Text>
           </View>
-          <View className="flex-row justify-between items-center py-4 border-b border-slate-100 dark:border-slate-800">
-            <TouchableOpacity onPress={handleOpenLinkedIn}>
-              <Text className="text-indigo-600 dark:text-indigo-400 font-semibold text-lg text-left pr-2">
-                LinkedIn Profile
+          {/* <View className="flex-row justify-between items-center py-4 border-b border-slate-100 dark:border-slate-800">
+            <TouchableOpacity className="flex-1" onPress={handleOpenLinkedIn}>
+              <Text className="text-indigo-600 dark:text-indigo-400 font-semibold text-lg text-right pr-2">
+                لنکڈ ان پروفائل
               </Text>
             </TouchableOpacity>
             <Text className="text-slate-400 dark:text-slate-500 font-medium text-sm w-16 text-left">
               لنکڈ ان
             </Text>
-          </View>
+          </View> */}
           <View className="flex-row justify-between items-center py-4 border-b border-slate-100 dark:border-slate-800">
-            <TouchableOpacity onPress={handleOpenLinkedIn}>
-              <Text className="text-indigo-600 dark:text-indigo-400 font-semibold text-lg text-left pr-2">
+            <TouchableOpacity className="flex-1" onPress={handleOpenWhatsApp}>
+              <Text className="text-indigo-600 dark:text-indigo-400 font-semibold text-lg text-right pr-2">
                 03130930399
               </Text>
             </TouchableOpacity>

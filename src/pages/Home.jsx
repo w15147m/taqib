@@ -94,8 +94,8 @@ const Home = () => {
 
         {/* Accordions Section */}
         <View className="mx-6 mb-6">
-          <Accordion title="تعقیباتِ نماز (Prayer Supplications)" items={prayersList} defaultOpen={true} />
-          <Accordion title="دیگر ادعیہ و اعمال (Devotions & Litanies)" items={devotionsList} defaultOpen={false} />
+          <Accordion title="تعقیباتِ نماز" items={prayersList} defaultOpen={true} />
+          <Accordion title="دیگر ادعیہ و اعمال" items={devotionsList} defaultOpen={false} />
         </View>
       </ScrollView>
     </SafeAreaView>

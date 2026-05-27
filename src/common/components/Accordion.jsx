@@ -23,14 +23,17 @@ const Accordion = ({ title, items = [], defaultOpen = false, className = '' }) =
         activeOpacity={0.8}
         className="flex-row justify-between items-center bg-indigo-50/70 dark:bg-indigo-950/20 px-6 py-4 rounded-2xl border border-indigo-100/50 dark:border-indigo-950/40"
       >
-        <Text className="text-base font-bold text-indigo-600 dark:text-indigo-400">
-          {title}
-        </Text>
+        {/* Chevron Icon (renders on the left) */}
         {isOpen ? (
           <ChevronUpIcon size={20} color="#6366f1" />
         ) : (
           <ChevronDownIcon size={20} color="#6366f1" />
         )}
+
+        {/* Title (renders on the right) */}
+        <Text className="font-quran-header text-xl text-right text-indigo-600 dark:text-indigo-400 flex-1 pl-4">
+          {title}
+        </Text>
       </TouchableOpacity>
 
       {/* Expandable Content Container */}

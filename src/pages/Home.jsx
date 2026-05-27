@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -21,25 +21,21 @@ import { useTheme } from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
 import ContentText from '../common/components/ContentText';
 import Accordion from '../common/components/Accordion';
+import useAutoScroll from '../common/hooks/useAutoScroll';
 
 const Home = () => {
   const navigation = useNavigation();
   const { isDarkMode } = useTheme();
 
-  const scrollViewRef = useRef(null);
-  const [accordionYPositions, setAccordionYPositions] = useState({});
+  const { scrollViewRef, handleLayout, handleOpen } = useAutoScroll(12);
 
-  const handleAccordionLayout = (id, event) => {
-    const { y } = event.nativeEvent.layout;
-    setAccordionYPositions(prev => ({ ...prev, [id]: y }));
-  };
-
-  const handleAccordionOpen = (id) => {
-    const yPos = accordionYPositions[id];
-    if (yPos !== undefined && scrollViewRef.current) {
-      scrollViewRef.current.scrollTo({ y: Math.max(0, yPos - 12), animated: true });
-    }
-  };
+  const surahsList = [
+    'سُورَةُ الْفَاتِحَةِ',
+    'سُورَةُ الْيَاسِينَ',
+    'سُورَةُ الرَّحْمَٰنِ',
+    'سُورَةُ الْوٰاقِعَةِ',
+    'سُورَةُ الْمُلْكِ',
+  ];
 
   const prayersList = [
     'تعقیباتِ مشترکہ',
@@ -48,17 +44,20 @@ const Home = () => {
     'تعقیباتِ نمازِ عصر',
     'تعقیباتِ نمازِ مغرب',
     'تعقیباتِ نمازِ عشاء',
-    'تعقیباتِ نمازِ عشاء',
-    'تعقیباتِ نمازِ عشاء',
-    'تعقیباتِ نمازِ عشاء',
-
   ];
 
-  const devotionsList = [
-    'دعائے کمیل',
-    'حدیثِ کساء',
+  const ziayaratsList = [
     'زیارتِ عاشورا',
-    'دعائے توسل',
+    'زیارتِ وارث',
+    'زیارتِ آلِ یاسین',
+    'زیارتِ جامعہ کبیرہ',
+  ];
+
+  const namazList = [
+    'نمازِ شب',
+    'نمازِ غفیلہ',
+    'نمازِ جعفرِ طَیّار',
+    'نمازِ وحشتِ قبر',
   ];
 
   return (
@@ -71,9 +70,9 @@ const Home = () => {
         {/* Header */}
         <View className="flex-row justify-between items-center px-6 pt-4 mb-6">
           <View>
-            <Text className="text-2xl font-black text-slate-900 dark:text-white">
-              تقیبات نماز
-            </Text>
+            <HeaderText className="text-3xl text-slate-900 dark:text-white text-right">
+              فهرست
+            </HeaderText>
           </View>
           <TouchableOpacity
             className="p-2 rounded-xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800"
@@ -113,20 +112,36 @@ const Home = () => {
         </View>
 
         {/* Accordions Section */}
-        <View onLayout={(e) => handleAccordionLayout('prayers', e)} className="mx-6 mb-4">
+        <View onLayout={(e) => handleLayout('surahs', e)} className="mx-6 mb-4">
+          <Accordion
+            title="سورتیں"
+            items={surahsList}
+            defaultOpen={false}
+            onOpen={() => handleOpen('surahs')}
+          />
+        </View>
+        <View onLayout={(e) => handleLayout('prayers', e)} className="mx-6 mb-4">
           <Accordion
             title="تعقیباتِ نماز"
             items={prayersList}
             defaultOpen={true}
-            onOpen={() => handleAccordionOpen('prayers')}
+            onOpen={() => handleOpen('prayers')}
           />
         </View>
-        <View onLayout={(e) => handleAccordionLayout('devotions', e)} className="mx-6 mb-6">
+        <View onLayout={(e) => handleLayout('ziyarat', e)} className="mx-6 mb-4">
           <Accordion
-            title="دیگر ادعیہ و اعمال"
-            items={devotionsList}
+            title="زیارات"
+            items={ziayaratsList}
             defaultOpen={false}
-            onOpen={() => handleAccordionOpen('devotions')}
+            onOpen={() => handleOpen('ziyarat')}
+          />
+        </View>
+        <View onLayout={(e) => handleLayout('namaz', e)} className="mx-6 mb-6">
+          <Accordion
+            title="نمازیں"
+            items={namazList}
+            defaultOpen={false}
+            onOpen={() => handleOpen('namaz')}
           />
         </View>
       </ScrollView>

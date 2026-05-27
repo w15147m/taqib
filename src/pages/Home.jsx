@@ -81,35 +81,7 @@ const Home = () => {
           </TouchableOpacity>
         </View>
 
-        {/* Test Custom Fonts Section */}
-        <View className="mx-6 p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm mb-6">
-          <Text className="text-xs font-bold uppercase tracking-wider text-indigo-500 mb-4">
-            Font Testing Section (Al Mushaf Quran)
-          </Text>
 
-          {/* Heading using Al Mushaf Quran */}
-          <View className="border-b border-slate-100 dark:border-slate-800 pb-4 mb-4">
-            <Text className="text-xs text-slate-400 dark:text-slate-500 mb-1">
-              Heading style:
-            </Text>
-            <HeaderText className="text-4xl text-slate-900 dark:text-white">
-              سُورَةُ الْفَاتِحَةِ
-            </HeaderText>
-          </View>
-
-          {/* Content using Al Mushaf Quran */}
-          <View>
-            <Text className="text-xs text-slate-400 dark:text-slate-500 mb-2">
-              Content style:
-            </Text>
-            <ContentText className="text-3xl leading-relaxed text-slate-800 dark:text-slate-200">
-              بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-            </ContentText>
-            <ContentText className="text-2xl leading-relaxed text-right text-slate-800 dark:text-slate-200 mt-2">
-              الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۞ الرَّحْمَٰنِ الرَّحِيمِ ۞ مَالِكِ يَوْمِ الدِّينِ ۞
-            </ContentText>
-          </View>
-        </View>
 
         {/* Accordions Section */}
         <View onLayout={(e) => handleLayout('surahs', e)} className="mx-6 mb-4">

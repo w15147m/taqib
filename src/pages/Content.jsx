@@ -1,12 +1,13 @@
 import React from 'react';
-import { Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import {Text, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
+import {useRoute} from '@react-navigation/native';
 import Header from '../common/components/Header';
-import { contentData, contentList } from '../utils/contentData';
+import ArabicText from '../common/components/ArabicText';
+import {contentData, contentList} from '../utils/contentData';
 
 const Content = () => {
   const route = useRoute();
-  const { id, title } = route.params || {};
+  const {id, title} = route.params || {};
 
   let itemData = contentData[id] || {};
   if (!id && title) {
@@ -37,9 +38,9 @@ const Content = () => {
         className="flex-1 px-4 "
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
-        <Text className="font-quran-content text-3xl text-center text-slate-800 dark:text-slate-200  leading-[58px]">
+        <ArabicText className="text-3xl text-slate-800 dark:text-slate-200 leading-[58px]">
           بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِیمِ
-        </Text>
+        </ArabicText>
         {lines.map((line, idx) => {
           const trimmed = line.trim();
           if (!trimmed) {
@@ -66,11 +67,11 @@ const Content = () => {
 
           // Normal Arabic Text
           return (
-            <Text
+            <ArabicText
               key={idx}
-              className="font-quran-content text-3xl text-center text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
+              className="text-3xl text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
               {line}
-            </Text>
+            </ArabicText>
           );
         })}
       </ScrollView>

@@ -68,7 +68,7 @@ const Content = () => {
           return (
             <Text
               key={idx}
-              className="font-quran-content text-3xl text-right text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
+              className="font-quran-content text-3xl text-center text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
               {line}
             </Text>
           );

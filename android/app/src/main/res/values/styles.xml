@@ -7,7 +7,8 @@
         
         <!-- Android 12+ SplashScreen compatibility -->
         <item name="android:windowSplashScreenBackground">#bce5ea</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/text_taqeebat</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
     </style>
 
 </resources>

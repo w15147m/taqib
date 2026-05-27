@@ -75,7 +75,7 @@ const ProfileDrawer = props => {
               />
             </View>
             <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
-              دستبرداری
+              ناشر و ڈویلپر
             </Text>
           </TouchableOpacity>
         </View>

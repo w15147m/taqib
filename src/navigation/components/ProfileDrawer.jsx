@@ -25,29 +25,22 @@ const ProfileDrawer = props => {
 
         {/* Shared Menu Items */}
         <View className="mt-6 px-2 space-y-1">
-          {/* Theme Toggle (Always Shown) */}
-          <View className="flex-row items-center px-5 py-4">
+          {/* Theme Toggle Button */}
+          <TouchableOpacity
+            onPress={toggleTheme}
+            activeOpacity={0.7}
+            className="flex-row items-center px-5 py-4 rounded-2xl">
             <View className="w-10 h-10 bg-amber-50 dark:bg-amber-900/20 rounded-xl items-center justify-center mr-4">
               {isDarkMode ? (
-                <MoonIcon size={20} color="#fbbf24" />
-              ) : (
                 <SunIcon size={20} color="#f59e0b" />
+              ) : (
+                <MoonIcon size={20} color="#fbbf24" />
               )}
             </View>
-            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base">
-              {isDarkMode ? 'Dark Mode' : 'Light Mode'}
+            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
+              {isDarkMode ? 'Light Mode' : 'Dark Mode'}
             </Text>
-            <TouchableOpacity
-              onPress={toggleTheme}
-              activeOpacity={0.8}
-              className={`w-12 h-6 rounded-full px-1 justify-center ${
-                isDarkMode
-                  ? 'bg-indigo-600 items-end'
-                  : 'bg-slate-200 items-start'
-              }`}>
-              <View className="w-4 h-4 bg-white rounded-full shadow-sm" />
-            </TouchableOpacity>
-          </View>
+          </TouchableOpacity>
 
           {/* About Book Navigation Button */}
           <TouchableOpacity
@@ -60,7 +53,7 @@ const ProfileDrawer = props => {
                 color={isDarkMode ? '#a5b4fc' : '#6366f1'}
               />
             </View>
-            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base">
+            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
               تعارفِ کتاب
             </Text>
           </TouchableOpacity>

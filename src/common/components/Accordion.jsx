@@ -7,12 +7,16 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-const Accordion = ({ title, items = [], defaultOpen = false, className = '' }) => {
+const Accordion = ({ title, items = [], defaultOpen = false, onOpen, className = '' }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleAccordion = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    setIsOpen(!isOpen);
+    const nextOpen = !isOpen;
+    setIsOpen(nextOpen);
+    if (nextOpen && onOpen) {
+      onOpen();
+    }
   };
 
   return (

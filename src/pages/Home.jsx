@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -8,23 +8,38 @@ import {
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import {
   Bars3Icon,
   FireIcon,
   SparklesIcon,
 } from 'react-native-heroicons/outline';
 
-const {width} = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
-import {useTheme} from '../context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
 import ContentText from '../common/components/ContentText';
 import Accordion from '../common/components/Accordion';
 
 const Home = () => {
   const navigation = useNavigation();
-  const {isDarkMode} = useTheme();
+  const { isDarkMode } = useTheme();
+
+  const scrollViewRef = useRef(null);
+  const [accordionYPositions, setAccordionYPositions] = useState({});
+
+  const handleAccordionLayout = (id, event) => {
+    const { y } = event.nativeEvent.layout;
+    setAccordionYPositions(prev => ({ ...prev, [id]: y }));
+  };
+
+  const handleAccordionOpen = (id) => {
+    const yPos = accordionYPositions[id];
+    if (yPos !== undefined && scrollViewRef.current) {
+      scrollViewRef.current.scrollTo({ y: Math.max(0, yPos - 12), animated: true });
+    }
+  };
 
   const prayersList = [
     'تعقیباتِ مشترکہ',
@@ -33,6 +48,10 @@ const Home = () => {
     'تعقیباتِ نمازِ عصر',
     'تعقیباتِ نمازِ مغرب',
     'تعقیباتِ نمازِ عشاء',
+    'تعقیباتِ نمازِ عشاء',
+    'تعقیباتِ نمازِ عشاء',
+    'تعقیباتِ نمازِ عشاء',
+
   ];
 
   const devotionsList = [
@@ -45,9 +64,10 @@ const Home = () => {
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
       <ScrollView
+        ref={scrollViewRef}
         className="flex-1"
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{paddingBottom: 100}}>
+        contentContainerStyle={{ paddingBottom: 100 }}>
         {/* Header */}
         <View className="flex-row justify-between items-center px-6 pt-4 mb-6">
           <View>
@@ -93,9 +113,21 @@ const Home = () => {
         </View>
 
         {/* Accordions Section */}
-        <View className="mx-6 mb-6">
-          <Accordion title="تعقیباتِ نماز" items={prayersList} defaultOpen={true} />
-          <Accordion title="دیگر ادعیہ و اعمال" items={devotionsList} defaultOpen={false} />
+        <View onLayout={(e) => handleAccordionLayout('prayers', e)} className="mx-6 mb-4">
+          <Accordion
+            title="تعقیباتِ نماز"
+            items={prayersList}
+            defaultOpen={true}
+            onOpen={() => handleAccordionOpen('prayers')}
+          />
+        </View>
+        <View onLayout={(e) => handleAccordionLayout('devotions', e)} className="mx-6 mb-6">
+          <Accordion
+            title="دیگر ادعیہ و اعمال"
+            items={devotionsList}
+            defaultOpen={false}
+            onOpen={() => handleAccordionOpen('devotions')}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

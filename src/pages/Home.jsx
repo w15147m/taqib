@@ -20,10 +20,27 @@ const {width} = Dimensions.get('window');
 import {useTheme} from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
 import ContentText from '../common/components/ContentText';
+import Accordion from '../common/components/Accordion';
 
 const Home = () => {
   const navigation = useNavigation();
   const {isDarkMode} = useTheme();
+
+  const prayersList = [
+    'تعقیباتِ مشترکہ',
+    'تعقیباتِ نمازِ فجر',
+    'تعقیباتِ نمازِ ظہر',
+    'تعقیباتِ نمازِ عصر',
+    'تعقیباتِ نمازِ مغرب',
+    'تعقیباتِ نمازِ عشاء',
+  ];
+
+  const devotionsList = [
+    'دعائے کمیل',
+    'حدیثِ کساء',
+    'زیارتِ عاشورا',
+    'دعائے توسل',
+  ];
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
@@ -69,10 +86,16 @@ const Home = () => {
             <ContentText className="text-3xl leading-relaxed text-slate-800 dark:text-slate-200">
               بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
             </ContentText>
-            <ContentText className="text-2xl leading-relaxed text-slate-800 dark:text-slate-200 mt-2">
+            <ContentText className="text-2xl leading-relaxed text-right text-slate-800 dark:text-slate-200 mt-2">
               الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۞ الرَّحْمَٰنِ الرَّحِيمِ ۞ مَالِكِ يَوْمِ الدِّينِ ۞
             </ContentText>
           </View>
+        </View>
+
+        {/* Accordions Section */}
+        <View className="mx-6 mb-6">
+          <Accordion title="تعقیباتِ نماز (Prayer Supplications)" items={prayersList} defaultOpen={true} />
+          <Accordion title="دیگر ادعیہ و اعمال (Devotions & Litanies)" items={devotionsList} defaultOpen={false} />
         </View>
       </ScrollView>
     </SafeAreaView>

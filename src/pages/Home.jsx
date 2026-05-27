@@ -19,46 +19,15 @@ const { width } = Dimensions.get('window');
 
 import { useTheme } from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
-import ContentText from '../common/components/ContentText';
 import Accordion from '../common/components/Accordion';
 import useAutoScroll from '../common/hooks/useAutoScroll';
+import { accordionData } from '../utils/accordionData';
 
 const Home = () => {
   const navigation = useNavigation();
   const { isDarkMode } = useTheme();
 
   const { scrollViewRef, handleLayout, handleOpen } = useAutoScroll(12);
-
-  const surahsList = [
-    'سُورَةُ الْفَاتِحَةِ',
-    'سُورَةُ الْيَاسِينَ',
-    'سُورَةُ الرَّحْمَٰنِ',
-    'سُورَةُ الْوٰاقِعَةِ',
-    'سُورَةُ الْمُلْكِ',
-  ];
-
-  const prayersList = [
-    'تعقیباتِ مشترکہ',
-    'تعقیباتِ نمازِ فجر',
-    'تعقیباتِ نمازِ ظہر',
-    'تعقیباتِ نمازِ عصر',
-    'تعقیباتِ نمازِ مغرب',
-    'تعقیباتِ نمازِ عشاء',
-  ];
-
-  const ziayaratsList = [
-    'زیارتِ عاشورا',
-    'زیارتِ وارث',
-    'زیارتِ آلِ یاسین',
-    'زیارتِ جامعہ کبیرہ',
-  ];
-
-  const namazList = [
-    'نمازِ شب',
-    'نمازِ غفیلہ',
-    'نمازِ جعفرِ طَیّار',
-    'نمازِ وحشتِ قبر',
-  ];
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
@@ -81,41 +50,20 @@ const Home = () => {
           </TouchableOpacity>
         </View>
 
-
-
         {/* Accordions Section */}
-        <View onLayout={(e) => handleLayout('surahs', e)} className="mx-6 mb-4">
-          <Accordion
-            title="سورتیں"
-            items={surahsList}
-            defaultOpen={false}
-            onOpen={() => handleOpen('surahs')}
-          />
-        </View>
-        <View onLayout={(e) => handleLayout('prayers', e)} className="mx-6 mb-4">
-          <Accordion
-            title="تعقیباتِ نماز"
-            items={prayersList}
-            defaultOpen={true}
-            onOpen={() => handleOpen('prayers')}
-          />
-        </View>
-        <View onLayout={(e) => handleLayout('ziyarat', e)} className="mx-6 mb-4">
-          <Accordion
-            title="زیارات"
-            items={ziayaratsList}
-            defaultOpen={false}
-            onOpen={() => handleOpen('ziyarat')}
-          />
-        </View>
-        <View onLayout={(e) => handleLayout('namaz', e)} className="mx-6 mb-6">
-          <Accordion
-            title="نمازیں"
-            items={namazList}
-            defaultOpen={false}
-            onOpen={() => handleOpen('namaz')}
-          />
-        </View>
+        {accordionData.map(category => (
+          <View
+            key={category.id}
+            onLayout={e => handleLayout(category.id, e)}
+            className={`mx-6 ${category.id === 'namaz' ? 'mb-6' : 'mb-4'}`}>
+            <Accordion
+              title={category.title}
+              items={category.items}
+              defaultOpen={category.defaultOpen}
+              onOpen={() => handleOpen(category.id)}
+            />
+          </View>
+        ))}
       </ScrollView>
     </SafeAreaView>
   );

@@ -1,7 +1,12 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
 import {DrawerContentScrollView} from '@react-navigation/drawer';
-import {SunIcon, MoonIcon, BookOpenIcon} from 'react-native-heroicons/outline';
+import {
+  SunIcon,
+  MoonIcon,
+  BookOpenIcon,
+  ExclamationTriangleIcon,
+} from 'react-native-heroicons/outline';
 import {useTheme} from '../../context/ThemeContext';
 
 const ProfileDrawer = props => {
@@ -55,6 +60,22 @@ const ProfileDrawer = props => {
             </View>
             <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
               تعارفِ کتاب
+            </Text>
+          </TouchableOpacity>
+
+          {/* Disclaimer Navigation Button */}
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('Disclaimer')}
+            activeOpacity={0.7}
+            className="flex-row items-center px-5 py-4 rounded-2xl">
+            <View className="w-10 h-10 bg-rose-50 dark:bg-rose-900/30 rounded-xl items-center justify-center mr-4">
+              <ExclamationTriangleIcon
+                size={20}
+                color={isDarkMode ? '#fda4af' : '#f43f5e'}
+              />
+            </View>
+            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
+              دستبرداری
             </Text>
           </TouchableOpacity>
         </View>

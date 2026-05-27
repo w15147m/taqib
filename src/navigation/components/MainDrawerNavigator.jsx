@@ -5,6 +5,7 @@ import ProfileDrawer from './ProfileDrawer';
 import EditProfile from '../../pages/Profile/components/EditProfile';
 import Content from '../../pages/Content';
 import About from '../../pages/About';
+import Disclaimer from '../../pages/Disclaimer';
 
 const Drawer = createDrawerNavigator();
 
@@ -21,7 +22,7 @@ const MainDrawerNavigator = () => {
         drawerPosition: 'right', // Drawer opens from the right side
         drawerType: 'front',
         drawerStyle: {
-          width: '80%',
+          width: '85%',
         },
         swipeEnabled: false, // Disable swipe to prevent accidental openings on Home/Stats
       }}>
@@ -43,6 +44,13 @@ const MainDrawerNavigator = () => {
       <Drawer.Screen
         name="About"
         component={About}
+        options={{
+          drawerItemStyle: {display: 'none'},
+        }}
+      />
+      <Drawer.Screen
+        name="Disclaimer"
+        component={Disclaimer}
         options={{
           drawerItemStyle: {display: 'none'},
         }}

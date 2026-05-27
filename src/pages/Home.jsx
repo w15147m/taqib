@@ -18,6 +18,8 @@ import {
 const {width} = Dimensions.get('window');
 
 import {useTheme} from '../context/ThemeContext';
+import HeaderText from '../common/components/HeaderText';
+import ContentText from '../common/components/ContentText';
 
 const Home = () => {
   const navigation = useNavigation();
@@ -54,9 +56,9 @@ const Home = () => {
             <Text className="text-xs text-slate-400 dark:text-slate-500 mb-1">
               Heading style:
             </Text>
-            <Text className="font-quran-header text-4xl text-right text-slate-900 dark:text-white">
+            <HeaderText className="text-4xl text-slate-900 dark:text-white">
               سُورَةُ الْفَاتِحَةِ
-            </Text>
+            </HeaderText>
           </View>
 
           {/* Content using Al Mushaf Quran */}
@@ -64,12 +66,12 @@ const Home = () => {
             <Text className="text-xs text-slate-400 dark:text-slate-500 mb-2">
               Content style:
             </Text>
-            <Text className="font-quran-content text-3xl leading-relaxed text-right text-slate-800 dark:text-slate-200">
+            <ContentText className="text-3xl leading-relaxed text-slate-800 dark:text-slate-200">
               بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-            </Text>
-            <Text className="font-quran-content text-2xl leading-relaxed text-right text-slate-800 dark:text-slate-200 mt-2">
-              الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝
-            </Text>
+            </ContentText>
+            <ContentText className="text-2xl leading-relaxed text-slate-800 dark:text-slate-200 mt-2">
+              الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۞ الرَّحْمَٰنِ الرَّحِيمِ ۞ مَالِكِ يَوْمِ الدِّينِ ۞
+            </ContentText>
           </View>
         </View>
       </ScrollView>

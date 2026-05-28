@@ -1,6 +1,9 @@
-import {useState} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 import {PermissionsAndroid, Platform} from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const LOCATION_STORAGE_KEY = 'location_data';
 
 const useLocation = () => {
   const [location, setLocation] = useState(null);
@@ -8,7 +11,7 @@ const useLocation = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const reverseGeocode = async (latitude, longitude) => {
+  const reverseGeocode = useCallback(async (latitude, longitude) => {
     try {
       const response = await fetch(
         `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`,
@@ -29,12 +32,27 @@ const useLocation = () => {
         data.display_name ||
         'Unknown Location';
       setLocationName(name);
+
+      await AsyncStorage.setItem(
+        LOCATION_STORAGE_KEY,
+        JSON.stringify({
+          location: {latitude, longitude},
+          locationName: name,
+        }),
+      );
     } catch {
       setLocationName(null);
+      await AsyncStorage.setItem(
+        LOCATION_STORAGE_KEY,
+        JSON.stringify({
+          location: {latitude, longitude},
+          locationName: null,
+        }),
+      );
     }
-  };
+  }, []);
 
-  const requestPermission = async () => {
+  const requestPermission = useCallback(async () => {
     if (Platform.OS === 'android') {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
@@ -49,12 +67,11 @@ const useLocation = () => {
       return granted === PermissionsAndroid.RESULTS.GRANTED;
     }
     return true;
-  };
+  }, []);
 
-  const getLocation = async () => {
+  const getLocation = useCallback(async () => {
     setLoading(true);
     setError(null);
-    setLocation(null);
 
     const hasPermission = await requestPermission();
 
@@ -79,9 +96,32 @@ const useLocation = () => {
         enableHighAccuracy: true,
         timeout: 15000,
         maximumAge: 10000,
+        showLocationDialog: true,
       },
     );
-  };
+  }, [requestPermission, reverseGeocode]);
+
+  // Load saved location on mount, or fetch if not available
+  useEffect(() => {
+    const initLocation = async () => {
+      try {
+        const stored = await AsyncStorage.getItem(LOCATION_STORAGE_KEY);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed?.location) {
+            setLocation(parsed.location);
+            setLocationName(parsed.locationName || null);
+            return;
+          }
+        }
+        await getLocation();
+      } catch (err) {
+        console.error('Error reading saved location:', err);
+        await getLocation();
+      }
+    };
+    initLocation();
+  }, [getLocation]);
 
   return {location, locationName, error, loading, getLocation};
 };

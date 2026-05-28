@@ -6,10 +6,14 @@ import Accordion from '../common/components/Accordion';
 import useAutoScroll from '../common/hooks/useAutoScroll';
 import {accordionData} from '../utils/accordionData';
 import UpcomingEventsCard from './components/UpcomingEventsCard';
+import useLocation from '../common/hooks/useLocation';
 
 const Home = () => {
   const navigation = useNavigation();
   const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
+
+  // Trigger location fetch automatically on first app load if not saved
+  useLocation();
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">

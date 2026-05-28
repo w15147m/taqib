@@ -32,10 +32,10 @@ export const accordionData = [
     title: 'دعائیں اور مناجات',
     items: [
       {id: 'dua_ahd', title: 'دعائے عہد'},
-      {id: 'munajat_imam_ali', title: 'مناجات امیر المؤمنین علیہ السلام'},
+      {id: 'munajat_imam_ali', title: 'مناجات امیر المؤمنینؑ'},
       {
         id: 'dua_tassul_imam_zamana',
-        title: 'دعائے سلامتی امام زمانہ علیہ السلام',
+        title: 'دعائے سلامتی امام زمانہؑ',
       },
       {id: 'dua_ramadan', title: 'دعائے ماہِ رمضان'},
       {id: 'dua_wahdat', title: 'دعائے وحدت'},
@@ -47,9 +47,9 @@ export const accordionData = [
     id: 'ziyarat',
     title: 'زیارات',
     items: [
-      {id: 'ziyarat_rasool', title: 'زیارتِ رسولِ خدا صلی اللہ علیہ وآلہ وسلم'},
-      {id: 'ziyarat_imam_hussain', title: 'زیارتِ امام حسین علیہ السلام'},
-      {id: 'ziyarat_imam_reza', title: 'زیارتِ امام رضا علیہ السلام'},
+      {id: 'ziyarat_rasool', title: 'زیارتِ رسولِ خداؐ'},
+      {id: 'ziyarat_imam_hussain', title: 'زیارتِ امام حسینؑ'},
+      {id: 'ziyarat_imam_reza', title: 'زیارتِ امام رضاؑ'},
       {id: 'ziyarat_imam_mahdi', title: 'زیارتِ امام مہدی (عج)'},
     ],
     defaultOpen: false,

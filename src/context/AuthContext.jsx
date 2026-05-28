@@ -17,6 +17,17 @@ export const AuthProvider = ({ children }) => {
       const authInfo = await getItem('authInfo');
       if (authInfo) {
         setUser(authInfo);
+      } else {
+        // Bypass login system by default on first install
+        setUser({
+          user: {
+            id: 1,
+            name: 'Guest User',
+            email: 'guest@taqeebat.com',
+            profile_image: null,
+          },
+          token: 'guest-token',
+        });
       }
     } catch (error) {
       console.error('Error loading user:', error);

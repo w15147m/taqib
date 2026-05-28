@@ -46,7 +46,7 @@ const Accordion = ({
       <TouchableOpacity
         onPress={toggleAccordion}
         activeOpacity={0.8}
-        className="flex-row justify-between items-center bg-white dark:bg-slate-900 px-6 py-4 rounded-2xl border border-slate-100 dark:border-slate-800">
+        className="flex-row justify-between items-center bg-[#bce5ea] dark:bg-slate-900 px-6 py-4 rounded-2xl border border-slate-200/50 dark:border-slate-800">
         {/* Chevron Icon (renders on the left) */}
         {isOpen ? (
           <ChevronUpIcon size={20} color={iconColor} />

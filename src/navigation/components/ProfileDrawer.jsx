@@ -7,6 +7,7 @@ import {
   BookOpenIcon,
   ExclamationTriangleIcon,
   Cog6ToothIcon,
+  BeakerIcon,
 } from 'react-native-heroicons/outline';
 import {useTheme} from '../../context/ThemeContext';
 
@@ -93,6 +94,22 @@ const ProfileDrawer = props => {
             </View>
             <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
               سیٹنگز
+            </Text>
+          </TouchableOpacity>
+
+          {/* Test Page Navigation Button */}
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('TestPage')}
+            activeOpacity={0.7}
+            className="flex-row items-center px-5 py-4 rounded-2xl">
+            <View className="w-10 h-10 bg-violet-50 dark:bg-violet-900/30 rounded-xl items-center justify-center mr-4">
+              <BeakerIcon
+                size={20}
+                color={isDarkMode ? '#c4b5fd' : '#7c3aed'}
+              />
+            </View>
+            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
+              Test Page
             </Text>
           </TouchableOpacity>
         </View>

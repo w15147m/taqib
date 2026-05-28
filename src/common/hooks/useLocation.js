@@ -4,8 +4,35 @@ import Geolocation from 'react-native-geolocation-service';
 
 const useLocation = () => {
   const [location, setLocation] = useState(null);
+  const [locationName, setLocationName] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  const reverseGeocode = async (latitude, longitude) => {
+    try {
+      const response = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`,
+        {
+          headers: {
+            'Accept-Language': 'en',
+            'User-Agent': 'TaqeebatApp/1.0',
+          },
+        },
+      );
+      const data = await response.json();
+      const addr = data.address || {};
+      const name =
+        addr.city ||
+        addr.town ||
+        addr.county ||
+        addr.state ||
+        data.display_name ||
+        'Unknown Location';
+      setLocationName(name);
+    } catch {
+      setLocationName(null);
+    }
+  };
 
   const requestPermission = async () => {
     if (Platform.OS === 'android') {
@@ -39,11 +66,9 @@ const useLocation = () => {
 
     Geolocation.getCurrentPosition(
       position => {
-        setLocation({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          accuracy: position.coords.accuracy,
-        });
+        const {latitude, longitude, accuracy} = position.coords;
+        setLocation({latitude, longitude, accuracy});
+        reverseGeocode(latitude, longitude);
         setLoading(false);
       },
       err => {
@@ -58,7 +83,7 @@ const useLocation = () => {
     );
   };
 
-  return {location, error, loading, getLocation};
+  return {location, locationName, error, loading, getLocation};
 };
 
 export default useLocation;

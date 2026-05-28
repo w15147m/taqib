@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   View,
   Text,
@@ -8,9 +8,20 @@ import {
 } from 'react-native';
 import {MapPinIcon} from 'react-native-heroicons/outline';
 import useLocation from '../common/hooks/useLocation';
+import {calculatePrayerTimes} from '../utils/prayerTimes';
 
 const TestPage = () => {
-  const {location, error, loading, getLocation} = useLocation();
+  const {location, locationName, error, loading, getLocation} = useLocation();
+  const [prayerTimes, setPrayerTimes] = useState(null);
+
+  useEffect(() => {
+    if (location?.latitude && location?.longitude) {
+      const times = calculatePrayerTimes(location.latitude, location.longitude);
+      setPrayerTimes(times);
+    } else {
+      setPrayerTimes(null);
+    }
+  }, [location]);
 
   return (
     <SafeAreaView className="flex-1 bg-white dark:bg-slate-950">
@@ -53,10 +64,45 @@ const TestPage = () => {
               <Text className="font-bold">Longitude: </Text>
               {location.longitude}
             </Text>
-            <Text className="text-slate-700 dark:text-slate-300 text-sm">
+            <Text className="text-slate-700 dark:text-slate-300 text-sm mb-1">
               <Text className="font-bold">Accuracy: </Text>
               {location.accuracy ? `±${location.accuracy.toFixed(1)}m` : 'N/A'}
             </Text>
+            {locationName && (
+              <Text className="text-slate-700 dark:text-slate-300 text-sm">
+                <Text className="font-bold">Location: </Text>
+                {locationName}
+              </Text>
+            )}
+
+            {/* Prayer Timings */}
+            {prayerTimes && (
+              <View className="mt-4 pt-4 border-t border-emerald-200/50 dark:border-emerald-800/50">
+                <Text className="text-xs font-bold text-emerald-600 dark:text-emerald-400 mb-3 uppercase tracking-widest">
+                  Namaz Timings (Jafari)
+                </Text>
+                <View className="flex-row flex-wrap justify-between mt-1">
+                  {[
+                    {label: 'Fajr', time: prayerTimes.fajr},
+                    {label: 'Dhuhr', time: prayerTimes.dhuhr},
+                    {label: 'Asr', time: prayerTimes.asr},
+                    {label: 'Maghrib', time: prayerTimes.maghrib},
+                    {label: 'Isha', time: prayerTimes.isha},
+                  ].map((p, idx) => (
+                    <View
+                      key={idx}
+                      className="w-[48%] bg-white dark:bg-slate-900 border border-emerald-100 dark:border-emerald-900/50 rounded-xl p-3 mb-2 flex-row justify-between items-center">
+                      <Text className="text-slate-500 dark:text-slate-400 text-xs font-semibold">
+                        {p.label}
+                      </Text>
+                      <Text className="text-slate-800 dark:text-slate-200 text-sm font-bold">
+                        {p.time}
+                      </Text>
+                    </View>
+                  ))}
+                </View>
+              </View>
+            )}
           </View>
         )}
 

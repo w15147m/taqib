@@ -5,8 +5,7 @@ const CURRENT_EVENT = {
   id: 'eid_al_adha',
   titleUr: 'عیدِ قربان (عید الاضحیٰ)',
   hijriDate: '۱۰ ذوالحجہ',
-  hijriDateEn: '10 Dhul-Hijjah',
-  nextPrayerName: 'Zuhr',
+  nextPrayerNameUr: 'ظہر',
   nextPrayerTime: '12:30',
 };
 
@@ -30,24 +29,24 @@ const UpcomingEventsCard = () => {
       <View className="bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-100/50 dark:border-emerald-900/30 p-4 rounded-2xl">
         {/* Banner Top Row */}
         <View className="flex-row justify-between items-center mb-2">
-          {/* Left: English Date */}
+          {/* Left: Urdu Date */}
           <Text className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-            {CURRENT_EVENT.hijriDateEn}
+            {CURRENT_EVENT.hijriDate}
           </Text>
 
           {/* Right: Today Badge */}
           <View className="bg-emerald-500/10 dark:bg-emerald-500/20 px-2 py-0.5 rounded-lg">
             <Text className="text-[9px] font-bold text-emerald-600 dark:text-emerald-400">
-              آج / TODAY
+              آج
             </Text>
           </View>
         </View>
 
         {/* Banner Main Row: Prayer (Left) and Event Title (Right) */}
         <View className="flex-row justify-between items-center mt-1">
-          {/* Left: Prayer Details */}
+          {/* Left: Prayer Details (Urdu name and time) */}
           <Text className="text-xs font-bold text-emerald-700 dark:text-emerald-300">
-            {CURRENT_EVENT.nextPrayerName} {CURRENT_EVENT.nextPrayerTime}
+            {CURRENT_EVENT.nextPrayerNameUr} {CURRENT_EVENT.nextPrayerTime}
           </Text>
 
           {/* Right: Urdu Event Title */}

@@ -24,7 +24,7 @@ const UpcomingEventsCard = () => {
   const displayCity = locationName || '';
 
   return (
-    <View className="mx-6 my-3 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800/80 shadow-sm">
+    <View className="mx-6 my-3 p-4 bg-[#bce5ea] dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/80 shadow-sm">
       {/* Header Row: Date (Left) and Title (Right) */}
       <View className="flex-row justify-between items-center mb-3">
         {/* Date (Left) */}
@@ -39,7 +39,7 @@ const UpcomingEventsCard = () => {
       </View>
 
       {/* Featured Today's Event Banner */}
-      <View className="bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-100/50 dark:border-emerald-900/30 p-4 rounded-2xl">
+      <View className="bg-white/40 dark:bg-emerald-950/20 border border-white/20 dark:border-emerald-900/30 p-4 rounded-2xl">
         {/* Banner Top Row */}
         <View className="flex-row justify-between items-center mb-2">
           {/* Left: City Name */}

@@ -6,6 +6,7 @@ import EditProfile from '../../pages/Profile/components/EditProfile';
 import Content from '../../pages/Content';
 import About from '../../pages/About';
 import Disclaimer from '../../pages/Disclaimer';
+import Settings from '../../pages/Settings';
 
 const Drawer = createDrawerNavigator();
 
@@ -51,6 +52,13 @@ const MainDrawerNavigator = () => {
       <Drawer.Screen
         name="Disclaimer"
         component={Disclaimer}
+        options={{
+          drawerItemStyle: {display: 'none'},
+        }}
+      />
+      <Drawer.Screen
+        name="Settings"
+        component={Settings}
         options={{
           drawerItemStyle: {display: 'none'},
         }}

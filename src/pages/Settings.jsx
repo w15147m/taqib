@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   View,
   Text,
   SafeAreaView,
   TouchableOpacity,
   ScrollView,
-  Switch,
   StyleSheet,
 } from 'react-native';
 import {
@@ -13,37 +12,32 @@ import {
   MinusIcon,
   PlusIcon,
 } from 'react-native-heroicons/outline';
-import { useTheme } from '../context/ThemeContext';
+import {useTheme} from '../context/ThemeContext';
+import {useSettings} from '../context/SettingsContext';
 import Header from '../common/components/Header';
-import HeaderText from '../common/components/HeaderText';
+import ArabicText from '../common/components/ArabicText';
+import UrduText from '../common/components/UrduText';
 
 const Settings = () => {
-  const { isDarkMode } = useTheme();
-
-  // Local state for settings as requested
-  const [showTranslation, setShowTranslation] = useState(true);
-  const [showArabic, setShowArabic] = useState(true);
-  const [arabicFontSize, setArabicFontSize] = useState(30);
-  const [urduFontSize, setUrduFontSize] = useState(16);
-
-  const handleReset = () => {
-    setShowTranslation(true);
-    setShowArabic(true);
-    setArabicFontSize(30);
-    setUrduFontSize(16);
-  };
+  const {isDarkMode} = useTheme();
+  const {
+    showTranslation,
+    showArabic,
+    arabicFontSize,
+    urduFontSize,
+    setArabicFontSize,
+    setUrduFontSize,
+    resetSettings,
+  } = useSettings();
 
   const adjustFontSize = (type, action) => {
     if (type === 'arabic') {
-      setArabicFontSize(prev => {
-        const next = action === 'increment' ? prev + 2 : prev - 2;
-        return Math.max(16, Math.min(50, next));
-      });
+      const next =
+        action === 'increment' ? arabicFontSize + 2 : arabicFontSize - 2;
+      setArabicFontSize(Math.max(16, Math.min(50, next)));
     } else {
-      setUrduFontSize(prev => {
-        const next = action === 'increment' ? prev + 1 : prev - 1;
-        return Math.max(12, Math.min(30, next));
-      });
+      const next = action === 'increment' ? urduFontSize + 1 : urduFontSize - 1;
+      setUrduFontSize(Math.max(12, Math.min(30, next)));
     }
   };
 
@@ -84,10 +78,9 @@ const Settings = () => {
           </View>
         </View> */}
 
-
         {/* Arabic Section */}
         <View
-          style={{ opacity: showArabic ? 1 : 0.3 }}
+          style={{opacity: showArabic ? 1 : 0.3}}
           className="py-6 border-b border-slate-100 dark:border-slate-900 w-full">
           <View className="items-center mb-4">
             <Text className="text-slate-700 dark:text-slate-300 text-xl font-quran-header font-bold">
@@ -119,11 +112,9 @@ const Settings = () => {
           {/* Full-width Preview */}
           <View className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[90px] justify-center">
             {showArabic ? (
-              <Text
-                style={{ fontSize: arabicFontSize }}
-                className="font-quran-content text-center text-slate-800 dark:text-slate-100 leading-relaxed">
+              <ArabicText className="text-slate-800 dark:text-slate-100 leading-relaxed">
                 بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِیمِ
-              </Text>
+              </ArabicText>
             ) : (
               <Text className="text-slate-400 dark:text-slate-600 text-xs italic text-center font-quran-header">
                 عربی متن غیر فعال ہے
@@ -134,7 +125,7 @@ const Settings = () => {
 
         {/* Urdu Section */}
         <View
-          style={{ opacity: showTranslation ? 1 : 0.3 }}
+          style={{opacity: showTranslation ? 1 : 0.3}}
           className="py-6 border-b border-slate-100 dark:border-slate-900 w-full">
           <View className="items-center mb-4">
             <Text className="text-slate-700 dark:text-slate-300 text-xl font-quran-header font-bold">
@@ -166,11 +157,16 @@ const Settings = () => {
           {/* Full-width Preview */}
           <View className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[70px] justify-center">
             {showTranslation ? (
-              <Text
-                style={{ fontSize: urduFontSize }}
+              <UrduText
+                style={{
+                  backgroundColor: 'transparent',
+                  borderWidth: 0,
+                  padding: 0,
+                  marginVertical: 0,
+                }}
                 className="text-slate-700 dark:text-slate-300 font-semibold text-right leading-relaxed">
                 یہ اردو ترجمہ کا پیش نظارہ ہے۔
-              </Text>
+              </UrduText>
             ) : (
               <Text className="text-slate-400 dark:text-slate-600 text-xs italic text-center font-quran-header">
                 ترجمہ غیر فعال ہے
@@ -182,7 +178,7 @@ const Settings = () => {
         {/* Reset Settings Button */}
         <View className="mt-12 items-center">
           <TouchableOpacity
-            onPress={handleReset}
+            onPress={resetSettings}
             activeOpacity={0.7}
             className="flex-row items-center justify-center border border-indigo-600 dark:border-indigo-400 rounded-2xl py-4 px-8 w-full max-w-xs bg-transparent">
             <ArrowPathIcon

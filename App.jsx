@@ -1,23 +1,24 @@
-import React, { useEffect } from 'react';
-import { StatusBar, View } from 'react-native';
-import { AuthProvider } from './src/context/AuthContext';
-import { AlertProvider } from './src/context/AlertContext';
+import React, {useEffect} from 'react';
+import {StatusBar, View} from 'react-native';
+import {AuthProvider} from './src/context/AuthContext';
+import {AlertProvider} from './src/context/AlertContext';
 import AlertModal from './src/components/AlertModal';
 import Toast from './src/components/Toast';
 import AppNavigator from './src/navigation/AppNavigator';
 import SplashScreen from 'react-native-splash-screen';
-import { runMigrations } from './src/db/client';
+import {runMigrations} from './src/db/client';
 
-import { ThemeProvider, useTheme } from './src/context/ThemeContext';
+import {ThemeProvider, useTheme} from './src/context/ThemeContext';
+import {SettingsProvider} from './src/context/SettingsContext';
 
 const MainApp = () => {
-  const { isDarkMode } = useTheme();
+  const {isDarkMode} = useTheme();
 
   return (
-    <View key={isDarkMode ? 'dark' : 'light'} style={{ flex: 1 }}>
-      <StatusBar 
-        barStyle={isDarkMode ? "light-content" : "dark-content"} 
-        backgroundColor={isDarkMode ? "#0f172a" : "#f8fafc"} 
+    <View key={isDarkMode ? 'dark' : 'light'} style={{flex: 1}}>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={isDarkMode ? '#0f172a' : '#f8fafc'}
       />
       <AppNavigator />
       <AlertModal />
@@ -43,11 +44,13 @@ function App() {
 
   return (
     <ThemeProvider>
-      <AuthProvider>
-        <AlertProvider>
-          <MainApp />
-        </AlertProvider>
-      </AuthProvider>
+      <SettingsProvider>
+        <AuthProvider>
+          <AlertProvider>
+            <MainApp />
+          </AlertProvider>
+        </AuthProvider>
+      </SettingsProvider>
     </ThemeProvider>
   );
 }

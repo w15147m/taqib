@@ -39,7 +39,7 @@ const Content = () => {
         className="flex-1 px-4 "
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
-        <ArabicText className="text-3xl text-slate-800 dark:text-slate-200 leading-[58px]">
+        <ArabicText className="text-slate-800 dark:text-slate-200 leading-[58px]">
           بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِیمِ
         </ArabicText>
         {lines.map((line, idx) => {
@@ -49,22 +49,19 @@ const Content = () => {
           }
 
           // Check if it's an explanation or translation line
-          const isExplanation = trimmed.startsWith('*(') && trimmed.endsWith(')*');
+          const isExplanation =
+            trimmed.startsWith('*(') && trimmed.endsWith(')*');
 
           if (isExplanation) {
             const cleanText = trimmed.replace(/[*()]/g, '').trim();
-            return (
-              <UrduText key={idx}>
-                {cleanText}
-              </UrduText>
-            );
+            return <UrduText key={idx}>{cleanText}</UrduText>;
           }
 
           // Normal Arabic Text
           return (
             <ArabicText
               key={idx}
-              className="text-3xl text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
+              className="text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
               {line}
             </ArabicText>
           );

@@ -1,4 +1,4 @@
-import {Coordinates, CalculationMethod, PrayerTimes} from 'adhan';
+import {Coordinates, CalculationParameters, PrayerTimes} from 'adhan';
 
 /**
  * Calculates prayer times for a given coordinate and date.
@@ -16,7 +16,8 @@ export const calculatePrayerTimes = (
 ) => {
   try {
     const coordinates = new Coordinates(latitude, longitude);
-    const params = CalculationMethod.Tehran();
+    // Shia Jafari (Leva Research Institute, Qum): Fajr 16°, Isha 14°, Maghrib 4°
+    const params = new CalculationParameters('Other', 16, 14, 0, 4);
     const prayerTimes = new PrayerTimes(coordinates, date, params);
 
     const formatTime = timeDate => {
@@ -55,7 +56,8 @@ export const calculatePrayerTimes = (
 export const getNextPrayer = (latitude, longitude, date = new Date()) => {
   try {
     const coordinates = new Coordinates(latitude, longitude);
-    const params = CalculationMethod.Tehran();
+    // Shia Jafari (Leva Research Institute, Qum): Fajr 16°, Isha 14°, Maghrib 4°
+    const params = new CalculationParameters('Other', 16, 14, 0, 4);
 
     // Calculate for today
     const prayerTimes = new PrayerTimes(coordinates, date, params);

@@ -24,13 +24,16 @@ const useLocation = () => {
       );
       const data = await response.json();
       const addr = data.address || {};
-      const name =
+      const rawName =
         addr.city ||
         addr.town ||
         addr.county ||
         addr.state ||
         data.display_name ||
         'Unknown Location';
+      const name = rawName
+        .replace(/\s+(District|County|Division)$/i, '')
+        .trim();
       setLocationName(name);
 
       await AsyncStorage.setItem(
@@ -110,7 +113,12 @@ const useLocation = () => {
           const parsed = JSON.parse(stored);
           if (parsed?.location) {
             setLocation(parsed.location);
-            setLocationName(parsed.locationName || null);
+            const cleanName = parsed.locationName
+              ? parsed.locationName
+                  .replace(/\s+(District|County|Division)$/i, '')
+                  .trim()
+              : null;
+            setLocationName(cleanName);
             return;
           }
         }

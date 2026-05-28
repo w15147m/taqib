@@ -23,11 +23,11 @@ export const calculatePrayerTimes = (
       if (!timeDate) {
         return '--:--';
       }
-      return timeDate.toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false,
-      });
+      let hours = timeDate.getHours();
+      const minutes = timeDate.getMinutes().toString().padStart(2, '0');
+      hours = hours % 12;
+      hours = hours ? hours : 12;
+      return `${hours}:${minutes}`;
     };
 
     return {
@@ -77,11 +77,11 @@ export const getNextPrayer = (latitude, longitude, date = new Date()) => {
       if (!timeDate) {
         return '--:--';
       }
-      return timeDate.toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false,
-      });
+      let hours = timeDate.getHours();
+      const minutes = timeDate.getMinutes().toString().padStart(2, '0');
+      hours = hours % 12;
+      hours = hours ? hours : 12;
+      return `${hours}:${minutes}`;
     };
 
     if (!next) {

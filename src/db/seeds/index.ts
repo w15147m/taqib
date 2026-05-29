@@ -9,6 +9,11 @@ import { prayersContentItems } from "./contentItems/contentItems/prayers";
 import { prayersExplanations } from "./contentItems/information/prayers";
 import { prayersTranslations } from "./contentItems/translations/prayers";
 
+// Imports for surahs
+import { surahsContentItems } from "./contentItems/contentItems/surahs";
+import { surahsExplanations } from "./contentItems/information/surahs";
+import { surahsTranslations } from "./contentItems/translations/surahs";
+
 export const seedDatabase = async () => {
   try {
     // 1. Seed categories
@@ -65,6 +70,33 @@ export const seedDatabase = async () => {
     // 5. Seed Translations for prayers
     console.log("Seeding prayers translations...");
     for (const trans of prayersTranslations) {
+      // Future-proofing
+    }
+
+    // 6. Seed Content Items for surahs
+    console.log("Seeding surahs content items...");
+    for (const item of surahsContentItems) {
+      const existing = await db.select().from(content_items)
+        .where(and(eq(content_items.content_id, item.content_id), eq(content_items.sequence_number, item.sequence_number)));
+
+      if (existing.length === 0) {
+        await db.insert(content_items).values({
+          content_id: item.content_id,
+          sequence_number: item.sequence_number,
+          arabic_text: item.arabic_text,
+        });
+      }
+    }
+
+    // 7. Seed Explanations for surahs
+    console.log("Seeding surahs explanations...");
+    for (const exp of surahsExplanations) {
+      // Future-proofing
+    }
+
+    // 8. Seed Translations for surahs
+    console.log("Seeding surahs translations...");
+    for (const trans of surahsTranslations) {
       // Future-proofing
     }
 

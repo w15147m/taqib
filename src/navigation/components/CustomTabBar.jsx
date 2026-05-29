@@ -57,12 +57,12 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
           <TouchableOpacity
             key={index}
             onPress={onPress}
-            className={`flex-1 items-center justify-center ${
+            className={`flex-1 items-center justify-center py-1.5 px-2 rounded-xl ${
               isFocused
                 ? isDarkMode
-                  ? 'bg-indigo-900/40 rounded-xl py-1.5 px-2'
-                  : 'bg-indigo-50/80 rounded-xl py-1.5 px-2'
-                : ''
+                  ? 'bg-indigo-900/40'
+                  : 'bg-indigo-50/80'
+                : 'bg-transparent'
             }`}
             style={isFocused ? styles.focusedTab : null}>
             <Icon size={24} color={iconColor} />

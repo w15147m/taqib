@@ -1,15 +1,12 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, View, StyleSheet} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import Header from '../common/components/Header';
-import Accordion from '../common/components/Accordion';
 import useAutoScroll from '../common/hooks/useAutoScroll';
-import {accordionData} from '../utils/accordionData';
 import UpcomingEventsCard from './components/UpcomingEventsCard';
+import Categories from './components/Categories';
 import useLocation from '../common/hooks/useLocation';
 
 const Home = () => {
-  const navigation = useNavigation();
   const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
 
   // Trigger location fetch automatically on first app load if not saved
@@ -28,28 +25,8 @@ const Home = () => {
         {/* Upcoming Events Card */}
         <UpcomingEventsCard />
 
-        {/* Accordions Section */}
-        <View className="mt-4">
-          {accordionData.map(category => (
-            <View
-              key={category.id}
-              onLayout={e => handleLayout(category.id, e)}
-              className={`mx-6 ${category.id === 'namaz' ? 'mb-2' : 'mb-1'}`}>
-              <Accordion
-                title={category.title}
-                items={category.items}
-                defaultOpen={category.defaultOpen}
-                onOpen={() => handleOpen(category.id)}
-                onItemPress={item =>
-                  navigation.navigate('Content', {
-                    id: item.id,
-                    title: item.title,
-                  })
-                }
-              />
-            </View>
-          ))}
-        </View>
+        {/* Categories child component (isolated logic) */}
+        <Categories handleLayout={handleLayout} handleOpen={handleOpen} />
       </ScrollView>
     </SafeAreaView>
   );

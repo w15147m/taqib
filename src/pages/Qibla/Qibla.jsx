@@ -376,11 +376,6 @@ const Qibla = () => {
             </View>
           </View>
 
-          <Text className="text-slate-400 dark:text-slate-600 text-xxs text-center px-4 font-quran-header">
-            {compassError
-              ? 'اپنے مقام کے مطابق سورج یا نقشے کی مدد سے کمپاس کو سیدھا کریں۔'
-              : 'بہترین نتائج کے لیے فون کو بالکل ہموار سطح پر رکھیں اور اسے دھاتی یا مقناطیسی اشیاء سے دور رکھیں۔'}
-          </Text>
         </View>
       </View>
     );

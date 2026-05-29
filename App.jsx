@@ -32,8 +32,10 @@ function App() {
     const initializeApp = async () => {
       try {
         await runMigrations();
+        const { seedDatabase } = require('./src/db/seeder');
+        await seedDatabase();
       } catch (error) {
-        // Silent error for UI, or handle as needed
+        console.error("Initialization error:", error);
       } finally {
         SplashScreen.hide();
       }

@@ -5,7 +5,7 @@ import migrations from "../../drizzle/migrations";
 
 // Open the database
 const sqlite = SQLite.openDatabase({
-  name: "MyData_v5.db", // Fresh start with cleaned migrations
+  name: "MyData_v6.db", // Bumped to force a fresh schema creation with the new migration
   location: "default",
 });
 
@@ -45,7 +45,8 @@ const callback = async (sql: string, params: any[], method: "all" | "run" | "get
           }
           resolve(rows);
         }, (_, err) => {
-          reject(err);
+          console.error("SQL execution failed:", sql, "params:", params, "error:", err);
+          reject(err || new Error(`Failed query: ${sql}`));
           return false;
         });
       });
@@ -83,11 +84,26 @@ export const runMigrations = async () => {
     const execute = (sql: string, params: any[] = []) => new Promise((resolve, reject) => {
       sqlite.transaction((tx) => {
         tx.executeSql(sql, params, (_, res) => resolve(res), (_, err) => {
-          reject(err);
+          if (!sql.includes("ALTER TABLE __drizzle_migrations ADD COLUMN name")) {
+            console.error("Migration SQL execution failed:", sql, "error:", err);
+          }
+          reject(err || new Error(`Failed migration query: ${sql}`));
           return false;
         });
       });
     });
+
+    // Log tables before migration
+    try {
+      const tablesBefore: any = await execute("SELECT name FROM sqlite_master WHERE type='table'");
+      const beforeNames = [];
+      for (let i = 0; i < tablesBefore.rows.length; i++) {
+        beforeNames.push(tablesBefore.rows.item(i).name);
+      }
+      console.log("DB Tables before migrations:", beforeNames);
+    } catch (err) {
+      console.error("Failed to query tables before migration:", err);
+    }
 
     // Create migrations table
     await execute(`
@@ -134,6 +150,18 @@ export const runMigrations = async () => {
         `INSERT INTO __drizzle_migrations (name, hash, created_at) VALUES (?, ?, ?)`,
         [key, key, Date.now()]
       );
+    }
+
+    // Log tables after migration
+    try {
+      const tablesAfter: any = await execute("SELECT name FROM sqlite_master WHERE type='table'");
+      const afterNames = [];
+      for (let i = 0; i < tablesAfter.rows.length; i++) {
+        afterNames.push(tablesAfter.rows.item(i).name);
+      }
+      console.log("DB Tables after migrations:", afterNames);
+    } catch (err) {
+      console.error("Failed to query tables after migration:", err);
     }
   } catch (error) {
     console.error("Migration error:", error);

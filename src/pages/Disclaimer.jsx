@@ -7,13 +7,13 @@ import {
   ScrollView,
   View,
 } from 'react-native';
-import { ExclamationTriangleIcon } from 'react-native-heroicons/outline';
-import { useTheme } from '../context/ThemeContext';
+import {ExclamationTriangleIcon} from 'react-native-heroicons/outline';
+import {useTheme} from '../context/ThemeContext';
 import HeaderText from '../common/components/HeaderText';
 import Header from '../common/components/Header';
 
 const Disclaimer = () => {
-  const { isDarkMode } = useTheme();
+  const {isDarkMode} = useTheme();
 
   const handleOpenWhatsApp = () => {
     Linking.openURL('https://wa.me/923130930399').catch(err =>
@@ -24,7 +24,7 @@ const Disclaimer = () => {
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
       {/* Reusable Header */}
-      <Header title="دستبرداری" />
+      <Header title="گزارش" />
 
       {/* Content Container */}
       <ScrollView

@@ -10,7 +10,15 @@ import {
   BeakerIcon,
   CalendarIcon,
 } from 'react-native-heroicons/outline';
+import Svg, {Circle, Path} from 'react-native-svg';
 import {useTheme} from '../../context/ThemeContext';
+
+const CompassIcon = ({color, size = 24}) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
+    <Circle cx="12" cy="12" r="10" />
+    <Path d="M16.2 7.8l-2 6.4-6.4 2 2-6.4 6.4-2z" />
+  </Svg>
+);
 
 const ProfileDrawer = props => {
   const {theme, toggleTheme, isDarkMode} = useTheme();
@@ -65,6 +73,24 @@ const ProfileDrawer = props => {
             </View>
             <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
               مناسبت
+            </Text>
+          </TouchableOpacity>
+
+          {/* Qibla Navigation Button */}
+          <TouchableOpacity
+            onPress={() =>
+              props.navigation.navigate('TabsRoot', {screen: 'Qibla'})
+            }
+            activeOpacity={0.7}
+            className="flex-row items-center px-5 py-4 rounded-2xl">
+            <View className="w-10 h-10 bg-indigo-50 dark:bg-indigo-900/30 rounded-xl items-center justify-center mr-4">
+              <CompassIcon
+                size={20}
+                color={isDarkMode ? '#818cf8' : '#4f46e5'}
+              />
+            </View>
+            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
+              قبلہ نما
             </Text>
           </TouchableOpacity>
 

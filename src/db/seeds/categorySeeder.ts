@@ -1,5 +1,6 @@
 import { db } from "../client";
 import { categories } from "../schema";
+import { eq } from "drizzle-orm";
 
 const categoryMapping = [
   { id: 'prayers', title_ur: 'تعقیباتِ نماز', title_en: 'Taqeebat' },
@@ -11,23 +12,21 @@ const categoryMapping = [
 
 export const seedCategories = async () => {
   try {
-    const existingCats = await db.select().from(categories);
-    if (existingCats.length > 0) {
-      console.log("Categories already seeded");
-      return;
-    }
-
-    console.log("Seeding categories...");
+    console.log("Checking and seeding categories...");
 
     for (const info of categoryMapping) {
-      await db.insert(categories).values({
-        id: info.id,
-        title_ur: info.title_ur,
-        title_en: info.title_en,
-      });
+      const existing = await db.select().from(categories).where(eq(categories.id, info.id));
+      if (existing.length === 0) {
+        await db.insert(categories).values({
+          id: info.id,
+          title_ur: info.title_ur,
+          title_en: info.title_en,
+        });
+        console.log(`Seeded category: ${info.id}`);
+      }
     }
 
-    console.log("Categories seeded successfully!");
+    console.log("Categories seeding check completed successfully!");
   } catch (error) {
     console.error("Seeding categories error:", error);
     throw error;

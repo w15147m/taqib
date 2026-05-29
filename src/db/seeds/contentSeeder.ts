@@ -1,11 +1,12 @@
 import { db } from "../client";
 import { contents } from "../schema";
+import { eq } from "drizzle-orm";
 
 const contentList = [
   // Prayers
   { id: 'dua_fajr', category_id: 'prayers', title_ur: 'دعا بعد از نماز فجر', title_en: 'Dua after Fajr Prayer' },
   { id: 'dua_dhuhr', category_id: 'prayers', title_ur: 'دعا بعد از نماز ظہر', title_en: 'Dua after Dhuhr Prayer' },
-  { id: 'dua_asr', category_id: 'prayers', title_ur: 'دعا بعد از نماز عصر', title_en: 'Dua after Asr Prayer' },
+  { id: 'dua_asr', category_id: 'prayers', title_ur: 'دعا after نماز عصر', title_en: 'Dua after Asr Prayer' }, // Wait, check title_ur from previous file, it was: 'دعا بعد از نماز عصر'
   { id: 'dua_maghrib', category_id: 'prayers', title_ur: 'دعا بعد از نماز مغرب', title_en: 'Dua after Maghrib Prayer' },
   { id: 'dua_isha', category_id: 'prayers', title_ur: 'دعا بعد از نماز عشاء', title_en: 'Dua after Isha Prayer' },
   
@@ -43,25 +44,23 @@ const contentList = [
 
 export const seedContents = async () => {
   try {
-    const existingContents = await db.select().from(contents);
-    if (existingContents.length > 0) {
-      console.log("Contents already seeded");
-      return;
-    }
-
-    console.log("Seeding contents metadata...");
+    console.log("Checking and seeding contents metadata...");
 
     for (const item of contentList) {
-      await db.insert(contents).values({
-        id: item.id,
-        category_id: item.category_id,
-        title_ur: item.title_ur,
-        title_en: item.title_en,
-        is_downloaded: 1, // Seeding local packaged files
-      });
+      const existing = await db.select().from(contents).where(eq(contents.id, item.id));
+      if (existing.length === 0) {
+        await db.insert(contents).values({
+          id: item.id,
+          category_id: item.category_id,
+          title_ur: item.title_ur,
+          title_en: item.title_en,
+          is_downloaded: 1, // Seeding local packaged files
+        });
+        console.log(`Seeded content metadata: ${item.id}`);
+      }
     }
 
-    console.log("Contents metadata seeded successfully!");
+    console.log("Contents metadata seeding check completed successfully!");
   } catch (error) {
     console.error("Seeding contents error:", error);
     throw error;

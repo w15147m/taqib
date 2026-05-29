@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, View} from 'react-native';
+import {SafeAreaView, ScrollView, View, StyleSheet} from 'react-native';
 import {Calendar} from 'react-native-calendars';
 import {useTheme} from '../../context/ThemeContext';
 import Header from '../../common/components/Header';
@@ -21,7 +21,10 @@ const Monasibat = () => {
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
       <Header title="مناسبت" />
 
-      <ScrollView className="flex-1 px-6" showsVerticalScrollIndicator={false}>
+      <ScrollView
+        className="flex-1 px-6"
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.scrollContent}>
         {/* Calendar Card */}
         <View className="mt-4 p-2 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm overflow-hidden">
           <Calendar
@@ -60,5 +63,11 @@ const Monasibat = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  scrollContent: {
+    paddingBottom: 100,
+  },
+});
 
 export default Monasibat;

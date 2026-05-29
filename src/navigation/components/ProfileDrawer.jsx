@@ -52,7 +52,9 @@ const ProfileDrawer = props => {
 
           {/* Monasibat Navigation Button */}
           <TouchableOpacity
-            onPress={() => props.navigation.navigate('Monasibat')}
+            onPress={() =>
+              props.navigation.navigate('TabsRoot', {screen: 'Monasibat'})
+            }
             activeOpacity={0.7}
             className="flex-row items-center px-5 py-4 rounded-2xl">
             <View className="w-10 h-10 bg-emerald-50 dark:bg-emerald-900/30 rounded-xl items-center justify-center mr-4">

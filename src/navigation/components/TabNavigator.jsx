@@ -1,49 +1,66 @@
 import React from 'react';
-import { View } from 'react-native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { 
-  HomeIcon, 
-  UserIcon
-} from 'react-native-heroicons/outline';
-import { 
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {HomeIcon, UserIcon, CalendarIcon} from 'react-native-heroicons/outline';
+import {
   HomeIcon as HomeIconSolid,
-  UserIcon as UserIconSolid
+  UserIcon as UserIconSolid,
+  CalendarIcon as CalendarIconSolid,
 } from 'react-native-heroicons/solid';
 
 // Custom Components & Pages
 import CustomTabBar from './CustomTabBar';
 import Home from '../../pages/Home';
 import Profile from '../../pages/Profile/Profile';
+import Monasibat from '../../pages/Monasibat/Monasibat';
 
 const Tab = createBottomTabNavigator();
+
+// Static tab icons to avoid react/no-unstable-nested-components warnings
+const HomeIconOutline = props => <HomeIcon {...props} />;
+const HomeIconSolidComp = props => <HomeIconSolid {...props} />;
+const CalendarIconOutline = props => <CalendarIcon {...props} />;
+const CalendarIconSolidComp = props => <CalendarIconSolid {...props} />;
+const UserIconOutline = props => <UserIcon {...props} />;
+const UserIconSolidComp = props => <UserIconSolid {...props} />;
+
+const TabBarComponent = props => <CustomTabBar {...props} />;
 
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      tabBar={(props) => <CustomTabBar {...props} />}
+      tabBar={TabBarComponent}
       screenOptions={{
         headerShown: false,
-      }}
-    >
-      <Tab.Screen 
-        name="MainHome" 
-        component={Home} 
-        options={{ 
-          title: 'Home',
-          tabBarIcon: (props) => <HomeIcon {...props} />,
-          tabBarIconActive: (props) => <HomeIconSolid {...props} />
-        }} 
+      }}>
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{
+          title: 'ہوم',
+          tabBarIcon: HomeIconOutline,
+          tabBarIconActive: HomeIconSolidComp,
+        }}
       />
 
-      <Tab.Screen 
-        name="ProfileTab" 
-        component={Profile} 
-        options={{ 
+      <Tab.Screen
+        name="Monasibat"
+        component={Monasibat}
+        options={{
+          title: 'مناسبت',
+          tabBarIcon: CalendarIconOutline,
+          tabBarIconActive: CalendarIconSolidComp,
+        }}
+      />
+
+      <Tab.Screen
+        name="ProfileTab"
+        component={Profile}
+        options={{
           title: 'Profile',
-          tabBarIcon: (props) => <UserIcon {...props} />, 
-          tabBarIconActive: (props) => <UserIconSolid {...props} />,
-          tabBarItemStyle: { display: 'none' }
-        }} 
+          tabBarIcon: UserIconOutline,
+          tabBarIconActive: UserIconSolidComp,
+          tabBarItemStyle: {display: 'none'},
+        }}
       />
     </Tab.Navigator>
   );

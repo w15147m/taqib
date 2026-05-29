@@ -8,7 +8,7 @@ import About from '../../pages/About';
 import Disclaimer from '../../pages/Disclaimer';
 import Settings from '../../pages/Settings';
 import TestPage from '../../pages/TestPage';
-import Monasibat from '../../pages/Monasibat';
+import Monasibat from '../../pages/Monasibat/Monasibat';
 
 const Drawer = createDrawerNavigator();
 

@@ -2,12 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import useLocation from '../../common/hooks/useLocation';
 import {getNextPrayer} from '../../utils/prayerTimes';
-
-const CURRENT_EVENT = {
-  id: 'eid_al_adha',
-  titleUr: 'عیدِ قربان (عید الاضحیٰ)',
-  hijriDate: '۱۰ ذوالحجہ',
-};
+import {getNextUpcomingEvent} from '../../utils/eventsData';
 
 const UpcomingEventsCard = () => {
   const {location, locationName} = useLocation();
@@ -23,13 +18,20 @@ const UpcomingEventsCard = () => {
 
   const displayCity = locationName || '';
 
+  // Get dynamic upcoming Shia event
+  const upcomingEvent = getNextUpcomingEvent() || {
+    titleUr: 'مناسبت',
+    formattedDateUr: '--',
+    isToday: false,
+  };
+
   return (
     <View className="mx-6 my-3 p-4 bg-[#bce5ea] dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/80 shadow-sm">
       {/* Header Row: Date (Left) and Title (Right) */}
       <View className="flex-row justify-between items-center mb-3">
         {/* Date (Left) */}
         <Text className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-          {CURRENT_EVENT.hijriDate}
+          {upcomingEvent.formattedDateUr}
         </Text>
 
         {/* Title (Right) */}
@@ -47,10 +49,10 @@ const UpcomingEventsCard = () => {
             {displayCity}
           </Text>
 
-          {/* Right: Today Badge */}
+          {/* Right: Today/Upcoming Badge */}
           <View className="bg-emerald-500/10 dark:bg-emerald-500/20 px-2 py-0.5 rounded-lg">
             <Text className="text-[9px] font-bold text-emerald-600 dark:text-emerald-400">
-              آج
+              {upcomingEvent.isToday ? 'آج' : 'آنے والی'}
             </Text>
           </View>
         </View>
@@ -64,12 +66,11 @@ const UpcomingEventsCard = () => {
 
           {/* Right: Urdu Event Title */}
           <Text className="text-base font-bold text-emerald-800 dark:text-emerald-400 font-quran-header">
-            {CURRENT_EVENT.titleUr}
+            {upcomingEvent.titleUr}
           </Text>
         </View>
       </View>
     </View>
   );
 };
-
 export default UpcomingEventsCard;

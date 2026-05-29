@@ -8,6 +8,7 @@ import About from '../../pages/About';
 import Disclaimer from '../../pages/Disclaimer';
 import Settings from '../../pages/Settings';
 import TestPage from '../../pages/TestPage';
+import Monasibat from '../../pages/Monasibat';
 
 const Drawer = createDrawerNavigator();
 
@@ -67,6 +68,13 @@ const MainDrawerNavigator = () => {
       <Drawer.Screen
         name="TestPage"
         component={TestPage}
+        options={{
+          drawerItemStyle: {display: 'none'},
+        }}
+      />
+      <Drawer.Screen
+        name="Monasibat"
+        component={Monasibat}
         options={{
           drawerItemStyle: {display: 'none'},
         }}

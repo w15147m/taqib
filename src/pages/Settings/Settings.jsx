@@ -7,16 +7,16 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import {ArrowPathIcon, MapPinIcon} from 'react-native-heroicons/outline';
-import {useTheme} from '../../context/ThemeContext';
+import { ArrowPathIcon } from 'react-native-heroicons/outline';
+import { useTheme } from '../../context/ThemeContext';
 import useLocation from '../../common/hooks/useLocation';
 import Header from '../../common/components/Header';
 import useSettingsLogic from './hooks/useSettingsLogic';
 import SettingSection from './components/SettingSection';
 
 const Settings = () => {
-  const {isDarkMode} = useTheme();
-  const {locationName, resetLocation} = useLocation();
+  const { isDarkMode } = useTheme();
+  const { locationName, resetLocation } = useLocation();
   const {
     showTranslation,
     showArabic,
@@ -61,6 +61,31 @@ const Settings = () => {
           isDarkMode={isDarkMode}
         />
 
+        {/* Location Section */}
+        <View className="py-6 border-b border-slate-100 dark:border-slate-900 w-full">
+
+          {/* Location Info & Refresh Button Row */}
+          <View className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[80px] flex-row justify-between items-center px-6">
+            {/* Refresh/Reset button with ArrowPathIcon */}
+            <TouchableOpacity
+              onPress={resetLocation}
+              activeOpacity={0.7}
+              className="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 items-center justify-center bg-white dark:bg-slate-900 shadow-sm">
+              <ArrowPathIcon size={18} color={isDarkMode ? '#34d399' : '#059669'} />
+            </TouchableOpacity>
+
+            {/* Current City Name */}
+            <View className="flex-1 items-end pr-4">
+              <Text className="text-xs text-slate-400 dark:text-slate-500 font-bold mb-1">
+                موجودہ شہر
+              </Text>
+              <Text className="text-base font-bold text-slate-800 dark:text-slate-100">
+                {locationName || 'دستیاب نہیں ہے'}
+              </Text>
+            </View>
+          </View>
+        </View>
+
         {/* Reset Settings Button */}
         <View className="mt-12 items-center">
           <TouchableOpacity
@@ -73,21 +98,6 @@ const Settings = () => {
             />
             <Text className="text-indigo-600 dark:text-indigo-400 font-quran-header text-lg ml-3">
               سیٹنگز واپس پلٹائیں
-            </Text>
-          </TouchableOpacity>
-        </View>
-
-        {/* Reset Location Button */}
-        <View className="mt-4 items-center">
-          <TouchableOpacity
-            onPress={resetLocation}
-            activeOpacity={0.7}
-            className="flex-row items-center justify-center border border-emerald-600 dark:border-emerald-400 rounded-2xl py-4 px-8 w-full max-w-xs bg-transparent">
-            <MapPinIcon size={20} color={isDarkMode ? '#34d399' : '#059669'} />
-            <Text className="text-emerald-600 dark:text-emerald-400 font-quran-header text-lg ml-3">
-              {locationName
-                ? `لوکیشن ری سیٹ کریں (${locationName})`
-                : 'لوکیشن ری سیٹ کریں'}
             </Text>
           </TouchableOpacity>
         </View>

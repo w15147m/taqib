@@ -35,7 +35,11 @@ const MonthlyEventsList = ({displayedHijriMonth, monthlyEventsList}) => {
                 </Text>
               </View>
               <View className="flex-1 items-end pl-2">
-                <Text className="text-sm font-bold text-slate-800 dark:text-slate-200 text-right font-quran-header">
+                <Text className={`text-sm font-bold text-right font-quran-header ${
+                    evt.type === 'joy'
+                      ? 'text-emerald-600 dark:text-emerald-400'
+                      : 'text-rose-600 dark:text-rose-400'
+                  }`}>
                   {evt.titleUr}
                 </Text>
                 <Text className="text-[10px] text-slate-400 dark:text-slate-500 text-right mt-0.5">

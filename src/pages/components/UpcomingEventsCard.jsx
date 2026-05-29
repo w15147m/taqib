@@ -80,7 +80,11 @@ const UpcomingEventsCard = () => {
           </Text>
 
           {/* Right: Urdu Event Title */}
-          <Text className="text-base font-bold text-emerald-800 dark:text-emerald-400 font-quran-header">
+          <Text className={`text-base font-bold font-quran-header ${
+            upcomingEvent.type === 'joy'
+              ? 'text-emerald-700 dark:text-emerald-400'
+              : 'text-rose-600 dark:text-rose-400'
+          }`}>
             {upcomingEvent.titleUr}
           </Text>
         </View>

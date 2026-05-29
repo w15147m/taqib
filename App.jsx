@@ -32,7 +32,7 @@ function App() {
     const initializeApp = async () => {
       try {
         await runMigrations();
-        const { seedDatabase } = require('./src/db/seeder');
+        const { seedDatabase } = require('./src/db/seeds');
         await seedDatabase();
       } catch (error) {
         console.error("Initialization error:", error);

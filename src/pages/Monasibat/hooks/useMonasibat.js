@@ -46,8 +46,12 @@ export const useMonasibat = () => {
       };
     })
     .sort((a, b) => {
-      if (a.isToday) return -1;
-      if (b.isToday) return 1;
+      if (a.isToday) {
+        return -1;
+      }
+      if (b.isToday) {
+        return 1;
+      }
       return a.day - b.day;
     });
 

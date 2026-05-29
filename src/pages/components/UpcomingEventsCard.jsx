@@ -2,7 +2,12 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import useLocation from '../../common/hooks/useLocation';
 import {getNextPrayer} from '../../utils/prayerTimes';
-import {getNextUpcomingEvent} from '../../utils/eventsData';
+import {
+  getNextUpcomingEvent,
+  getHijriDate,
+  toUrduDigits,
+  HIJRI_MONTHS_UR,
+} from '../../utils/eventsData';
 
 const UpcomingEventsCard = () => {
   const {location, locationName} = useLocation();
@@ -25,13 +30,18 @@ const UpcomingEventsCard = () => {
     isToday: false,
   };
 
+  const todayHijri = getHijriDate(new Date());
+  const todayHijriStr = `${toUrduDigits(todayHijri.day)} ${
+    HIJRI_MONTHS_UR[todayHijri.month - 1]
+  }`;
+
   return (
     <View className="mx-6 my-3 p-4 bg-[#bce5ea] dark:bg-slate-900 rounded-2xl border border-slate-200/50 dark:border-slate-800/80 shadow-sm">
       {/* Header Row: Date (Left) and Title (Right) */}
       <View className="flex-row justify-between items-center mb-3">
         {/* Date (Left) */}
         <Text className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-          {upcomingEvent.formattedDateUr}
+          {todayHijriStr}
         </Text>
 
         {/* Title (Right) */}
@@ -49,11 +59,16 @@ const UpcomingEventsCard = () => {
             {displayCity}
           </Text>
 
-          {/* Right: Today/Upcoming Badge */}
-          <View className="bg-emerald-500/10 dark:bg-emerald-500/20 px-2 py-0.5 rounded-lg">
-            <Text className="text-[9px] font-bold text-emerald-600 dark:text-emerald-400">
-              {upcomingEvent.isToday ? 'آج' : 'آنے والی'}
+          {/* Right: Event Date & Today/Upcoming Badge */}
+          <View className="flex-row items-center">
+            <Text className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 mr-2">
+              {upcomingEvent.formattedDateUr}
             </Text>
+            <View className="bg-emerald-500/10 dark:bg-emerald-500/20 px-2 py-0.5 rounded-lg">
+              <Text className="text-[9px] font-bold text-emerald-600 dark:text-emerald-400">
+                {upcomingEvent.isToday ? 'آج' : 'آنے والی'}
+              </Text>
+            </View>
           </View>
         </View>
 

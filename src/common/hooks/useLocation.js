@@ -131,7 +131,21 @@ const useLocation = () => {
     initLocation();
   }, [getLocation]);
 
-  return {location, locationName, error, loading, getLocation};
+  const resetLocation = useCallback(async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      await AsyncStorage.removeItem(LOCATION_STORAGE_KEY);
+      setLocation(null);
+      setLocationName(null);
+      await getLocation();
+    } catch (err) {
+      setError(err.message || 'Error resetting location');
+      setLoading(false);
+    }
+  }, [getLocation]);
+
+  return {location, locationName, error, loading, getLocation, resetLocation};
 };
 
 export default useLocation;

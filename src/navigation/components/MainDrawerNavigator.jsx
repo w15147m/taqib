@@ -6,7 +6,7 @@ import EditProfile from '../../pages/Profile/components/EditProfile';
 import Content from '../../pages/Content';
 import About from '../../pages/About';
 import Disclaimer from '../../pages/Disclaimer';
-import Settings from '../../pages/Settings';
+import Settings from '../../pages/Settings/Settings';
 import TestPage from '../../pages/TestPage';
 import Monasibat from '../../pages/Monasibat/Monasibat';
 

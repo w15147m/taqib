@@ -8,9 +8,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
   const shadowStyle = isDarkMode ? styles.shadowDark : styles.shadowLight;
 
   return (
-    <View
-      className="bg-white dark:bg-slate-900 p-2 rounded-t-[30px] flex-row items-center px-8 shadow-2xl border-t border-slate-50 dark:border-slate-800 absolute bottom-0 left-0 right-0"
-      style={[styles.container, shadowStyle]}>
+    <View style={[styles.container, shadowStyle]}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
 
@@ -45,28 +43,27 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
         const inactiveColor = isDarkMode ? '#64748b' : '#94a3b8';
         const iconColor = isFocused ? activeColor : inactiveColor;
 
-        const activeTextClass = isDarkMode
-          ? 'text-indigo-400'
-          : 'text-indigo-600';
-        const inactiveTextClass = isDarkMode
-          ? 'text-slate-500'
-          : 'text-slate-400';
-        const textClass = isFocused ? activeTextClass : inactiveTextClass;
+        const activeTextColor = isDarkMode ? '#818cf8' : '#4f46e5';
+        const inactiveTextColor = isDarkMode ? '#64748b' : '#94a3b8';
+
+        const activeBg = isDarkMode
+          ? 'rgba(67,56,202,0.25)'
+          : 'rgba(238,242,255,0.9)';
 
         return (
           <TouchableOpacity
             key={index}
             onPress={onPress}
-            className={`flex-1 items-center justify-center py-1.5 px-2 rounded-xl ${
-              isFocused
-                ? isDarkMode
-                  ? 'bg-indigo-900/40'
-                  : 'bg-indigo-50/80'
-                : 'bg-transparent'
-            }`}
-            style={isFocused ? styles.focusedTab : null}>
+            style={[
+              styles.tabItem,
+              {backgroundColor: isFocused ? activeBg : 'transparent'},
+            ]}>
             <Icon size={24} color={iconColor} />
-            <Text className={`text-[9px] font-bold mt-1 ${textClass}`}>
+            <Text
+              style={[
+                styles.label,
+                {color: isFocused ? activeTextColor : inactiveTextColor},
+              ]}>
               {label}
             </Text>
           </TouchableOpacity>
@@ -78,20 +75,43 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    paddingBottom: 14,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: -10},
     shadowRadius: 15,
     elevation: 30,
-    paddingBottom: 10,
   },
   shadowLight: {
     shadowOpacity: 0.05,
+    backgroundColor: '#ffffff',
   },
   shadowDark: {
     shadowOpacity: 0.2,
+    backgroundColor: '#0f172a',
   },
-  focusedTab: {
-    maxWidth: 80,
+  tabItem: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 6,
+    paddingHorizontal: 8,
+    borderRadius: 12,
+  },
+  label: {
+    fontSize: 9,
+    fontWeight: 'bold',
+    marginTop: 4,
   },
 });
 

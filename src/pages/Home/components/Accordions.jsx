@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {View, ActivityIndicator} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import Accordion from '../../common/components/Accordion';
-import {db} from '../../db/client';
-import {categories, contents} from '../../db/schema';
+import Accordion from '../../../common/components/Accordion';
+import {db} from '../../../db/client';
+import {categories, contents} from '../../../db/schema';
 
-const Categories = ({handleLayout, handleOpen}) => {
+const Accordions = ({handleLayout, handleOpen}) => {
   const navigation = useNavigation();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -73,4 +73,4 @@ const Categories = ({handleLayout, handleOpen}) => {
   );
 };
 
-export default Categories;
+export default Accordions;

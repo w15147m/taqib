@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import useLocation from '../../common/hooks/useLocation';
-import {getNextPrayer} from '../../utils/prayerTimes';
+import useLocation from '../../../common/hooks/useLocation';
+import {getNextPrayer} from '../../../utils/prayerTimes';
 import {
   getNextUpcomingEvent,
   getHijriDate,
   toUrduDigits,
   HIJRI_MONTHS_UR,
-} from '../../utils/eventsData';
+} from '../../../utils/eventsData';
 
 const UpcomingEventsCard = () => {
   const {location, locationName} = useLocation();
@@ -80,11 +80,12 @@ const UpcomingEventsCard = () => {
           </Text>
 
           {/* Right: Urdu Event Title */}
-          <Text className={`text-base font-bold font-quran-header ${
-            upcomingEvent.type === 'joy'
-              ? 'text-emerald-700 dark:text-emerald-400'
-              : 'text-rose-600 dark:text-rose-400'
-          }`}>
+          <Text
+            className={`text-base font-bold font-quran-header ${
+              upcomingEvent.type === 'joy'
+                ? 'text-emerald-700 dark:text-emerald-400'
+                : 'text-rose-600 dark:text-rose-400'
+            }`}>
             {upcomingEvent.titleUr}
           </Text>
         </View>
@@ -92,4 +93,5 @@ const UpcomingEventsCard = () => {
     </View>
   );
 };
+
 export default UpcomingEventsCard;

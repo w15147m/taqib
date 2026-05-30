@@ -1,10 +1,10 @@
 import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
-import Header from '../common/components/Header';
-import useAutoScroll from '../common/hooks/useAutoScroll';
+import Header from '../../common/components/Header';
+import useAutoScroll from '../../common/hooks/useAutoScroll';
 import UpcomingEventsCard from './components/UpcomingEventsCard';
-import Categories from './components/Categories';
-import useLocation from '../common/hooks/useLocation';
+import Accordions from './components/Accordions';
+import useLocation from '../../common/hooks/useLocation';
 
 const Home = () => {
   const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
@@ -25,8 +25,8 @@ const Home = () => {
         {/* Upcoming Events Card */}
         <UpcomingEventsCard />
 
-        {/* Categories child component (isolated logic) */}
-        <Categories handleLayout={handleLayout} handleOpen={handleOpen} />
+        {/* Accordions child component (isolated logic) */}
+        <Accordions handleLayout={handleLayout} handleOpen={handleOpen} />
       </ScrollView>
     </SafeAreaView>
   );

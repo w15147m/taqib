@@ -16,7 +16,7 @@ import Svg, {Circle, Path} from 'react-native-svg';
 
 // Custom Components & Pages
 import CustomTabBar from './CustomTabBar';
-import Home from '../../pages/Home';
+import Home from '../../pages/Home/Home';
 import Profile from '../../pages/Profile/Profile';
 import Monasibat from '../../pages/Monasibat/Monasibat';
 import Tasbih from '../../pages/Tasbih/Tasbih';
@@ -33,14 +33,26 @@ const SparklesIconOutline = props => <SparklesIcon {...props} />;
 const SparklesIconSolidComp = props => <SparklesIconSolid {...props} />;
 
 const CompassIconOutline = ({color, size = 24}) => (
-  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
+  <Svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2">
     <Circle cx="12" cy="12" r="10" />
     <Path d="M16.2 7.8l-2 6.4-6.4 2 2-6.4 6.4-2z" />
   </Svg>
 );
 
 const CompassIconSolidComp = ({color, size = 24}) => (
-  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
+  <Svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2">
     <Circle cx="12" cy="12" r="10" />
     <Path d="M16.2 7.8l-2 6.4-6.4 2 2-6.4 6.4-2z" fill={color} />
   </Svg>

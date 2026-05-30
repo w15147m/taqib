@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {View, StatusBar, Image, StyleSheet} from 'react-native';
+import React, {useEffect, useState, useRef} from 'react';
+import {View, StatusBar, Animated, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {runMigrations} from '../db/client';
@@ -10,8 +10,12 @@ import textTaqeebatImage from '../assets/images/parts/text_taqeebat.png';
 export const AppInitializer = ({children}) => {
   const [isDbReady, setIsDbReady] = useState(false);
   const [isReady, setIsReady] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const {themeLoading} = useTheme();
   const {loading: settingsLoading} = useSettings();
+
+  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const opacityAnim = useRef(new Animated.Value(1)).current;
 
   // Run database migrations and seeding
   useEffect(() => {
@@ -55,30 +59,64 @@ export const AppInitializer = ({children}) => {
     initialize();
   }, []);
 
-  // Monitor loading states and set ready state
+  // Dismiss native splash dialog early (after 150ms) to show the identical static React Native view
   useEffect(() => {
-    if (isDbReady && !themeLoading && !settingsLoading) {
-      setIsReady(true);
-    }
-  }, [isDbReady, themeLoading, settingsLoading]);
+    const timer = setTimeout(() => {
+      SplashScreen.hide();
+    }, 150);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // Delay native splash screen dismissal slightly to ensure the UI has finished mounting
+  // Monitor loading states. Once everything is loaded, start the exit shrink & fade transition
   useEffect(() => {
-    if (isReady) {
-      const timer = setTimeout(() => {
-        SplashScreen.hide();
-      }, 150);
-      return () => clearTimeout(timer);
+    if (
+      isDbReady &&
+      !themeLoading &&
+      !settingsLoading &&
+      !isTransitioning &&
+      !isReady
+    ) {
+      setIsTransitioning(true);
+
+      // Smoothly shrink and fade out the calligraphic logo
+      Animated.parallel([
+        Animated.timing(scaleAnim, {
+          toValue: 0.3,
+          duration: 500,
+          useNativeDriver: true,
+        }),
+        Animated.timing(opacityAnim, {
+          toValue: 0,
+          duration: 400,
+          useNativeDriver: true,
+        }),
+      ]).start(() => {
+        setIsReady(true);
+      });
     }
-  }, [isReady]);
+  }, [
+    isDbReady,
+    themeLoading,
+    settingsLoading,
+    isTransitioning,
+    isReady,
+    scaleAnim,
+    opacityAnim,
+  ]);
 
   if (!isReady) {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#bce5ea" barStyle="dark-content" />
-        <Image
+        <Animated.Image
           source={textTaqeebatImage}
-          style={styles.logo}
+          style={[
+            styles.logo,
+            {
+              transform: [{scale: scaleAnim}],
+              opacity: opacityAnim,
+            },
+          ]}
           resizeMode="contain"
         />
       </View>

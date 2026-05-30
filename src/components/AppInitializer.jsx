@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {View, StatusBar} from 'react-native';
+import {View, StatusBar, Image, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {runMigrations} from '../db/client';
 import {useTheme} from '../context/ThemeContext';
 import {useSettings} from '../context/SettingsContext';
+import textTaqeebatImage from '../assets/images/parts/text_taqeebat.png';
 
 export const AppInitializer = ({children}) => {
   const [isDbReady, setIsDbReady] = useState(false);
@@ -12,6 +13,7 @@ export const AppInitializer = ({children}) => {
   const {themeLoading} = useTheme();
   const {loading: settingsLoading} = useSettings();
 
+  // Run database migrations and seeding
   useEffect(() => {
     const initialize = async () => {
       try {
@@ -53,22 +55,31 @@ export const AppInitializer = ({children}) => {
     initialize();
   }, []);
 
+  // Monitor loading states and set ready state
   useEffect(() => {
     if (isDbReady && !themeLoading && !settingsLoading) {
       setIsReady(true);
-      SplashScreen.hide();
     }
   }, [isDbReady, themeLoading, settingsLoading]);
 
+  // Delay native splash screen dismissal slightly to ensure the UI has finished mounting
+  useEffect(() => {
+    if (isReady) {
+      const timer = setTimeout(() => {
+        SplashScreen.hide();
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [isReady]);
+
   if (!isReady) {
-    // Return a blank view that matches native splash background color (#bce5ea)
-    // to prevent any white flash while native splash screen transitions.
     return (
-      <View style={{flex: 1, backgroundColor: '#bce5ea'}}>
-        <StatusBar
-          translucent
-          backgroundColor="transparent"
-          barStyle="dark-content"
+      <View style={styles.container}>
+        <StatusBar backgroundColor="#bce5ea" barStyle="dark-content" />
+        <Image
+          source={textTaqeebatImage}
+          style={styles.logo}
+          resizeMode="contain"
         />
       </View>
     );
@@ -76,3 +87,16 @@ export const AppInitializer = ({children}) => {
 
   return children;
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#bce5ea',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  logo: {
+    width: 260,
+    height: 150,
+  },
+});

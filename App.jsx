@@ -1,15 +1,13 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {StatusBar, View} from 'react-native';
 import {AuthProvider} from './src/context/AuthContext';
 import {AlertProvider} from './src/context/AlertContext';
 import AlertModal from './src/components/AlertModal';
 import Toast from './src/components/Toast';
 import AppNavigator from './src/navigation/AppNavigator';
-import SplashScreen from 'react-native-splash-screen';
-import {runMigrations} from './src/db/client';
-
 import {ThemeProvider, useTheme} from './src/context/ThemeContext';
 import {SettingsProvider} from './src/context/SettingsContext';
+import {AppInitializer} from './src/components/AppInitializer';
 
 const MainApp = () => {
   const {isDarkMode} = useTheme();
@@ -28,32 +26,18 @@ const MainApp = () => {
 };
 
 function App() {
-  useEffect(() => {
-    const initializeApp = async () => {
-      try {
-        await runMigrations();
-        const { seedDatabase } = require('./src/db/seeds');
-        await seedDatabase();
-      } catch (error) {
-        console.error("Initialization error:", error);
-      } finally {
-        SplashScreen.hide();
-      }
-    };
-
-    initializeApp();
-  }, []);
-
   return (
-    <ThemeProvider>
-      <SettingsProvider>
-        <AuthProvider>
-          <AlertProvider>
-            <MainApp />
-          </AlertProvider>
-        </AuthProvider>
-      </SettingsProvider>
-    </ThemeProvider>
+    <AppInitializer>
+      <ThemeProvider>
+        <SettingsProvider>
+          <AuthProvider>
+            <AlertProvider>
+              <MainApp />
+            </AlertProvider>
+          </AuthProvider>
+        </SettingsProvider>
+      </ThemeProvider>
+    </AppInitializer>
   );
 }
 

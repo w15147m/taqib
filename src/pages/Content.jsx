@@ -7,6 +7,7 @@ import UrduText from '../common/components/UrduText';
 import { db } from '../db/client';
 import { contents, content_items, content_item_explanations } from '../db/schema';
 import { eq, asc } from 'drizzle-orm';
+import primaryData from '../db/primaryAccordion.json';
 
 const Content = () => {
   const route = useRoute();
@@ -21,63 +22,84 @@ const Content = () => {
       try {
         setLoading(true);
         let targetId = id;
-        
-        // Resolve ID if only title is provided
-        if (!targetId && title) {
-          const found = await db.select().from(contents).where(eq(contents.title_ur, title));
-          if (found.length > 0) {
-            targetId = found[0].id;
+
+        // Check if the ID belongs to the primary JSON data source
+        const isFromJson = primaryData.contents.some(c => c.id === targetId);
+
+        if (isFromJson) {
+          // Load content meta from JSON
+          const contentMeta = primaryData.contents.find(c => c.id === targetId);
+          setContent({ id: contentMeta.id, title_ur: contentMeta.title_ur });
+
+          // Load items from JSON sorted by sequence_number
+          const jsonItems = primaryData.content_items
+            .filter(item => item.content_id === targetId)
+            .sort((a, b) => a.sequence_number - b.sequence_number);
+
+          // Attach explanations from JSON
+          const itemsWithDetails = jsonItems.map(item => {
+            const itemExplanations = primaryData.content_item_explanations.filter(
+              e => e.item_id === item.id,
+            );
+            return {
+              ...item,
+              beforeExplanations: itemExplanations.filter(e => e.position === 'before'),
+              afterExplanations: itemExplanations.filter(e => e.position === 'after'),
+            };
+          });
+
+          setContentItems(itemsWithDetails);
+        } else {
+          // Resolve ID if only title is provided
+          if (!targetId && title) {
+            const found = await db.select().from(contents).where(eq(contents.title_ur, title));
+            if (found.length > 0) {
+              targetId = found[0].id;
+            }
           }
-        }
 
-        if (targetId) {
-          const contentRes = await db.select().from(contents).where(eq(contents.id, targetId));
-          if (contentRes.length > 0) {
-            setContent(contentRes[0]);
-          }
+          if (targetId) {
+            const contentRes = await db.select().from(contents).where(eq(contents.id, targetId));
+            if (contentRes.length > 0) {
+              setContent(contentRes[0]);
+            }
 
-          // Fetch items
-          const items = await db.select()
-            .from(content_items)
-            .where(eq(content_items.content_id, targetId))
-            .orderBy(asc(content_items.sequence_number));
+            // Fetch items
+            const items = await db.select()
+              .from(content_items)
+              .where(eq(content_items.content_id, targetId))
+              .orderBy(asc(content_items.sequence_number));
 
-          if (items.length > 0) {
-            // Fetch explanations
-            const explanations = await db.select({
-              id: content_item_explanations.id,
-              item_id: content_item_explanations.item_id,
-              explanation_text: content_item_explanations.explanation_text,
-              language: content_item_explanations.language,
-              position: content_item_explanations.position,
-              sequence_number: content_item_explanations.sequence_number,
-            })
-            .from(content_item_explanations)
-            .innerJoin(content_items, eq(content_item_explanations.item_id, content_items.id))
-            .where(eq(content_items.content_id, targetId))
-            .orderBy(asc(content_item_explanations.sequence_number));
+            if (items.length > 0) {
+              // Fetch explanations
+              const explanations = await db.select({
+                id: content_item_explanations.id,
+                item_id: content_item_explanations.item_id,
+                explanation_text: content_item_explanations.explanation_text,
+                language: content_item_explanations.language,
+                position: content_item_explanations.position,
+                sequence_number: content_item_explanations.sequence_number,
+              })
+              .from(content_item_explanations)
+              .innerJoin(content_items, eq(content_item_explanations.item_id, content_items.id))
+              .where(eq(content_items.content_id, targetId))
+              .orderBy(asc(content_item_explanations.sequence_number));
 
-            const itemsWithDetails = items.map(item => {
-              const itemExplanations = explanations.filter(e => e.item_id === item.id);
+              const itemsWithDetails = items.map(item => {
+                const itemExplanations = explanations.filter(e => e.item_id === item.id);
+                return {
+                  ...item,
+                  beforeExplanations: itemExplanations.filter(e => e.position === 'before'),
+                  afterExplanations: itemExplanations.filter(e => e.position === 'after'),
+                };
+              });
 
-              const beforeExplanations = itemExplanations
-                .filter(e => e.position === 'before');
-
-              const afterExplanations = itemExplanations
-                .filter(e => e.position === 'after');
-
-              return {
-                ...item,
-                beforeExplanations,
-                afterExplanations,
-              };
-            });
-
-            setContentItems(itemsWithDetails);
+              setContentItems(itemsWithDetails);
+            }
           }
         }
       } catch (error) {
-        console.error("Error loading content from SQLite:", error);
+        console.error('Error loading content:', error);
       } finally {
         setLoading(false);
       }

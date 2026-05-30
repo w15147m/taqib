@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import {View, ActivityIndicator} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import React, { useState, useEffect } from 'react';
+import { View, ActivityIndicator } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import Accordion from '../../../common/components/Accordion';
-import {db} from '../../../db/client';
-import {categories, contents} from '../../../db/schema';
+import { db } from '../../../db/client';
+import { categories, contents } from '../../../db/schema';
 import PrimaryAccordion from './components/PrimaryAccordion';
 
-const Accordions = ({handleLayout, handleOpen}) => {
+const Accordions = ({ handleLayout, handleOpen }) => {
   const navigation = useNavigation();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -51,6 +51,8 @@ const Accordions = ({handleLayout, handleOpen}) => {
 
   return (
     <View className="mt-4">
+      <PrimaryAccordion handleLayout={handleLayout} handleOpen={handleOpen} />
+
       {data.map(category => (
         <View
           key={category.id}
@@ -70,7 +72,6 @@ const Accordions = ({handleLayout, handleOpen}) => {
           />
         </View>
       ))}
-      <PrimaryAccordion handleLayout={handleLayout} handleOpen={handleOpen} />
     </View>
   );
 };

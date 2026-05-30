@@ -4,6 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 import Accordion from '../../../common/components/Accordion';
 import {db} from '../../../db/client';
 import {categories, contents} from '../../../db/schema';
+import PrimaryAccordion from './components/PrimaryAccordion';
 
 const Accordions = ({handleLayout, handleOpen}) => {
   const navigation = useNavigation();
@@ -69,6 +70,7 @@ const Accordions = ({handleLayout, handleOpen}) => {
           />
         </View>
       ))}
+      <PrimaryAccordion handleLayout={handleLayout} handleOpen={handleOpen} />
     </View>
   );
 };

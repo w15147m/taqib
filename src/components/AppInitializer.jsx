@@ -9,7 +9,7 @@ import textTaqeebatImage from '../assets/images/parts/text_taqeebat.png';
 
 export const AppInitializer = ({children}) => {
   const [isDbReady, setIsDbReady] = useState(false);
-  const [isReady, setIsReady] = useState(false);
+  const [isAnimationFinished, setIsAnimationFinished] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const {themeLoading} = useTheme();
   const {loading: settingsLoading} = useSettings();
@@ -67,46 +67,44 @@ export const AppInitializer = ({children}) => {
     return () => clearTimeout(timer);
   }, []);
 
+  const showHome = isDbReady && !themeLoading && !settingsLoading;
+
   // Monitor loading states. Once everything is loaded, start the exit shrink & fade transition
   useEffect(() => {
-    if (
-      isDbReady &&
-      !themeLoading &&
-      !settingsLoading &&
-      !isTransitioning &&
-      !isReady
-    ) {
+    if (showHome && !isTransitioning && !isAnimationFinished) {
       setIsTransitioning(true);
 
       // Smoothly shrink and fade out the calligraphic logo
       Animated.parallel([
         Animated.timing(scaleAnim, {
           toValue: 0.3,
-          duration: 500,
+          duration: 1000, // Slower shrink duration
           useNativeDriver: true,
         }),
         Animated.timing(opacityAnim, {
           toValue: 0,
-          duration: 400,
+          duration: 800, // Slower fade duration
           useNativeDriver: true,
         }),
       ]).start(() => {
-        setIsReady(true);
+        setIsAnimationFinished(true);
       });
     }
-  }, [
-    isDbReady,
-    themeLoading,
-    settingsLoading,
-    isTransitioning,
-    isReady,
-    scaleAnim,
-    opacityAnim,
-  ]);
+  }, [showHome, isTransitioning, isAnimationFinished, scaleAnim, opacityAnim]);
 
-  if (!isReady) {
-    return (
-      <View style={styles.container}>
+  if (isAnimationFinished) {
+    return children;
+  }
+
+  return (
+    <View style={{flex: 1}}>
+      {showHome && children}
+      <Animated.View
+        style={[
+          styles.container,
+          showHome && StyleSheet.absoluteFill,
+          {opacity: opacityAnim},
+        ]}>
         <StatusBar backgroundColor="#bce5ea" barStyle="dark-content" />
         <Animated.Image
           source={textTaqeebatImage}
@@ -114,16 +112,13 @@ export const AppInitializer = ({children}) => {
             styles.logo,
             {
               transform: [{scale: scaleAnim}],
-              opacity: opacityAnim,
             },
           ]}
           resizeMode="contain"
         />
-      </View>
-    );
-  }
-
-  return children;
+      </Animated.View>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({

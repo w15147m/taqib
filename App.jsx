@@ -27,17 +27,17 @@ const MainApp = () => {
 
 function App() {
   return (
-    <AppInitializer>
-      <ThemeProvider>
-        <SettingsProvider>
+    <ThemeProvider>
+      <SettingsProvider>
+        <AppInitializer>
           <AuthProvider>
             <AlertProvider>
               <MainApp />
             </AlertProvider>
           </AuthProvider>
-        </SettingsProvider>
-      </ThemeProvider>
-    </AppInitializer>
+        </AppInitializer>
+      </SettingsProvider>
+    </ThemeProvider>
   );
 }
 

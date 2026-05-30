@@ -1,24 +1,31 @@
-import React, { createContext, useContext, useEffect } from 'react';
-import { useColorScheme } from 'nativewind';
-import { getItem, setItem } from '../utils/storage';
+import React, {createContext, useContext, useEffect, useState} from 'react';
+import {useColorScheme} from 'nativewind';
+import {getItem, setItem} from '../utils/storage';
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
-  const { colorScheme, setColorScheme, toggleColorScheme } = useColorScheme();
+export const ThemeProvider = ({children}) => {
+  const {colorScheme, setColorScheme, toggleColorScheme} = useColorScheme();
+  const [themeLoading, setThemeLoading] = useState(true);
 
   useEffect(() => {
+    const loadTheme = async () => {
+      try {
+        const savedTheme = await getItem('theme');
+        if (savedTheme) {
+          setColorScheme(savedTheme);
+        }
+      } catch (error) {
+        console.error('Error loading theme:', error);
+      } finally {
+        setThemeLoading(false);
+      }
+    };
+
     loadTheme();
-  }, []);
+  }, [setColorScheme]);
 
-  const loadTheme = async () => {
-    const savedTheme = await getItem('theme');
-    if (savedTheme) {
-      setColorScheme(savedTheme);
-    }
-  };
-
-  const changeTheme = async (theme) => {
+  const changeTheme = async theme => {
     setColorScheme(theme);
     await setItem('theme', theme);
   };
@@ -30,12 +37,14 @@ export const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ 
-      theme: colorScheme, 
-      isDarkMode: colorScheme === 'dark',
-      toggleTheme,
-      setTheme: changeTheme 
-    }}>
+    <ThemeContext.Provider
+      value={{
+        theme: colorScheme,
+        isDarkMode: colorScheme === 'dark',
+        toggleTheme,
+        setTheme: changeTheme,
+        themeLoading,
+      }}>
       {children}
     </ThemeContext.Provider>
   );

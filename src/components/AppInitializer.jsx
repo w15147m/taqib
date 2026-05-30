@@ -3,9 +3,14 @@ import {View, StatusBar} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {runMigrations} from '../db/client';
+import {useTheme} from '../context/ThemeContext';
+import {useSettings} from '../context/SettingsContext';
 
 export const AppInitializer = ({children}) => {
+  const [isDbReady, setIsDbReady] = useState(false);
   const [isReady, setIsReady] = useState(false);
+  const {themeLoading} = useTheme();
+  const {loading: settingsLoading} = useSettings();
 
   useEffect(() => {
     const initialize = async () => {
@@ -17,9 +22,8 @@ export const AppInitializer = ({children}) => {
         const isSeeded = await AsyncStorage.getItem('db_seeded_v1');
 
         if (isSeeded === 'true') {
-          // Already seeded, app is ready
-          setIsReady(true);
-          SplashScreen.hide();
+          // Already seeded, essential data ready
+          setIsDbReady(true);
         } else {
           // First launch: seed essential data while keeping native splash screen visible
           const {
@@ -32,9 +36,8 @@ export const AppInitializer = ({children}) => {
           // Mark as seeded so we don't run essential seeding again
           await AsyncStorage.setItem('db_seeded_v1', 'true');
 
-          // Show the main UI
-          setIsReady(true);
-          SplashScreen.hide();
+          // DB is ready
+          setIsDbReady(true);
 
           // Seed large background data asynchronously
           seedBackgroundData().catch(error => {
@@ -43,14 +46,19 @@ export const AppInitializer = ({children}) => {
         }
       } catch (error) {
         console.error('Initialization error:', error);
-        // Ensure we still show the app UI and hide the splash screen even if there is an error
-        setIsReady(true);
-        SplashScreen.hide();
+        setIsDbReady(true);
       }
     };
 
     initialize();
   }, []);
+
+  useEffect(() => {
+    if (isDbReady && !themeLoading && !settingsLoading) {
+      setIsReady(true);
+      SplashScreen.hide();
+    }
+  }, [isDbReady, themeLoading, settingsLoading]);
 
   if (!isReady) {
     // Return a blank view that matches native splash background color (#bce5ea)

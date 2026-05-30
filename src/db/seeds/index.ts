@@ -160,7 +160,26 @@ export const seedDatabase = async () => {
     // 11. Seed Translations for supplications
     console.log("Seeding supplications translations...");
     for (const trans of supplicationsTranslations) {
-      // Future-proofing
+      const matchedItems = await db.select().from(content_items)
+        .where(and(eq(content_items.content_id, trans.content_id), eq(content_items.sequence_number, trans.sequence_number)));
+      
+      if (matchedItems.length > 0) {
+        const itemId = matchedItems[0].id;
+        const existingTrans = await db.select().from(content_item_translations)
+          .where(and(
+            eq(content_item_translations.item_id, itemId),
+            eq(content_item_translations.language, trans.language)
+          ));
+
+        if (existingTrans.length === 0) {
+          await db.insert(content_item_translations).values({
+            item_id: itemId,
+            language: trans.language,
+            translation_text: trans.translation_text,
+            transliteration: trans.transliteration,
+          });
+        }
+      }
     }
 
     // 12. Seed Content Items for ziyarat

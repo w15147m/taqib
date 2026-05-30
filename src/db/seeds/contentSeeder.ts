@@ -27,6 +27,10 @@ const contentList = [
   { id: 'dua_ramadan', category_id: 'supplications', title_ur: 'دعائے ماہِ رمضان', title_en: 'Dua of Month of Ramadan' },
   { id: 'dua_wahdat', category_id: 'supplications', title_ur: 'دعائے وحدت', title_en: 'Dua-e-Wahdat' },
   { id: 'dua_mutalia', category_id: 'supplications', title_ur: 'دعائے مطالعہ', title_en: 'Dua-e-Mutalia' },
+  { id: 'dua_kumayl', category_id: 'supplications', title_ur: 'دعائے کمیل', title_en: 'Dua-e-Kumayl' },
+  { id: 'dua_nudba', category_id: 'supplications', title_ur: 'دعائے ندبہ', title_en: 'Dua-e-Nudba' },
+  { id: 'dua_tawassul', category_id: 'supplications', title_ur: 'دعائے توسل', title_en: 'Dua-e-Tawassul' },
+  { id: 'hadith_kisa', category_id: 'supplications', title_ur: 'حدیثِ کساء', title_en: 'Hadith-e-Kisa' },
 
   // Ziyarat
   { id: 'ziyarat_rasool', category_id: 'ziyarat', title_ur: 'زیارتِ رسولِ خداؐ', title_en: 'Ziyarat of Holy Prophet (saw)' },

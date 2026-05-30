@@ -58,42 +58,6 @@ const ProfileDrawer = props => {
             </Text>
           </TouchableOpacity>
 
-          {/* Monasibat Navigation Button */}
-          <TouchableOpacity
-            onPress={() =>
-              props.navigation.navigate('TabsRoot', {screen: 'Monasibat'})
-            }
-            activeOpacity={0.7}
-            className="flex-row items-center px-5 py-4 rounded-2xl">
-            <View className="w-10 h-10 bg-emerald-50 dark:bg-emerald-900/30 rounded-xl items-center justify-center mr-4">
-              <CalendarIcon
-                size={20}
-                color={isDarkMode ? '#34d399' : '#059669'}
-              />
-            </View>
-            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
-              مناسبت
-            </Text>
-          </TouchableOpacity>
-
-          {/* Qibla Navigation Button */}
-          <TouchableOpacity
-            onPress={() =>
-              props.navigation.navigate('TabsRoot', {screen: 'Qibla'})
-            }
-            activeOpacity={0.7}
-            className="flex-row items-center px-5 py-4 rounded-2xl">
-            <View className="w-10 h-10 bg-indigo-50 dark:bg-indigo-900/30 rounded-xl items-center justify-center mr-4">
-              <CompassIcon
-                size={20}
-                color={isDarkMode ? '#818cf8' : '#4f46e5'}
-              />
-            </View>
-            <Text className="flex-1 text-slate-700 dark:text-slate-200 font-bold text-base text-left">
-              قبلہ نما
-            </Text>
-          </TouchableOpacity>
-
           {/* About Book Navigation Button */}
           <TouchableOpacity
             onPress={() => props.navigation.navigate('About')}
@@ -142,7 +106,8 @@ const ProfileDrawer = props => {
             </Text>
           </TouchableOpacity>
 
-          {/* Test Page Navigation Button */}
+          {/* Test Page Navigation Button (Hidden) */}
+          {/* 
           <TouchableOpacity
             onPress={() => props.navigation.navigate('TestPage')}
             activeOpacity={0.7}
@@ -157,6 +122,7 @@ const ProfileDrawer = props => {
               Test Page
             </Text>
           </TouchableOpacity>
+          */}
         </View>
       </DrawerContentScrollView>
     </View>

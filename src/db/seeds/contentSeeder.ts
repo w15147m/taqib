@@ -3,23 +3,6 @@ import { contents } from "../schema";
 import { eq } from "drizzle-orm";
 
 const contentList = [
-  // Prayers
-  { id: 'dua_fajr', category_id: 'prayers', title_ur: 'دعا بعد از نماز فجر', title_en: 'Dua after Fajr Prayer' },
-  { id: 'dua_dhuhr', category_id: 'prayers', title_ur: 'دعا بعد از نماز ظہر', title_en: 'Dua after Dhuhr Prayer' },
-  { id: 'dua_asr', category_id: 'prayers', title_ur: 'دعا after نماز عصر', title_en: 'Dua after Asr Prayer' }, // Wait, check title_ur from previous file, it was: 'دعا بعد از نماز عصر'
-  { id: 'dua_maghrib', category_id: 'prayers', title_ur: 'دعا بعد از نماز مغرب', title_en: 'Dua after Maghrib Prayer' },
-  { id: 'dua_isha', category_id: 'prayers', title_ur: 'دعا بعد از نماز عشاء', title_en: 'Dua after Isha Prayer' },
-  
-  // Surahs
-  { id: 'ayat_al_kursi', category_id: 'surahs', title_ur: 'آيَةُ الْكُرْسِی', title_en: 'Ayat al-Kursi' },
-  { id: 'surah_al_kafirun', category_id: 'surahs', title_ur: 'سُوْرَةُ الْكَافِرُوْن', title_en: 'Surah Al-Kafirun' },
-  { id: 'surah_al_ikhlas', category_id: 'surahs', title_ur: 'سُوْرَةُ الْاِخْلَاص', title_en: 'Surah Al-Ikhlas' },
-  { id: 'surah_al_falaq', category_id: 'surahs', title_ur: 'سُوْرَةُ الْفَلَق', title_en: 'Surah Al-Falaq' },
-  { id: 'surah_an_nas', category_id: 'surahs', title_ur: 'سُوْرَةُ النَّاس', title_en: 'Surah An-Nas' },
-  { id: 'surah_al_jumuah', category_id: 'surahs', title_ur: 'سُوْرَةُ الْجُمُعَه', title_en: 'Surah Al-Jumuah' },
-  { id: 'surah_al_munafiqun', category_id: 'surahs', title_ur: 'سُوْرَةُ الْمُنَافِقُوْن', title_en: 'Surah Al-Munafiqun' },
-  { id: 'surah_al_qadr', category_id: 'surahs', title_ur: 'سُوْرَةُ الْقَدْر', title_en: 'Surah Al-Qadr' },
-
   // Supplications
   { id: 'dua_ahd', category_id: 'supplications', title_ur: 'دعائے عہد', title_en: 'Dua-e-Ahd' },
   { id: 'munajat_imam_ali', category_id: 'supplications', title_ur: 'مناجات امیر المؤمنینؑ', title_en: 'Munajat of Imam Ali (as)' },

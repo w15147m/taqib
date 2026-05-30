@@ -3,8 +3,6 @@ import { categories } from "../schema";
 import { eq } from "drizzle-orm";
 
 const categoryMapping = [
-  { id: 'prayers', title_ur: 'تعقیباتِ نماز', title_en: 'Taqeebat' },
-  { id: 'surahs', title_ur: 'سورتیں', title_en: 'Surahs' },
   { id: 'supplications', title_ur: 'دعائیں اور مناجات', title_en: 'Supplications' },
   { id: 'ziyarat', title_ur: 'زیارات', title_en: 'Ziyarat' },
   { id: 'namaz', title_ur: 'نمازیں', title_en: 'Namaz' },

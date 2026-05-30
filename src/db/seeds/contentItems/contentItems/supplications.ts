@@ -1505,4 +1505,3237 @@ export const supplicationsContentItems = [
     sequence_number: 249,
     arabic_text: 'وَسَلَّمَ تَسْلِيماً كَثِيراً',
   },
+
+  // ─── hadith_kisa, dua_tawassul, dua_nudba ────────────────────────────────
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 1,
+    arabic_text: 'اَللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَ آلِ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 2,
+    arabic_text: 'بِسْمِ ٱللَّـهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 3,
+    arabic_text: 'عَنْ فاطِمَةَ الزَّهْراءِ عَلَيْهَا اَلسلام بِنْتِ رَسُول ِاللّه صَلَّى اللهُ عَلَيْهِ وَآلِهِ أَنَّها قالَتْ :',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 4,
+    arabic_text: 'دَخَلَ عَلَيَّ أَبِي رَسُولُ اللّهِ صَلَّى اللهُ عَلَيْهِ وَآلِهِ فِي بَعْضِ الاْيَّامِ فَقالَ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 5,
+    arabic_text: 'السَّلامُ عَلَيْكِ يَا فاطِمَةُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 6,
+    arabic_text: 'فَقُلْتُ: عَلَيْكَ السَّلامُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 7,
+    arabic_text: 'قالَ: إِنِّي أَجِدُ فِي بَدَنِي ضُعْفا',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 8,
+    arabic_text: 'فَقُلْتُ لَهُ: أُعِيذُكَ بِاللّهِ يَا أَبَتاهُ مِنَ الضُّعْفِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 9,
+    arabic_text: 'فَقَالَ: ”يَا فَاطِمَةُ! ٱئْتِينِي بِٱلْكِسَاءِ ٱلْيَمَانِيِّ فَغَطِّينِي بِهِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 10,
+    arabic_text: 'فَأَتَيْتُهُ بالْكِساءِ الْـيَمانِي فَغَطَّيْتُهُ بِهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 11,
+    arabic_text: 'وَصرْتُ أَنْظُرُ إِلَيْهِ وَإِذا وَجْهُهُ يَتَلَأَلَؤُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 12,
+    arabic_text: 'كَأَنَّهُ الْبَدْرُ فِي لَيْلَة تَمامِهِ وَكَمالِهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 13,
+    arabic_text: 'فَمَا كانَتْ إِلاّ ساعَةً وَإِذا بِوَلَدِيَ الْحَسَنِ عليه السلام قَدْ أَقْبَلَ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 14,
+    arabic_text: 'وَقالَ: السَّلامُ عَلَيْكِ يَا أُمَّاهُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 15,
+    arabic_text: 'فَقُلتُ: وَعَلَيْكَ السَّلامُ يَا قُرَّةَ عَيْنِي وَثَمَرَةَ فُؤَادِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 16,
+    arabic_text: 'فَقَالَ: يَا أُمَّاهُ إِنِّي أَشَمُّ عِنْدَكِ رائِحَةً طَيِّبَةً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 17,
+    arabic_text: 'كَأَنَّها رائِحَةُ جَدِّي رَسُولِ اللّه صَلَّى اللهُ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 18,
+    arabic_text: 'فَقُلْتُ: نَعَمْ إِنَّ جَدَّكَ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 19,
+    arabic_text: 'فَأَقْبَلَ الْحَسَنُ نَحْوَ الْكِساءِ وَقالَ: السَّلامُ عَلَيْكَ يَا جَدَّاهُ يَا رَسُولَ اللّهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 20,
+    arabic_text: 'أَتَأْذَنُ لِي أَنْ أَدْخُلَ مَعَكَ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 21,
+    arabic_text: 'فَقالَ: وَعَلَيْكَ السَّلامُ يَا وَلَدِي وَيَا صاحِبَ حَوْضِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 22,
+    arabic_text: 'قَدْ أَذِنْتُ لَكَ ِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 23,
+    arabic_text: 'فَدَخَلَ مَعَهُ تَحْتَ الْكِساء',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 24,
+    arabic_text: 'فَمَا كانَتْ إِلاَّ ساعَةً وَإِذا بِوَلَدِيَ الْحُسَيْنِ قَدْ أَقْبَلَ وَقالَ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 25,
+    arabic_text: 'السَّلامُ عَلَيْكِ يَا أُمَّاهُ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 26,
+    arabic_text: 'فَقُلْتُ: وَعَلَيْكَ السَّلامُ يَا وَلَدِي وَيَا قُرَّةَ عَيْنِي وَثَمَرَةَ فُؤَادِي.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 27,
+    arabic_text: 'فَقَالَ لِي: يَا أُمَّاهُ إِنِّي أَشَمُّ عِنْدَكِ رائِحَةً طَيِّبَةً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 28,
+    arabic_text: 'كَأَنَّها رائِحَةُ جَدِّي رَسُولِ اللّهُ صَلَّى اللهُ عَلَيْهِ وَآلِهِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 29,
+    arabic_text: 'فَقُلْتُ: نَعَمْ إِنَّ جَدَّكَ وَأَخاكَ تَحْتَ الْكِساءِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 30,
+    arabic_text: 'فَدَنَا الْحُسَيْنُ نَحْوَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 31,
+    arabic_text: 'وَقالَ: السَّلامُ عَلَيْكَ يَا جَدَّاهُ السَّلامُ عَلَيْكَ يَا مَنِ اخْتارَهُ اللّهُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 32,
+    arabic_text: 'أَتَأْذَنُ لِي أَنْ أَكُونَ مَعَكُما تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 33,
+    arabic_text: 'فَقالَ: وَعَلَيْكَ السَّلامُ يَا وَلَدِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 34,
+    arabic_text: 'وَيَا شافِعَ أُمَّتِي قَدْ أَذِنْتُ لَكَ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 35,
+    arabic_text: 'فَدَخَلَ مَعَهُما تَحْتَ الْكِساء',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 36,
+    arabic_text: 'فَأَ قْبَلَ عِنْدَ ذلِكَ أَبُو الْحَسَنِ عَلِيُّ بْنُ أَبِي طالِبٍ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 37,
+    arabic_text: 'وَقالَ: السَّلامُ عَلَيْكِ يَا بِنْتَ رَسُولِ اللّهِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 38,
+    arabic_text: 'فَقُلْتُ: وَعَلَيْكَ السَّلامُ يَا أَبَا الْحَسَنِ وَيَا أَمِيرَ الْمُؤْمِنِينَ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 39,
+    arabic_text: 'فَقالَ: يَا فاطِمَةُ إِنِّي أَشَمُّ عِنْدَكِ رائِحَةً طَيِّبَةً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 40,
+    arabic_text: 'كَانَّهَا رائِحَةُ أَخِي وَابْنِ عَمِّي رَسُولِ اللّه صَلَّى اللهُ عَلَيْهِ وَآلِهِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 41,
+    arabic_text: 'فَقُلْتُ: نَعَمْ هَا هُوَ مَعَ وَلَدَيْكَ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 42,
+    arabic_text: 'فَأَقْبَلَ عَلِيٌّ نَحْوَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 43,
+    arabic_text: 'وَقالَ: السَّلامُ عَلَيْكَ يَا رَسُولَ اللّهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 44,
+    arabic_text: 'وأَتَأْذَنُ لِي أَنْ أَكُونَ مَعَكُمْ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 45,
+    arabic_text: 'قالَ لَهُ: وَعَلَيْكَ السَّلامُ يَا أَخِي ويَا وَصِيِّي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 46,
+    arabic_text: 'وَخَلِيفَتِي وَصاحِبَ لِوَائِي قَدْ أَذِنْتُ لَكَ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 47,
+    arabic_text: 'فَدَخَلَ عَلِيٌّ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 48,
+    arabic_text: 'ثُمَّ أَتَيْتُ نَحْوَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 49,
+    arabic_text: 'وَقُلْتُ: السَّلامُ عَلَيْكَ يَا أَبَتاهُ يَا رَسُولَ اللّهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 50,
+    arabic_text: 'أَتَأْذَنُ لِي أَنْ أَكُونَ مَعَكُمْ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 51,
+    arabic_text: 'قالَ: وَعَلَيْكِ السَّلامُ يَا بِنْتِي وَيَا بِضْعَتِي قَدْ أَذِنْتُ لَكِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 52,
+    arabic_text: 'فَدَخَلْتُ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 53,
+    arabic_text: 'فَلَمَّا اكْتَمَلْنا جَمِيعاً تَحْتَ الْكِساءِ أَخَذَ أَبِي رَسُولُ اللّه بِطَرَفَي الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 54,
+    arabic_text: 'وَأَوْمَأَ بِيَدِهِ ٱلْيُمْـنٰى إِلَى السَّماءِ وَقالَ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 55,
+    arabic_text: 'اللّهُمَّ إِنَّ هَؤُلاءِ أَهْلُ بَيْتِي وَخاصَّتِي وَحامَّتِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 56,
+    arabic_text: 'لَحْمُهُمْ لَحْمِي وَدَمُهُمْ دَمِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 57,
+    arabic_text: 'يُؤْلِمُنِي مَا يُؤْلِمُهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 58,
+    arabic_text: 'وَيَحْزُنُنِي مَا يَحْزُنُهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 59,
+    arabic_text: 'أَنَا حَرْبٌ لِمَنْ حارَبَهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 60,
+    arabic_text: 'وَسِلْمٌ لِمَنْ سالَمَهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 61,
+    arabic_text: 'وَعَدُوٌّ لِمَنْ عَاداهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 62,
+    arabic_text: 'وَمُحِبٌّ لِمَنْ أَحَبَّهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 63,
+    arabic_text: 'إِنَّهُمْ مِنِّي وَأَنَا مِنْهُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 64,
+    arabic_text: 'فَاجْعَلْ صَلَواتِكَ وَبَرَكاتِكَ وَرَحْمَتَكَ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 65,
+    arabic_text: 'وَغُفْرانَكَ وَرِضْوانَكَ عَلَيَّ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 66,
+    arabic_text: 'وَعَلَيْهِمْ وَأَذْهِبْ عَنْهُمُ الرِّجْسَ وَطَهِّرْهُمْ تَطْهِيراً.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 67,
+    arabic_text: 'فَقالَ اللّهُ عَزَّ وَجَلَّ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 68,
+    arabic_text: 'يَا مَلائِكَتِي وَيَا سُكَّانَ سَمَاواتِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 69,
+    arabic_text: 'إِنِّي إمَا خَلَقْتُ سَماءً مَبْنِيَّةً وَلاَ أَرْضاً مَدْحِيَّةً وَلاَ قَمَراً مُنِيراً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 70,
+    arabic_text: 'وَلاَ شَمْساً مُضِيئَةً وَلاَ فَلَكاً يَدُورُ وَلاَ بَحْراً يَجْرِي وَلاَ فُلْكاً يَسْرِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 71,
+    arabic_text: 'إِلاَّ فِي مَحَبَّةِ هَؤلاءِ الْخَمْسَةِ الَّذِينَ هُمْ تَحْتَ الْكِساءِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 72,
+    arabic_text: 'فَقالَ الاْمِينُ جَبْرائِيلُ: يَارَبِّ وَمَنْ تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 73,
+    arabic_text: 'فَقالَ عَزَّ وَجَلَّ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 74,
+    arabic_text: 'هُمْ أَهْلُ بَيْتِ النُّبُوَّةِ وَمَعْدِنُ الرِّسالَةِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 75,
+    arabic_text: 'هُمْ فاطِمَةُ وَأَبُوها وَبَعْلُها وَبَنُوها.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 76,
+    arabic_text: 'فَقالَ جَبْرائِيلُ: يَارَبِّ أَتَأْذَنُ لِي أَنْ أَهْبِطَ إِلَى الاْرْضِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 77,
+    arabic_text: 'لأِكُونَ مَعَهُمْ سادِساً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 78,
+    arabic_text: 'فَقالَ اللّهُ: نَعَمْ قَدْ أَذِنْتُ لَكَ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 79,
+    arabic_text: 'فَهَبَطَ الاْمِينُ جَبْرائِيلُ وَقالَ: السَّلامُ عَلَيْكَ يَا رَسُولَ اللّهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 80,
+    arabic_text: 'الْعَلِيُّ الاْعْلى يُقْرِئُكَ السَّلام َوَيَخُصُّكَ بِالتَّحِيَّةِ وَالاْكْرامِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 81,
+    arabic_text: 'وَيَقُوْلُ لَكَ :وَعِزَّتِي وَجَلالِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 82,
+    arabic_text: 'إِنِّي مَا خَلَقْتُ سَماءً مَبْنِيَّةً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 83,
+    arabic_text: 'وَلاَ أَرْضاً مَدْحِيَّةً وَلاَ قَمَراً مُنِيراً وَلاَ شَمْساً مُضِيئَةً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 84,
+    arabic_text: 'وَلاَ فَلَكاً يَدُورُ وَلاَ بَحْراً يَجْرِي وَلاَ فُلْكاً يَسْرِي',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 85,
+    arabic_text: 'إِلاَّ لاِجْلِكُمْ وَمَحَبَّتِكُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 86,
+    arabic_text: 'وَقَدْ أَذِنَ لِي أَنْ أَدْخُلَ مَعَكُمْ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 87,
+    arabic_text: 'فَهَلْ تَأْذَنُ لِي يَا رَسُولَ اللّه',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 88,
+    arabic_text: 'فَقالَ رَسُولُ اللّه: وَعَلَيْكَ السَّلامُ يَا أَمِينَ وَحْي اللّهِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 89,
+    arabic_text: 'فإِنَّهُ نَعَمْ قَدْ أَذِنْتُ لَكَ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 90,
+    arabic_text: 'فَدَخَلَ جَبْرائِيلُ مَعَنا تَحْتَ الْكِساءِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 91,
+    arabic_text: 'فَقالَ لاِبِي: إِنَّ اللّهَ قَدْ أَوْحَى إِلَيْكُمْ يَقُولُ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 92,
+    arabic_text: 'إِنَّمَا يُرِيدُ اللّهُ لِيُذْهِبَ عَنْكُمُ الرِّجْسَ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 93,
+    arabic_text: 'أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيراً.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 94,
+    arabic_text: 'فَقالَ عَلِيٌّ لاِبِي: يَا رَسُولَ اللّه أَخْبِرْنِي مَا لِجُلُوسِنا',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 95,
+    arabic_text: 'هذَا تَحْتَ الْكِساءِ مِنَ الْفَضْلِ عِنْدَ اللّهُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 96,
+    arabic_text: 'فَقالَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَآلِهِ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 97,
+    arabic_text: 'وَالَّذِي بَعَثَنِي بِالْحَقِّ نَبِيَّاً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 98,
+    arabic_text: 'وَاصْطَفانِي بِالرِّسالَةِ نَجِيّاً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 99,
+    arabic_text: 'مَا ذُكِرَ خَبَرُنا هذَا فِي مَحْفِلٍ مِنْ مَحافِلِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 100,
+    arabic_text: 'أَهْلِ الاْرْضِ وَفِيهِ جَمْعٌ مِنْ شِيعَتِنا وَمُحِّبِينا',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 101,
+    arabic_text: 'إِلاَّ وَنَزَلَتْ عَلَيْهِمُ الرَّحْمَةُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 102,
+    arabic_text: 'وَحَفَّتْ بِهِمُ الْمَلائِكَةُ وَاسْتَغْفَرَتْ لَهُمْ إِلى أَنْ يَتَفَرَّقُوا.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 103,
+    arabic_text: 'فَقالَ عَلِيٌّ عَلَيْهِ السَّلامُ: إِذنْ وَاللّهِ فُزْنَا وَفازَ شِيعَتُنا وَرَبِّ الْكَعْبَةِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 104,
+    arabic_text: 'فَقالَ أَبِي رَسُولُ اللّهِ صَلَّى اللهُ عَلَيْهِ وَآلِهِ:',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 105,
+    arabic_text: 'يَا عَلِيُّ وَالَّذِي بَعَثَنِي بِالْحَقِّ نَبِيّاً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 106,
+    arabic_text: 'وَاصْطَفَانِي بِالرِّسالَةِ نَجِيّاً',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 107,
+    arabic_text: 'مَا ذُكِرَ خَبَرُنا هذَا فِي مَحْفِلٍ مِنْ مَحَافِلِ أَهْلِ الاْرْضِ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 108,
+    arabic_text: 'وَفِيهِ جَمْعٌ مِنْ شِيعَتِنا وَمُحِبِّينا',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 109,
+    arabic_text: 'وَفِيهِمْ مَهْمُومٌ إِلاَّ وَفَرَّجَ اللّهُ هَمَّهُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 110,
+    arabic_text: 'وَلاَ مَغْمُومٌ إِلاَّ وَكَشَفَ اللّهُ غَمَّهُ',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 111,
+    arabic_text: 'وَلاَ طالِبُ حاجَةٍ إِلاَّ وَقَضَى اللّهُ حاجَتَهُ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 112,
+    arabic_text: 'فَقالَ عَلِيٌّ عَلَيْهِ السَّلامُ: إِذن وَاللّه فُزْنا وَسُعِدْنا وَكَذلِكَ شِيعَتُنا',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 113,
+    arabic_text: 'فازُوا وَسُعِدُوا فِي الدُّنْيا وَالاْخِرَةِ وَرَبِّ الْكَعْبَةِ.',
+  },
+  {
+    content_id: 'hadith_kisa',
+    sequence_number: 114,
+    arabic_text: 'اَللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَآلِ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 1,
+    arabic_text: 'اَللَّهُمَّ إِنِّي أَسْأَلُكَ وَأَتَوَجَّهُ إِلَيْكَ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 2,
+    arabic_text: 'بِنَبِيِّكَ نَبِيِّ ٱلرَّحْمَةِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 3,
+    arabic_text: 'مُحَمَّدٍ صَلَّىٰ ٱللَّهُ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 4,
+    arabic_text: 'يَا أَبَا ٱلْقَاسِمِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 5,
+    arabic_text: 'يَا رَسُولَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 6,
+    arabic_text: 'يَا إِمَامَ ٱلرَّحْمَةِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 7,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 8,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 9,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 10,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 11,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 12,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 13,
+    arabic_text: 'يَا أَبَا ٱلْحَسَنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 14,
+    arabic_text: 'يَا أَمِيرَ ٱلْمُؤْمِنِينَ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 15,
+    arabic_text: 'يَا عَلِيُّ بْنَ أَبِي طَالِبٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 16,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 17,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 18,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 19,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ اللّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 20,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 21,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 22,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 23,
+    arabic_text: 'يَا فَاطِمَةُ ٱلزَّهْرَاءُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 24,
+    arabic_text: 'يَا بِنْتَ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 25,
+    arabic_text: 'يَا قُرَّةَ عَيْنِ ٱلرَّسُولِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 26,
+    arabic_text: 'يَا سَيِّدَتَنَا وَمَوْلاَتَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 27,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 28,
+    arabic_text: 'وَتَوَسَّلْنَا بِكِ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 29,
+    arabic_text: 'وَقَدَّمْنَاكِ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 30,
+    arabic_text: 'يَا وَجِيهَةً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 31,
+    arabic_text: 'إِشْفَعي لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 32,
+    arabic_text: 'يَا أَبَا مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 33,
+    arabic_text: 'يَا حَسَنُ بْنَ عَلِيٍّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 34,
+    arabic_text: 'أَيُّهَا ٱلْمجْتَبَىٰ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 35,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 36,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 37,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 38,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 39,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 40,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 41,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 42,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 43,
+    arabic_text: 'يَا أَبَا عَبْدِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 44,
+    arabic_text: 'يَا حُسَيْنُ بْنَ عَلِيٍّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 45,
+    arabic_text: 'أَيُّهَا ٱلشَّهِيدُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 46,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 47,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 48,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 49,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 50,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 51,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 52,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 53,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 54,
+    arabic_text: 'يَا أَبَا ٱلْحَسَنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 55,
+    arabic_text: 'يَا عَلِيُّ بْنَ ٱلْحُسَيْنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 56,
+    arabic_text: 'يَا زَيْنَ ٱلْعَابِدينَ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 57,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 58,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 59,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 60,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 61,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 62,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 63,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 64,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 65,
+    arabic_text: 'يَا أَبَا جَعْفَرٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 66,
+    arabic_text: 'يَا مُحَمَّدُ بْنَ عَلِيٍّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 67,
+    arabic_text: 'أَيُّهَا ٱلْبَاقِرُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 68,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 69,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 70,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 71,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 72,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 73,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 74,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 75,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 76,
+    arabic_text: 'يَا أَبَا عَبْدِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 77,
+    arabic_text: 'يَا جَعْفَرُ بْنَ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 78,
+    arabic_text: 'أَيُّهَا ٱلصَّادِقُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 79,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 80,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 81,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 82,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 83,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 84,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 85,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 86,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 87,
+    arabic_text: 'يَا أَبَا ٱلْحَسَنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 88,
+    arabic_text: 'يَا مُوسَىٰ بْنَ جَعْفَرٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 89,
+    arabic_text: 'أَيُّهَا ٱلْكَاظِمُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 90,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 91,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 92,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 93,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 94,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 95,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 96,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 97,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 98,
+    arabic_text: 'يَا أَبَا ٱلْحَسَنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 99,
+    arabic_text: 'يَا عَلِيُّ بْنَ مُوسَىٰ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 100,
+    arabic_text: 'أَيُّهَا ٱلرِّضَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 101,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 102,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 103,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 104,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 105,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 106,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 107,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 108,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 109,
+    arabic_text: 'يَا أَبَا جَعْفَرٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 110,
+    arabic_text: 'يَا مُحَمَّدُ بْنَ عَلِيٍّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 111,
+    arabic_text: 'أَيُّهَا ٱلتَّقِيُّ ٱلْجَوَادُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 112,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 113,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 114,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 115,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 116,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 117,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 118,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 119,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 120,
+    arabic_text: 'يَا أَبَا ٱلْحَسَنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 121,
+    arabic_text: 'يَا عَلِيُّ بْنَ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 122,
+    arabic_text: 'أَيُّهَا ٱلْهَادِي ٱلنَّقِيُّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 123,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 124,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 125,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 126,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 127,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 128,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 129,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 130,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 131,
+    arabic_text: 'يَا أَبَا مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 132,
+    arabic_text: 'يَا حَسَنُ بْنَ عَلِيٍّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 133,
+    arabic_text: 'أَيُّهَا ٱلزَّكِيُّ ٱلْعَسْكَرِيُّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 134,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 135,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 136,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 137,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 138,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 139,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 140,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 141,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 142,
+    arabic_text: 'يَا وَصِيَّ ٱلْحَسَنِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 143,
+    arabic_text: 'وَٱلْخَلَفُ ٱلْحُجَّةُ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 144,
+    arabic_text: 'أَيُّهَا ٱلْقَائِمُ ٱلْمُنْتَظَرُ ٱلْمَهْدِيُّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 145,
+    arabic_text: 'يَا بْنَ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 146,
+    arabic_text: 'يَا حُجَّةَ ٱللَّهِ عَلَىٰ خَلْقِهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 147,
+    arabic_text: 'يَا سَيِّدَنَا وَمَوْلاَنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 148,
+    arabic_text: 'إِنَّا تَوَجَّهْنَا وَٱسْتَشْفَعْنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 149,
+    arabic_text: 'وَتَوَسَّلْنَا بِكَ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 150,
+    arabic_text: 'وَقَدَّمْنَاكَ بَيْنَ يَدَيْ حَاجَاتِنَا',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 151,
+    arabic_text: 'يَا وَجِيهاً عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 152,
+    arabic_text: 'إِشْفَعْ لَنَا عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 153,
+    arabic_text: 'يَا سَادَتِي وَمَوَالِيَّ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 154,
+    arabic_text: 'إِنِّي تَوَجَّهْتُ بِكُمْ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 155,
+    arabic_text: 'ائِمَّتِي وَعُدَّتِي',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 156,
+    arabic_text: 'لِيَوْمِ فَقْرِي وَحَاجَتِي',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 157,
+    arabic_text: 'إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 158,
+    arabic_text: 'وَتَوَسَّلْتُ بِكُمْ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 159,
+    arabic_text: 'وَٱسْتَشْفَعْتُ بِكُمْ إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 160,
+    arabic_text: 'فَٱشْفَعُوا لِي عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 161,
+    arabic_text: 'وَٱسْتَنْقِذُونِي مِنْ ذُنُوبِي عِنْدَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 162,
+    arabic_text: 'فَإنَّكُمْ وَسيلَتِي إِلَىٰ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 163,
+    arabic_text: 'وَبِحُبِّكُمْ وَبِقُرْبِكُمْ ارْجُو نَجَاةً مِنَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 164,
+    arabic_text: 'فَكُونُوا عِنْدَ ٱللَّهِ رَجَائِي',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 165,
+    arabic_text: 'يَا سَادَتِي يَا اوْلِيَاءَ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 166,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِمْ اجْمَعينَ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 167,
+    arabic_text: 'وَلَعَنَ ٱللَّهُ اعْدَاءَ ٱللَّهِ ظَالِمِيهِمْ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 168,
+    arabic_text: 'مِنَ ٱلاوَّلِينَ وَٱلآخِرِينَ',
+  },
+  {
+    content_id: 'dua_tawassul',
+    sequence_number: 169,
+    arabic_text: 'آمِينَ رَبَّ ٱلْعَالَمينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 1,
+    arabic_text: 'لْحَمْدُ لِلَّهِ رَبِّ ٱلْعَالَمِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 2,
+    arabic_text: 'وَصَلَّىٰ ٱللَّهُ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ نَبِيِّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 3,
+    arabic_text: 'وَآلِهِ وَسَلَّمَ تَسْلِيماً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 4,
+    arabic_text: 'اَللَّهُمَّ لَكَ ٱلْحَمْدُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 5,
+    arabic_text: 'عَلَىٰ مَا جَرَىٰ بِهِ قَضَاؤُكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 6,
+    arabic_text: 'فِي اوْلِيَائِكَ ٱلَّذِينَ ٱسْتَخْلَصْتَهُمْ لِنَفْسِكَ وَدِينِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 7,
+    arabic_text: 'إِِذِ ٱخْتَرْتَ لَهُمْ جَزِيلَ مَا عِنْدَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 8,
+    arabic_text: 'مِنَ ٱلنَّعِيمِ ٱلْمُقِيمِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 9,
+    arabic_text: 'ٱلَّذِي لاََ زَوَالَ لَهُ وَلاَ ٱضْمِحْلاَلَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 10,
+    arabic_text: 'بَعْدَ انْ شَرَطْتَ عَلَيْهِمُ ٱلزُّهْدَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 11,
+    arabic_text: 'فِي دَرَجَاتِ هٰذِهِ ٱلدُّنْيَا ٱلدَّنِيَّةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 12,
+    arabic_text: 'وَزُخْرُفِهَا وَزِبْرِجِهَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 13,
+    arabic_text: 'فَشَرَطُوٱ لَكَ ذٰلِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 14,
+    arabic_text: 'وَعَلِمْتَ مِنْهُمُ ٱلْوَفَاءَ بِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 15,
+    arabic_text: 'فَقَبِلْتَهُمْ وَقَرَّبْتَهُمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 16,
+    arabic_text: 'وَقَدَّمْتَ لَهُمُ ٱلذِّكْرَ ٱلْعَلِيَّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 17,
+    arabic_text: 'وَٱلثَّنَاءَ ٱلْجَلِيَّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 18,
+    arabic_text: 'وَاهْبَطْتَ عَلَيْهِمْ مَلاَئِكَتَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 19,
+    arabic_text: 'وَكَرَّمْتَهُمْ بِوَحْيِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 20,
+    arabic_text: 'وَرَفَدْتَهُمْ بِعِلْمِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 21,
+    arabic_text: 'وَجَعَلْتَهُمُ ٱلذَّرِيعَةَ إِِلَيْكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 22,
+    arabic_text: 'وَٱلْوَسِيلَةَ إِلَىٰ رِضْوَانِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 23,
+    arabic_text: 'فَبَعْضٌ اسْكَنْتَهُ جَنَّتَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 24,
+    arabic_text: 'إِلَىٰ انْ اخْرَجْتَهُ مِنْهَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 25,
+    arabic_text: 'وَبَعْضٌ حَمَلْتَهُ فِي فُلْكِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 26,
+    arabic_text: 'وَنَجَّيْتَهُ وَمَنْ آمَنَ مَعَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 27,
+    arabic_text: 'مِنَ ٱلْهَلَكَةِ بِرَحْمَتِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 28,
+    arabic_text: 'وَبَعْضٌ ٱتَّخَذْتَهُ لِنَفْسِكَ خَلِيلاًَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 29,
+    arabic_text: 'وَسَالَكَ لِسَانَ صِدْقٍ فِي ٱلآخِرِينَ فَاجَبْتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 30,
+    arabic_text: 'وَجَعَلْتَ ذٰلِكَ عَلِيّاً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 31,
+    arabic_text: 'وَبَعْضٌ كَلَّمْتَهُ مِنْ شَجَرَةٍ تَكْلِيماً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 32,
+    arabic_text: 'وَجَعَلْتَ لَهُ مِنْ اخِيهِ رِدْءاً وَوَزِيراً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 33,
+    arabic_text: 'وَبَعْضٌ اوْلَدْتَهُ مِنْ غَيْرِ ابٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 34,
+    arabic_text: 'وَآتَيْتَهُ ٱلْبَيِّنَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 35,
+    arabic_text: 'وَايَّدْتَهُ بِرُوحِ ٱلْقُدُسِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 36,
+    arabic_text: 'وَكُلٌّ شَرَعْتَ لَهُ شَرِيعَةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 37,
+    arabic_text: 'وَنَهَجْتَ لَهُ مِنْهَاجاً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 38,
+    arabic_text: 'وَتَخَيَّرْتَ لَهُ اوْصِيَاءَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 39,
+    arabic_text: 'مُسْتَحْفِظاً بَعْدَ مُسْتَحْفِظٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 40,
+    arabic_text: 'مِنْ مُدَّةٍ إِلَىٰ مُدَّةٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 41,
+    arabic_text: 'إِِقَامَةً لِدِينِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 42,
+    arabic_text: 'وَحُجَّةً عَلَىٰ عِبَادِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 43,
+    arabic_text: 'وَلِئَلاَّ يَزُولَ ٱلْحَقُّ عَنْ مَقَرِّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 44,
+    arabic_text: 'وَيَغْلِبَ ٱلْبَاطِلُ عَلَىٰ اهْلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 45,
+    arabic_text: 'وَلاَ يَقُولَ احَدٌ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 46,
+    arabic_text: 'لَوْ لاَ ارْسَلْتَ إِِلَيْنَا رَسُولاًَ مُنْذِراً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 47,
+    arabic_text: 'وَاقَمْتَ لَنَا عَلَماً هَادِياً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 48,
+    arabic_text: 'فَنَتَّبِعَ آيَاتِكَ مِنْ قَبْلِ انْ نَذِلَّ وَنَخْزَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 49,
+    arabic_text: 'إِلَىٰ انِ ٱنْتَهَيْتَ بِٱلامْرِ إِلَىٰ حَبِيبِكَ وَنَجِيبِكَ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 50,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 51,
+    arabic_text: 'فَكَانَ كَمَا ٱنْتَجَبْتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 52,
+    arabic_text: 'سَيِّدَ مَنْ خَلَقْتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 53,
+    arabic_text: 'وَصَفْوَةَ مَنِ ٱصْطَفَيْتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 54,
+    arabic_text: 'وَافْضَلَ مَنِ ٱجْتَبَيْتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 55,
+    arabic_text: 'وَاكْرَمَ مَنِ ٱعْتَمَدْتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 56,
+    arabic_text: 'قَدَّمْتَهُ عَلَىٰ انْبِيَائِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 57,
+    arabic_text: 'وَبَعَثْتَهُ إِِلَىٰ ٱلثَّقَلَيْنِ مِنْ عِبَادِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 58,
+    arabic_text: 'وَاوْطَاتَهُ مَشَارِقَكَ وَمَغَارِبَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 59,
+    arabic_text: 'وَسَخَّرْتَ لَهُ ٱلْبُرَاقَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 60,
+    arabic_text: 'وَعَرَجْتَ بِرُوْحِهِ إِلَىٰ سَمَائِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 61,
+    arabic_text: 'وَاوْدَعْتَهُ عِلْمَ مَا كَانَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 62,
+    arabic_text: 'وَمَا يَكُونُ إِِلَىٰ ٱنْقِضَاءِ خَلْقِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 63,
+    arabic_text: 'ثُمَّ نَصَرْتَهُ بِٱلرُّعْبِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 64,
+    arabic_text: 'وَحَفَفْتَهُ بِجَبْرَئِيلَ وَمِيكَائِيلَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 65,
+    arabic_text: 'وَٱلْمُسَوِّمِينَ مِنْ مَلاَئِكَتِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 66,
+    arabic_text: 'وَوَعَدْتَهُ انْ تُظْهِرَ دِينَهُ عَلَىٰ ٱلدِّينِ كُلِّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 67,
+    arabic_text: 'وَلَوْ كَرِهَ ٱلْمُشْرِكُونَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 68,
+    arabic_text: 'وَذٰلِكَ بَعْدَ انْ بَوَّاتَهُ مُبَوَّا صِدْقٍ مِنْ اهْلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 69,
+    arabic_text: 'وَجَعَلْتَ لَهُ وَلَهُمْ اوَّلَ بَيْتٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 70,
+    arabic_text: 'وُضِعَ لِلنَّاسِ لَلَّذي بِبَكَّةَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 71,
+    arabic_text: 'مُبَارَكاً وَهُدىًٰ لِلْعَالَمينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 72,
+    arabic_text: 'فِيهِ آيَاتٌ بَيِّنَاتٌ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 73,
+    arabic_text: 'مَقَامُ إِِبْرَاهِيمَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 74,
+    arabic_text: 'وَمَنْ دَخَلَهُ كَانَ آمِناً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 75,
+    arabic_text: 'وَقُلْتَ «إِِنَّمَا يُرِيدُ ٱللَّهُ لِيُذْهِبَ عَنْكُمُ ٱلرِّجْسَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 76,
+    arabic_text: 'اهْلَ ٱلْبَيْتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 77,
+    arabic_text: 'وَيُطَهِّرَكُمْ تَطْهِيراً.»',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 78,
+    arabic_text: 'ثُمَّ جَعَلْتَ اجْرَ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 79,
+    arabic_text: 'صَلَوَاتُكَ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 80,
+    arabic_text: 'مَوَدَّتَهُمْ فِي كِتَابِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 81,
+    arabic_text: 'فَقُلْتَ «قُلْ لاََ اسْالُكُمْ عَلَيْهِ اجْراً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 82,
+    arabic_text: 'إِِلاَّ ٱلْمَوَدَّةَ فِي ٱلْقُرْبَىٰ.»',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 83,
+    arabic_text: 'وَقُلْتَ «مَا سَالْتُكُمْ مِنْ اجْرٍ فَهُوَ لَكُمْ.»',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 84,
+    arabic_text: 'وَقُلْتَ «مَا اسْالُكُمْ عَلَيْهِ مِنْ اجْرٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 85,
+    arabic_text: 'إِلاَّ مَنْ شَاءَ انْ يَتَّخِذَ إِلَىٰ رَبِّهِ سَبِيلاًَ.»',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 86,
+    arabic_text: 'فَكَانُوٱ هُمُ ٱلسَّبِيلَ إِِلَيْكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 87,
+    arabic_text: 'وَٱلْمَسْلَكَ إِلَىٰ رِضْوَانِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 88,
+    arabic_text: 'فَلَمَّا ٱنْقَضَتْ ايَّامُهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 89,
+    arabic_text: 'اقَامَ وَلِيَّهُ عَلِيَّ بْنَ ابِي طَالِبٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 90,
+    arabic_text: 'صَلَوَاتُكَ عَلَيْهِمَا وَآلِهِمَا هَادِياً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 91,
+    arabic_text: 'إِِذْ كَانَ هُوَ ٱلْمُنْذِرَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 92,
+    arabic_text: 'وَلِكُلِّ قَوْمٍ هَادٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 93,
+    arabic_text: 'فَقَالَ وَٱلْمَلَا امَامَهُ:',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 94,
+    arabic_text: '”مَنْ كُنْتُ مَوْلاَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 95,
+    arabic_text: 'فَعَلِيٌّ مَوْلاَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 96,
+    arabic_text: 'اَللَّهُمَّ وَالِ مَنْ وَالاَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 97,
+    arabic_text: 'وَعَادِ مَنْ عَادَاهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 98,
+    arabic_text: 'وَٱنْصُرْ مَنْ نَصَرَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 99,
+    arabic_text: 'وَٱخْذُلْ مَنْ خَذَلَهُ.“',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 100,
+    arabic_text: 'وَقَالَ: ”مَنْ كُنْتُ انَا نَبِيَّهُ فَعَلِيٌّ امِيرُهُ.“',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 101,
+    arabic_text: 'وَقَالَ: ”انَا وَعَلِيٌّ مِنْ شَجَرَةٍ وَاحِدَةٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 102,
+    arabic_text: 'وَسَائِرُ ٱلنَّاسِ مِنْ شَجَرٍ شَتَّىٰ.“',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 103,
+    arabic_text: 'وَاحَلَّهُ مَحَلَّ هَارُونَ مِنْ مُوسَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 104,
+    arabic_text: 'فَقَالَ لَهُ: ”انْتَ مِنِّي بِمَنْزِلَةِ هَارُونَ مِنْ مُوسَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 105,
+    arabic_text: 'إِلاَّ انَّهُ لاََ نَبِيَّ بَعْدِي.“',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 106,
+    arabic_text: 'وَزَوَّجَهُ ٱبْنَتَهُ سَيِّدَةَ نِسَاءِ ٱلْعَالَمِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 107,
+    arabic_text: 'وَاحَلَّ لَهُ مِنْ مَسْجِدِهِ مَا حَلَّ لَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 108,
+    arabic_text: 'وَسَدَّ ٱلابْوَابَ إِِلاَّ بَابَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 109,
+    arabic_text: 'ثُمَّ اوْدَعَهُ عِلْمَهُ وَحِكْمَتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 110,
+    arabic_text: 'فَقَالَ: ”انَا مَدِينَةُ ٱلْعِلْمِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 111,
+    arabic_text: 'وَعَلِيٌّ بَابُهَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 112,
+    arabic_text: 'فَمَنْ ارَادَ ٱلْمَدِينَةَ وَٱلْحِكْمَةَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 113,
+    arabic_text: 'فَلْيَاتِهَا مِنْ بَابِهَا.“',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 114,
+    arabic_text: 'ثُمَّ قَالَ: ”انْتَ اخِي وَوَصِيِّي وَوَارِثِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 115,
+    arabic_text: 'لَحْمُكَ مِنْ لَحْمِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 116,
+    arabic_text: 'وَدَمُكَ مِنْ دَمِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 117,
+    arabic_text: 'وَسِلْمُكَ سِلْمِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 118,
+    arabic_text: 'وَحَرْبُكَ حَرْبِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 119,
+    arabic_text: 'وَٱلإِيـمَانُ مُخَالِطٌ لَحْمَكَ وَدَمَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 120,
+    arabic_text: 'كَمَا خَالَطَ لَحْمِي وَدَمِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 121,
+    arabic_text: 'وَانْتَ غَداً عَلَىٰ الْحَوْضِ خَلِيفَتِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 122,
+    arabic_text: 'وَانْتَ تَقْضِي دَيْنِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 123,
+    arabic_text: 'وَتُنْجِزُ عِدَاتِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 124,
+    arabic_text: 'وَشِيعَتُكَ عَلَىٰ مَنَابِرَ مِنْ نُورٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 125,
+    arabic_text: 'مُبْيَضَّةً وُجُوهُهُمْ حَوْلِي فِي ٱلْجَنَّةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 126,
+    arabic_text: 'وَهُمْ جِيرَانِي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 127,
+    arabic_text: 'وَلَوْلاَ انْتَ يَا عَلِيُّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 128,
+    arabic_text: 'لَمْ يُعْرَفِ ٱلْمُؤْمِنُونَ بَعْدِي.“',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 129,
+    arabic_text: 'وَكَانَ بَعْدَهُ هُدىٰ مِنَ ٱلضَّلاَلِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 130,
+    arabic_text: 'وَنُوراً مِنَ ٱلْعَمَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 131,
+    arabic_text: 'وَحَبْلَ ٱللَّهِ ٱلْمَتِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 132,
+    arabic_text: 'وَصِرَاطَهُ ٱلْمُسْتَقِيمَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 133,
+    arabic_text: 'لاََ يُسْبَقُ بِقَرَابَةٍ فِي رَحِمٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 134,
+    arabic_text: 'وَلاَ بِسَابِقَةٍ فِي دِينٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 135,
+    arabic_text: 'وَلاَ يُلْحَقُ فِي مَنْقَبَةٍ مِنْ مَنَاقِبِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 136,
+    arabic_text: 'يَحْذُو حَذْوَ ٱلرَّسُولِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 137,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِمَا وَآلِهِمَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 138,
+    arabic_text: 'وَيُقَاتِلُ عَلَىٰ ٱلتَّاوِيلِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 139,
+    arabic_text: 'وَلاَ تَاخُذُهُ فِي ٱللَّهِ لَوْمَةُ لاَئِمٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 140,
+    arabic_text: 'قَدْ وَتَرَ فِيهِ صَنَادِيدَ ٱلْعَرَبِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 141,
+    arabic_text: 'وَقَتَلَ ابْطَالَهُمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 142,
+    arabic_text: 'وَنَاوَشَ ذُؤْبَانَهُمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 143,
+    arabic_text: 'فَاوْدَعَ قُلُوبَهُمْ احْقَاداً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 144,
+    arabic_text: 'بَدْرِيَّةً وَخَيْبَرِيَّةً وَحُنَيْنِيَّةً وَغَيْرَهُنَّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 145,
+    arabic_text: 'فَاضَبَّتْ عَلَىٰ عَدَاوَتِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 146,
+    arabic_text: 'وَاكَبَّتْ عَلَىٰ مُنَابَذَتِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 147,
+    arabic_text: 'حَتَّىٰ قَتَلَ ٱلنَّاكِثِينَ وَٱلْقَاسِطِينَ وَٱلْمَارِقِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 148,
+    arabic_text: 'وَلَمَّا قَضَىٰ نَحْبَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 149,
+    arabic_text: 'وَقَتَلَهُ اشْقَىٰ ٱلآخِرِينَ يَتْبَعُ اشْقَىٰ ٱلاوَّلِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 150,
+    arabic_text: 'لَمْ يُمْتَثَلْ امْرُ رَسُولِ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 151,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 152,
+    arabic_text: 'فِي ٱلْهَادِينَ بَعْدَ ٱلْهَادِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 153,
+    arabic_text: 'وَٱلامَّةُ مُصِرَّةٌ عَلَىٰ مَقْتِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 154,
+    arabic_text: 'مُجْتَمِعَةٌ عَلَىٰ قَطِيعَةِ رَحِمِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 155,
+    arabic_text: 'وَإِِقْصَاءِ وُلْدِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 156,
+    arabic_text: 'إِِلاَّ ٱلْقَلِيلَ مِمَّنْ وَفَىٰ لِرِعَايَةِ ٱلْحَقِّ فِيهِمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 157,
+    arabic_text: 'فَقُتِلَ مَنْ قُتِلَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 158,
+    arabic_text: 'وَسُبِيَ مَنْ سُبِيَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 159,
+    arabic_text: 'وَاقْصِيَ مَنْ اقْصِيَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 160,
+    arabic_text: 'وَجَرَىٰ ٱلْقَضَاءُ لَهُمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 161,
+    arabic_text: 'بِمَا يُرْجَىٰ لَهُ حُسْنُ ٱلْمَثُوبَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 162,
+    arabic_text: 'إِِذْ كَانَتِ ٱلارْضُ لِلَّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 163,
+    arabic_text: 'يُورِثُهَا مَنْ يَشَاءُ مِنْ عِبَادِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 164,
+    arabic_text: 'وَٱلْعَاقِبَةُ لِلْمُتَّقِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 165,
+    arabic_text: 'وَسُبْحَانَ رَبِّنَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 166,
+    arabic_text: 'إِِنْ كَانَ وَعْدُ رَبِّنَا لَمَفْعُولاًَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 167,
+    arabic_text: 'وَلَنْ يُخْلِفَ ٱللَّهُ وَعْدَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 168,
+    arabic_text: 'وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 169,
+    arabic_text: 'فَعَلَىٰ ٱلاطَائِبِ مِنْ اهْلِ بَيْتِ مُحَمَّد وَعَلِيٍّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 170,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِمَا وَآلِهِمَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 171,
+    arabic_text: 'فَلْيَبْكِ ٱلْبَاكُونَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 172,
+    arabic_text: 'وَإِِيَّاهُمْ فَلْيَنْدُبِ ٱلنَّادِبُونَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 173,
+    arabic_text: 'وَلِمِثْلِهِمْ فَلْتَذْرِفِ ٱلدُّمُوعُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 174,
+    arabic_text: 'وَلْيَصْرُخِ ٱلصَّارِخُونَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 175,
+    arabic_text: 'وَيَضِجَّ ٱلضَّاجُّونَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 176,
+    arabic_text: 'وَيَعِجَّ ٱلْعَاجُّوَنَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 177,
+    arabic_text: 'ايْنَ ٱلْحَسَنُ ايْنَ ٱلْحُسَيْنُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 178,
+    arabic_text: 'ايْنَ ابْنَاءُ ٱلْحُسَيْنِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 179,
+    arabic_text: 'صَالِحٌ بَعْدَ صَالِحٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 180,
+    arabic_text: 'وَصَادِقٌ بَعْدَ صَادِقٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 181,
+    arabic_text: 'ايْنَ ٱلسَّبِيلُ بَعْدَ ٱلسَّبِيلِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 182,
+    arabic_text: 'ايْنَ ٱلْخِيَرَةُ بَعْدَ ٱلْخِيَرَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 183,
+    arabic_text: 'ايْنَ ٱلشُّمُوسُ ٱلطَّالِعَةُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 184,
+    arabic_text: 'ايْنَ ٱلاقْمَارُ ٱلْمُنِيرَةُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 185,
+    arabic_text: 'ايْنَ ٱلانْجُمُ ٱلزَّاهِرَةُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 186,
+    arabic_text: 'ايْنَ اعْلاَمُ ٱلدِّينِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 187,
+    arabic_text: 'وَقَوَاعِدُ ٱلْعِلْمِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 188,
+    arabic_text: 'ايْنَ بَقِيَّةُ ٱللَّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 189,
+    arabic_text: 'ٱلَّتِي لاََ تَخْلُو مِنَ ٱلْعِتْرَةِ ٱلْهَادِيةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 190,
+    arabic_text: 'اينَ ٱلْمُعَدُّ لِقَطْعِ دَابِرِ ٱلظَّلَمَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 191,
+    arabic_text: 'ايْنَ ٱلْمُنْتَظَرُ لإِِِقَامَةِ ٱلامْتِ وَٱلعِوَجِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 192,
+    arabic_text: 'ايْنَ ٱلْمُرْتَجىٰ لإِِزَالَةِ ٱلْجَوْرِ وَٱلْعُدْوَانِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 193,
+    arabic_text: 'ايْنَ ٱلْمُدَّخَرُ لِتَجْدِيدِ ٱلْفَرَائِضِ وَٱلسُّنَنِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 194,
+    arabic_text: 'ايْنَ ٱلْمُتَخَيَّرُ لإِِِعَادَةِ ٱلْمِلَّةِ وَٱلشَّرِيعَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 195,
+    arabic_text: 'ايْنَ ٱلْمُؤَمَّلُ لإِِِحْيَاءِ ٱلْكِتَابِ وَحُدُودِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 196,
+    arabic_text: 'ايْنَ مُحْيِي مَعَالِمِ ٱلدِّينِ وَاهْلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 197,
+    arabic_text: 'ايْنَ قَاصِمُ شَوْكَةِ ٱلْمُعْتَدِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 198,
+    arabic_text: 'ايْنَ هَادِمُ ابْنِيَةِ ٱلشِّرْكِ وَٱلنِّفَاقِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 199,
+    arabic_text: 'ايْنَ مُبِيدُ اهْلِ ٱلْفُسُوقِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 200,
+    arabic_text: 'وَٱلْعِصْيَانِ وَٱلطُّغْيَانِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 201,
+    arabic_text: 'ايْنَ حَاصِدُ فُرُوعِ ٱلْغَيِّ وَٱلشِّقَاقِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 202,
+    arabic_text: 'ايْنَ طَامِسُ آثَارِ ٱلزَّيْغِ وَٱلاهْوَاءِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 203,
+    arabic_text: 'ايْنَ قَاطِعُ حَبَائِلِ ٱلْكِذْبِ وَٱلٱِفْتِرَاءِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 204,
+    arabic_text: 'ايْنَ مُبِيدُ ٱلْعُتَاةِ وَٱلْمَرَدَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 205,
+    arabic_text: 'ايْنَ مُسْتَاصِلُ اهْلِ ٱلْعِنَادِ وَٱلتَّضْلِيلِ وَٱلإِلْحَادِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 206,
+    arabic_text: 'ايْنَ مُعِزُّ ٱلاوْلِيَاءِ وَمُذِلُّ ٱلاعْدَاءِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 207,
+    arabic_text: 'ايْنَ جَامِعُ ٱلْكَلِمَةِ عَلَىٰ ٱلتَّقْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 208,
+    arabic_text: 'ايْنَ بَابُ ٱللَّهِ ٱلَّذِي مِنْهُ يُؤْتَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 209,
+    arabic_text: 'ايْنَ وَجْهُ ٱللَّهِ ٱلَّذِي إِِلَيْهِ يَتَوَجَّهُ ٱلاوْلِيَاءُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 210,
+    arabic_text: 'ايْنَ ٱلسَّبَبُ ٱلْمُتَّصِلُ بَيْنَ ٱلارْضِ وَٱلسَّمَاءِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 211,
+    arabic_text: 'ايْنَ صَاحِبُ يَوْمِ ٱلْفَتْحِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 212,
+    arabic_text: 'وَنَاشِرُ رَايَةِ ٱلْهُدَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 213,
+    arabic_text: 'ايْنَ مُؤَلِّفُ شَمْلِ ٱلصَّلاَحِ وَٱلرِّضَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 214,
+    arabic_text: 'ايْنَ ٱلطَّالِبُ بِذُحُولِ ٱلانْبِيَاءِ وَابْنَاءِ ٱلانْبِيَاءِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 215,
+    arabic_text: 'ايْنَ ٱلطَّالِبُ بِدَمِ ٱلْمَقْتُولِ بِكَرْبَلاَءَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 216,
+    arabic_text: 'ايْنَ ٱلْمَنْصُورُ عَلَىٰ مَنِ ٱعْتَدَىٰ عَلَيْهِ وَٱفْتَرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 217,
+    arabic_text: 'ايْنَ ٱلْمُضْطَرُّ ٱلَّذِي يُجَابُ إِِذَا دَعَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 218,
+    arabic_text: 'ايْنَ صَدْرُ ٱلْخَلاَئِقِ ذُوُ ٱلْبِرِّ وَٱلتَّقْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 219,
+    arabic_text: 'ايْنَ ٱبْنُ ٱلنَّبِيِّ ٱلْمُصْطَفَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 220,
+    arabic_text: 'وَٱبْنُ عَلِيٍّ ٱلْمُرْتَضَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 221,
+    arabic_text: 'وَٱبْنُ خَدِيـجَةَ ٱلْغَرَّاءِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 222,
+    arabic_text: 'وَٱبْنُ فَاطِمَةَ ٱلْكُبْرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 223,
+    arabic_text: 'بِابِي انْتَ وَامِّي',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 224,
+    arabic_text: 'وَنَفْسِي لَكَ ٱلْوِقَاءُ وَٱلْحِمَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 225,
+    arabic_text: 'يَا بْنَ ٱلسَّادَةِ ٱلْمُقَرَّبِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 226,
+    arabic_text: 'يَا بْنَ ٱلنُّجَبَاءِ ٱلاكْرَمِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 227,
+    arabic_text: 'يَا بْنَ ٱلْهُدَاةِ ٱلْمَهْدِيِّينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 228,
+    arabic_text: 'يَا بْنَ ٱلْخِيَرَةِ ٱلْمُهَذَّبِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 229,
+    arabic_text: 'يَا بْنَ ٱلْغَطَارِفَةِ ٱلانْجَبِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 230,
+    arabic_text: 'يَا بْنَ ٱلاطَائِبِ ٱلْمُطَهَّرِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 231,
+    arabic_text: 'يَا بْنَ ٱلْخَضَارِمَةِ ٱلْمُنْتَجَبِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 232,
+    arabic_text: 'يَا بْنَ ٱلْقَمَاقِمَةِ ٱلاكْرَمِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 233,
+    arabic_text: 'يَا بْنَ ٱلْبُدُورِ ٱلْمُنِيرَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 234,
+    arabic_text: 'يَا بْنَ ٱلسُّرُجِ ٱلْمُضِيئَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 235,
+    arabic_text: 'يَا بْنَ ٱلشُّهُبِ ٱلثَّاقِبَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 236,
+    arabic_text: 'يَا بْنَ ٱلانْجُمِ ٱلزَّاهِرَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 237,
+    arabic_text: 'يَا بْنَ ٱلسُّبُلِ ٱلْوَاضِحَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 238,
+    arabic_text: 'يَا بْنَ ٱلاعْلاَمِ ٱللاَّئِحَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 239,
+    arabic_text: 'يَا بْنَ ٱلْعُلُومِ ٱلْكَامِلَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 240,
+    arabic_text: 'يَا بْنَ ٱلسُّنَنِ ٱلْمَشْهُورَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 241,
+    arabic_text: 'يَا بْنَ ٱلْمَعَالِمِ ٱلْمَاثُورَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 242,
+    arabic_text: 'يَا بْنَ ٱلْمُعْجِزَاتِ ٱلْمَوْجُودَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 243,
+    arabic_text: 'يَا بْنَ ٱلدَّلاَئِلِ ٱلْمَشْهُودَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 244,
+    arabic_text: 'يَا بْنَ ٱلصِّرَاطِ ٱلْمُسْتَقِيمِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 245,
+    arabic_text: 'يَا بْنَ ٱلنَّبَإِ ٱلْعَظِيمِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 246,
+    arabic_text: 'يَا بْنَ مَنْ هُوَ فِي امِّ ٱلْكِتَابِ لَدَىٰ ٱللَّهِ عَلِيٌّ حَكِيمٌ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 247,
+    arabic_text: 'يَا بْنَ ٱلآيَاتِ وَٱلْبَيِّنَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 248,
+    arabic_text: 'يَا بْنَ ٱلدَّلاَئِلِ ٱلظَّاهِرَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 249,
+    arabic_text: 'يَا بْنَ ٱلْبَرَاهِينِ ٱلْوَاضِحَاتِ ٱلْبَاهِرَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 250,
+    arabic_text: 'يَا بْنَ ٱلْحُجَجِ ٱلْبَالِغَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 251,
+    arabic_text: 'يَا بْنَ ٱلنِّعَمِ ٱلسَّابِغَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 252,
+    arabic_text: 'يَا بْنَ طـٰهٰ وَٱلْمُحْكَمَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 253,
+    arabic_text: 'يَا بْنَ يـٰس وَٱلذَّارِيَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 254,
+    arabic_text: 'يَا بْنَ ٱلطُّورِ وَٱلْعَادِيَاتِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 255,
+    arabic_text: 'يَا بْنَ مَنْ دَنَا فَتَدَلَّىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 256,
+    arabic_text: 'فَكَانَ قَابَ قَوْسَيْنِ اوْ ادْنَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 257,
+    arabic_text: 'دُنُوّاً وَٱقْتِرَاباً مِنَ ٱلْعَلِيِّ ٱلاعْلَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 258,
+    arabic_text: 'لَيْتَ شِعْرِي ايْنَ ٱسْتَقَرَّتْ بِكَ ٱلنَّوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 259,
+    arabic_text: 'بَلْ ايُّ ارْضٍ تُقِلُّكَ اوْ ثَرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 260,
+    arabic_text: 'ابِرَضْوَىٰ اوْ غَيْرِهَا امْ ذِي طُوَىٰٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 261,
+    arabic_text: 'عَزِيزٌ عَلَيَّ انْ ارَىٰ ٱلْخَلْقَ وَلاَ تُرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 262,
+    arabic_text: 'وَلاَ اسْمَعُ لَكَ حَسِيساً وَلاَ نَجْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 263,
+    arabic_text: 'عَزِيزٌ عَلَيَّ انْ تُحِيطَ بِكَ دُونِيَ ٱلْبَلْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 264,
+    arabic_text: 'وَلاَ يَنَالُكَ مِنِّي ضَجِيجٌ وَلاَ شَكْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 265,
+    arabic_text: 'بِنَفْسِي انْتَ مِنْ مُغَيَّبٍ لَمْ يَخْلُ مِنَّا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 266,
+    arabic_text: 'بِنَفْسِي انْتَ مِنْ نَازِحٍ مَا نَزَحَ عَنَّا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 267,
+    arabic_text: 'بِنَفْسِي انْتَ امْنِيَّةُ شَائِقٍ يَتَمَنَّىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 268,
+    arabic_text: 'مِنْ مُؤْمِنٍ وَمُؤْمِنَةٍ ذَكَرَا فَحَنَّا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 269,
+    arabic_text: 'بِنَفْسِي انْتَ مِنْ عَقِيدِ عِزٍّ لاَ يُسَامَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 270,
+    arabic_text: 'بِنَفْسِي انْتَ مِنْ اثِيلِ مَجْدٍ لاَ يُجَارَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 271,
+    arabic_text: 'بِنَفْسِي انْتَ مِنْ تِلاَدِ نِعَمٍ لاََ تُضَاهَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 272,
+    arabic_text: 'بِنَفْسِي انْتَ مِنْ نَصِيفِ شَرَفٍ لاََ يُسَاوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 273,
+    arabic_text: 'إِلَىٰ مَتَىٰ احَارُ فِيكَ يَا مَوْلاَيَ وَإِِلَىٰ مَتَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 274,
+    arabic_text: 'وَايَّ خِطَابٍ اصِفُ فِيكَ وَايَّ نَجْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 275,
+    arabic_text: 'عَزِيزٌ عَلَيَّ انْ اجَابَ دُونَكَ وَانَاغَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 276,
+    arabic_text: 'عَزِيزٌ عَلَيَّ انْ ابْكِيَكَ وَيَخْذُلَكَ ٱلْوَرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 277,
+    arabic_text: 'عَزِيزٌ عَلَيَّ انْ يَجْرِيَ عَلَيْكَ دُونَهُمْ مَا جَرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 278,
+    arabic_text: 'هَلْ مِنْ مُعِينٍ فَاطِيلَ مَعَهُ ٱلْعَوِيلَ وَٱلْبُكَاءَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 279,
+    arabic_text: 'هَلْ مِنْ جَزُوعٍ فَاسَاعِدَ جَزَعَهُ إِِذَا خَلاَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 280,
+    arabic_text: 'هَلْ قَذِيَتْ عَيْنٌ فَسَاعَدَتْهَا عَيْنِي عَلَىٰ ٱلْقَذَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 281,
+    arabic_text: 'هَلْ إِِلَيْكَ يَا بْنَ احْمَدَ سَبِيلٌ فَتُلْقَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 282,
+    arabic_text: 'هَلْ يَتَّصِلُ يَوْمُنَا مِنْكَ بِعِدَةٍ فَنَحْظَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 283,
+    arabic_text: 'مَتَىٰ نَرِدُ مَنَاهِلَكَ ٱلرَّوِيَّةَ فَنَرْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 284,
+    arabic_text: 'مَتَىٰ نَنْتَقِعُ مِنْ عَذْبِ مَائِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 285,
+    arabic_text: 'فَقَدْ طَالَ ٱلصَّدَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 286,
+    arabic_text: 'مَتَىٰ نُغَادِيكَ وَنُرَاوِحُكَ فَنُقِرَّ عَيْناً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 287,
+    arabic_text: 'مَتَىٰ تَرَانَا وَنَرَاكَ وَقَدْ نَشَرْتَ لِوَاءَ ٱلنَّصْرِ تُرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 288,
+    arabic_text: 'اتَرَانَا نَحُفُّ بِكَ وَانْتَ تَؤُمُّ ٱلْمَلَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 289,
+    arabic_text: 'وَقَدْ مَلَاتَ ٱلارْضَ عَدْلاًَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 290,
+    arabic_text: 'وَاذَقْتَ اعْدَاءَكَ هَوَاناً وَعِقَاباً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 291,
+    arabic_text: 'وَابَرْتَ ٱلْعُتَاةَ وَجَحَدَةَ ٱلْحَقِّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 292,
+    arabic_text: 'وَقَطَعْتَ دَابِرَ ٱلْمُتَكَبِّرِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 293,
+    arabic_text: 'وَٱجْتَثَثْتَ اصُولَ ٱلظَّالِمِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 294,
+    arabic_text: 'وَنَحْنُ نَقُولُ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَالَمِينَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 295,
+    arabic_text: 'اَللَّهُمَّ انْتَ كَشَّافُ ْٱلكُرَبِ وَٱلْبَلْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 296,
+    arabic_text: 'وَإِِلَيْكَ اسْتَعْدِي فَعِنْدَكَ ٱلْعَدْوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 297,
+    arabic_text: 'وَانْتَ رَبُّ ٱلآخِرَةِ وَٱلدُّنْيَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 298,
+    arabic_text: 'فَاغِثْ يَا غِيَاثَ ٱلْمُسْتَغِيثِينَ عُبَيْدَكَ ٱلْمُبْتَلَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 299,
+    arabic_text: 'وَارِهِ سَيِّدَهُ يَا شَدِيدَ ٱلْقُوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 300,
+    arabic_text: 'وَازِلْ عَنْهُ بِهِ ٱلاسَىٰ وَٱلْجَوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 301,
+    arabic_text: 'وَبَرِّدْ غَلِيلَهُ يَا مَنْ عَلَىٰ ٱلْعَرْشِ ٱسْتَوَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 302,
+    arabic_text: 'وَمَنْ إِِلَيْهِ ٱلرُّجْعَىٰ وَٱلْمُنْتَهَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 303,
+    arabic_text: 'اَللَّهُمَّ وَنَحْنُ عَبِيدُكَ ٱلتَّائِقُونَ إِلَىٰ وَلِيِّكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 304,
+    arabic_text: 'ٱلْمُذَكِّرِ بِكَ وَبِنَبِيِّكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 305,
+    arabic_text: 'خَلَقْتَهُ لَنَا عِصْمَةً وَمَلاَذاً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 306,
+    arabic_text: 'وَاقَمْتَهُ لَنَا قِوَاماً وَمَعَاذاً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 307,
+    arabic_text: 'وَجَعَلْتَهُ لِلْمُؤْمِنِينَ مِنَّا إِِمَاماً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 308,
+    arabic_text: 'فَبَلِّغْهُ مِنَّا تَحِيَّةً وَسَلاَماً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 309,
+    arabic_text: 'وَزِدْنَا بِذٰلِكَ يَا رَبِّ إِِكْرَاماً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 310,
+    arabic_text: 'وَٱجْعَلْ مُسْتَقَرَّهُ لَنَا مُسْتَقَرّاً وَمُقَاماً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 311,
+    arabic_text: 'وَاتْمِمْ نِعْمَتَكَ بِتَقْدِيـمِكَ إِِيَّاهُ امَامَنَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 312,
+    arabic_text: 'حَتَّىٰ تُورِدَنَا جِنَانَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 313,
+    arabic_text: 'وَمُرَافَقَةَ ٱلشُّهَدَاءِ مِنْ خُلَصَائِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 314,
+    arabic_text: 'اَللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَآلِ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 315,
+    arabic_text: 'وَصَلِّ عَلَىٰ مُحَمَّدٍ جَدِّهِ وَرَسُولِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 316,
+    arabic_text: 'ٱلسَّيِّدِ ٱلاكْبَرِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 317,
+    arabic_text: 'وَعَلَىٰ ابِيهِ ٱلسَّيِّدِ ٱلاصْغَرِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 318,
+    arabic_text: 'وَجَدَّتِهِ ٱلصِّدِّيقَةِ ٱلْكُبْرَىٰ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 319,
+    arabic_text: 'فَاطِمَةَ بِنْتِ مُحَمَّدٍ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 320,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 321,
+    arabic_text: 'وَعَلَىٰ مَنِ ٱصْطَفَيْتَ مِنْ آبَائِهِ ٱلْبَرَرَةِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 322,
+    arabic_text: 'وَعَلَيْهِ افْضَلَ وَاكْمَلَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 323,
+    arabic_text: 'وَاتَمَّ وَادْوَمَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 324,
+    arabic_text: 'وَاكْثَرَ وَاوْفَرَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 325,
+    arabic_text: 'مَا صَلَّيْتَ عَلَىٰ احَدٍ مِنْ اصْفِيَائِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 326,
+    arabic_text: 'وَخِيَرَتِكَ مِنْ خَلْقِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 327,
+    arabic_text: 'وَصَلِّ عَلَيْهِ صَلاَةً لاََ غَايَةَ لِعَدَدِهَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 328,
+    arabic_text: 'وَلاَ نِهَايَةَ لِمَدَدِهَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 329,
+    arabic_text: 'وَلاَ نَفَادَ لاِمَدِهَا',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 330,
+    arabic_text: 'اَللَّهُمَّ وَاقِمْ بِهِ ٱلْحَقَّ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 331,
+    arabic_text: 'وَادْحِضْ بِهِ ٱلْبَاطِلَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 332,
+    arabic_text: 'وَادِلْ بِهِ اوْلِيَاءَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 333,
+    arabic_text: 'وَاذْلِلْ بِهِ اعْدَاءَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 334,
+    arabic_text: 'وَصِلِ ٱللَّهُمَّ بَيْنَنَا وَبَيْنَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 335,
+    arabic_text: 'وُصْلَةً تُؤَدِّي إِلَىٰ مُرَافَقَةِ سَلَفِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 336,
+    arabic_text: 'وَٱجْعَلْنَا مِمَّنْ يَاخُذُ بِحُجْزَتِهِمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 337,
+    arabic_text: 'وَيَمْكُثُ فِي ظِلِّهِمْ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 338,
+    arabic_text: 'وَاعِنَّا عَلَىٰ تَادِيَةِ حُقُوقِهِ إِِلَيْهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 339,
+    arabic_text: 'وَٱلِٱجْتِهَادِ فِي طَاعَتِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 340,
+    arabic_text: 'وَٱجْتِنَابِ مَعْصِيَتِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 341,
+    arabic_text: 'وَٱمْنُنْ عَلَيْنَا بِرِضَاهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 342,
+    arabic_text: 'وَهَبْ لَنَا رَافَتَهُ وَرَحْمَتَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 343,
+    arabic_text: 'وَدُعَاءَهُ وَخَيْرَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 344,
+    arabic_text: 'مَا نَنَالُ بِهِ سَعَةً مِنْ رَحْمَتِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 345,
+    arabic_text: 'وَفَوْزاً عِنْدَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 346,
+    arabic_text: 'وَٱجْعَلْ صَلاَتَنَا بِهِ مَقبُولَةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 347,
+    arabic_text: 'وَذُنُوبَنَا بِهِ مَغْفُورَةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 348,
+    arabic_text: 'وَدُعَاءَنَا بِهِ مُسْتَجَاباً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 349,
+    arabic_text: 'وَٱجْعَلْ ارْزَاقَنَا بِهِ مَبْسُوطَةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 350,
+    arabic_text: 'وَهُمُومَنَا بِهِ مَكْفِيَّةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 351,
+    arabic_text: 'وَحَوَائِجَنَا بِهِ مَقْضِيَّةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 352,
+    arabic_text: 'وَاقْبِلْ إِِلَيْنَا بِوَجْهِكَ ٱلْكَرِيـمِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 353,
+    arabic_text: 'وَٱقْبَلْ تَقَرُّبَنَا إِِلَيْكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 354,
+    arabic_text: 'وَٱنْظُرْ إِِلَيْنَا نَظْرَةً رَحِيمَةً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 355,
+    arabic_text: 'نَسْتَكْمِلُ بِهَا ٱلْكَرَامَةَ عِنْدَكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 356,
+    arabic_text: 'ثُمَّ لاََ تَصْرِفْهَا عَنَّا بِجُودِكَ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 357,
+    arabic_text: 'وَٱسْقِنَا مِنْ حَوْضِ جَدِّهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 358,
+    arabic_text: 'صَلَّىٰ ٱللَّهُ عَلَيْهِ وَآلِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 359,
+    arabic_text: 'بِكَاسِهِ وَبِيَدِهِ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 360,
+    arabic_text: 'رَيّاً رَوِيّاً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 361,
+    arabic_text: 'هَنِيئاً سَائِغاً',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 362,
+    arabic_text: 'لاََ ظَمَا بَعْدَهُ',
+  },
+  {
+    content_id: 'dua_nudba',
+    sequence_number: 363,
+    arabic_text: 'يَا ارْحَمَ ٱلرَّاحِمينَ',
+  },
+
 ];

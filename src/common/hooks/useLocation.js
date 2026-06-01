@@ -131,6 +131,53 @@ const useLocation = () => {
     initLocation();
   }, [getLocation]);
 
+  const geocodeCity = useCallback(async (cityName) => {
+    if (!cityName || cityName.trim() === '') return false;
+    setLoading(true);
+    setError(null);
+    try {
+      const response = await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cityName)}&limit=1`,
+        {
+          headers: {
+            'Accept-Language': 'en',
+            'User-Agent': 'TaqeebatApp/1.0',
+          },
+        },
+      );
+      const data = await response.json();
+      if (data && data.length > 0) {
+        const latitude = parseFloat(data[0].lat);
+        const longitude = parseFloat(data[0].lon);
+        const matchedName = data[0].name || cityName;
+        const name = matchedName
+          .replace(/\s+(District|County|Division)$/i, '')
+          .trim();
+
+        setLocation({latitude, longitude});
+        setLocationName(name);
+
+        await AsyncStorage.setItem(
+          LOCATION_STORAGE_KEY,
+          JSON.stringify({
+            location: {latitude, longitude},
+            locationName: name,
+          }),
+        );
+        setLoading(false);
+        return true;
+      } else {
+        setError('City not found.');
+        setLoading(false);
+        return false;
+      }
+    } catch (err) {
+      setError(err.message || 'Geocoding error.');
+      setLoading(false);
+      return false;
+    }
+  }, []);
+
   const resetLocation = useCallback(async () => {
     setLoading(true);
     setError(null);
@@ -145,7 +192,7 @@ const useLocation = () => {
     }
   }, [getLocation]);
 
-  return {location, locationName, error, loading, getLocation, resetLocation};
+  return {location, locationName, error, loading, getLocation, resetLocation, geocodeCity};
 };
 
 export default useLocation;

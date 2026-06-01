@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -14,11 +14,13 @@ import Header from '../../common/components/Header';
 import useSettingsLogic from './hooks/useSettingsLogic';
 import SettingSection from './components/SettingSection';
 import {useAlert} from '../../context/AlertContext';
+import LocationModal from './components/LocationModal';
 
 const Settings = () => {
   const {isDarkMode} = useTheme();
-  const {locationName, resetLocation} = useLocation();
+  const {locationName, resetLocation, geocodeCity, loading: locationLoading} = useLocation();
   const {showToast} = useAlert();
+  const [modalVisible, setModalVisible] = useState(false);
   const {
     showTranslation,
     showArabic,
@@ -31,6 +33,26 @@ const Settings = () => {
   const handleResetSettings = () => {
     resetSettings();
     showToast('آپ کی سیٹنگز ری سیٹ ہو گئی ہیں۔', 'success');
+  };
+
+  const handleSelectGPS = async () => {
+    try {
+      await resetLocation();
+      showToast('لوکیشن کامیابی سے اپ ڈیٹ ہو گئی ہے', 'success');
+      setModalVisible(false);
+    } catch {
+      showToast('لوکیشن اپ ڈیٹ کرنے میں ناکامی ہوئی', 'error');
+    }
+  };
+
+  const handleSelectCity = async (city) => {
+    const success = await geocodeCity(city);
+    if (success) {
+      showToast('شہر کی لوکیشن تبدیل کر دی گئی ہے', 'success');
+      setModalVisible(false);
+    } else {
+      showToast('شہر تلاش کرنے میں ناکامی ہوئی', 'error');
+    }
   };
 
   return (
@@ -74,7 +96,7 @@ const Settings = () => {
           <View className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[80px] flex-row justify-between items-center px-6">
             {/* Refresh/Reset button with ArrowPathIcon */}
             <TouchableOpacity
-              onPress={resetLocation}
+              onPress={() => setModalVisible(true)}
               activeOpacity={0.7}
               className="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 items-center justify-center bg-white dark:bg-slate-900 shadow-sm">
               <ArrowPathIcon
@@ -111,6 +133,15 @@ const Settings = () => {
           </TouchableOpacity>
         </View>
       </ScrollView>
+
+      {/* Location Selector Modal */}
+      <LocationModal
+        visible={modalVisible}
+        onClose={() => setModalVisible(false)}
+        onSelectGPS={handleSelectGPS}
+        onSelectCity={handleSelectCity}
+        loading={locationLoading}
+      />
     </SafeAreaView>
   );
 };

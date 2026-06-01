@@ -32,7 +32,7 @@ const LocationModal = ({
       setFetchingSuggestions(true);
       try {
         const response = await fetch(
-          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cityName)}&limit=5`,
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cityName)}&limit=15`,
           {
             headers: {
               'Accept-Language': 'en',
@@ -42,14 +42,17 @@ const LocationModal = ({
         );
         const data = await response.json();
         if (data) {
-          const formatted = data.map(item => {
-            return {
-              name: item.name || cityName,
-              fullName: item.display_name,
-              lat: item.lat,
-              lon: item.lon,
-            };
-          });
+          const query = cityName.trim().toLowerCase();
+          const formatted = data
+            .map(item => {
+              return {
+                name: item.name || cityName,
+                fullName: item.display_name,
+                lat: item.lat,
+                lon: item.lon,
+              };
+            })
+            .filter(item => item.name.toLowerCase().startsWith(query));
           setSuggestions(formatted);
         }
       } catch (err) {
@@ -101,7 +104,7 @@ const LocationModal = ({
           </View>
 
           {/* Option 2: Manual City Entry */}
-          <View className="space-y-3">
+          <View style={{zIndex: 50, position: 'relative'}} className="space-y-3">
             <Text className="text-slate-500 dark:text-slate-400 font-bold text-sm text-right pr-1">
               شہر کا نام درج کریں
             </Text>
@@ -124,15 +127,15 @@ const LocationModal = ({
               />
             </View>
 
-            {/* Auto Suggestions List */}
+            {/* Auto Suggestions List & Loader positioned absolutely to prevent UI shifting */}
             {fetchingSuggestions && (
-              <View className="py-2 items-center">
+              <View className="absolute top-[82px] left-0 right-0 py-3 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl items-center z-50 shadow-lg">
                 <ActivityIndicator size="small" color={isDarkMode ? '#818cf8' : '#4f46e5'} />
               </View>
             )}
 
-            {suggestions.length > 0 && (
-              <View className="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/80 rounded-xl overflow-hidden mt-1 max-h-[220px]">
+            {suggestions.length > 0 && !fetchingSuggestions && (
+              <View className="absolute top-[82px] left-0 right-0 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden z-50 max-h-[180px] shadow-lg">
                 <ScrollView keyboardShouldPersistTaps="handled" nestedScrollEnabled={true}>
                   {suggestions.map((item, idx) => (
                     <TouchableOpacity
@@ -143,7 +146,7 @@ const LocationModal = ({
                         setSuggestions([]);
                       }}
                       activeOpacity={0.7}
-                      className="p-3 border-b border-slate-100 dark:border-slate-900/60 justify-center items-end">
+                      className="p-3 border-b border-slate-100 dark:border-slate-800/40 justify-center items-end">
                       <Text className="text-slate-800 dark:text-slate-200 font-semibold text-right">
                         {item.name}
                       </Text>

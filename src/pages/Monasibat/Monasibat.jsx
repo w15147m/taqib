@@ -19,7 +19,7 @@ const Monasibat = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
-      <Header title="مناسبت" />
+      <Header title="مناسبات" />
 
       <ScrollView
         className="flex-1 px-6"

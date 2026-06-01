@@ -25,7 +25,7 @@ const UpcomingEventsCard = () => {
 
   // Get dynamic upcoming Shia event
   const upcomingEvent = getNextUpcomingEvent() || {
-    titleUr: 'مناسبت',
+    titleUr: 'مناسبات',
     formattedDateUr: '--',
     isToday: false,
   };
@@ -46,7 +46,7 @@ const UpcomingEventsCard = () => {
 
         {/* Title (Right) */}
         <Text className="text-base font-bold text-slate-800 dark:text-slate-100 font-quran-header">
-          مناسبت
+          مناسبات
         </Text>
       </View>
 

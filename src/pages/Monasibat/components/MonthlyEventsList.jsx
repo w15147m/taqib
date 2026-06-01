@@ -6,7 +6,7 @@ const MonthlyEventsList = ({displayedHijriMonth, monthlyEventsList}) => {
   return (
     <View className="mt-4 mb-8">
       <Text className="text-base font-bold text-slate-800 dark:text-slate-200 mb-3 text-right font-quran-header">
-        {HIJRI_MONTHS_UR[displayedHijriMonth - 1]} کی مناسبتیں
+        {HIJRI_MONTHS_UR[displayedHijriMonth - 1]} کی مناسبات
       </Text>
 
       {monthlyEventsList.length > 0 ? (
@@ -52,7 +52,7 @@ const MonthlyEventsList = ({displayedHijriMonth, monthlyEventsList}) => {
       ) : (
         <View className="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm items-center">
           <Text className="text-slate-400 dark:text-slate-500 text-sm">
-            اس مہینے کی کوئی مناسبت درج نہیں ہے۔
+            اس مہینے کی کوئی مناسبات درج نہیں ہے۔
           </Text>
         </View>
       )}

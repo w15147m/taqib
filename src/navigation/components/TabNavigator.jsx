@@ -104,7 +104,7 @@ const TabNavigator = () => {
         name="Monasibat"
         component={Monasibat}
         options={{
-          title: 'مناسبت',
+          title: 'مناسبات',
           tabBarIcon: CalendarIconOutline,
           tabBarIconActive: CalendarIconSolidComp,
         }}

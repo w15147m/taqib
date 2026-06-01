@@ -33,7 +33,8 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
-
+android/scratch
+scratch
 # node.js
 #
 node_modules/

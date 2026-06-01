@@ -7,7 +7,12 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "extract-categories": "node scratch/extract_categories.js",
+    "inspect-section": "node scratch/inspect_section_1.js",
+    "extract-section-1": "node scratch/extract_section_1.js",
+    "inspect-all-sections": "node scratch/inspect_all_sections.js",
+    "extract-all-contents": "node scratch/extract_all_contents.js"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

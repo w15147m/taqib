@@ -1,0 +1,2936 @@
+[
+  {
+    "id": "mafatih_2",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تعقیبات مشترک",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_3",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تعقیب نماز ظهر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_4",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تعقیب نماز عصر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_5",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تعقیب نماز مغرب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_7",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تعقیب نماز عشاء",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_8",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تعقیب نماز صبح",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_9",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "حکایت نافعه برای گشایش کار",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_10",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای وقت طلوع و غروب آفتاب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_11",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز شنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_12",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز یکشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_13",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز دوشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_14",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز سه شنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_15",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز چهارشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_16",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز پنجشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_17",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_18",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت شب و روز جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_19",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_20",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_21",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز کامله",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_22",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز حضرت رسول (ص)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_23",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز حضرت امیرالمومنین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_24",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز حضرت فاطمه (س)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_25",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز سایر امامان (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_26",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز حضرت صاحب الزمان (ع) و دعای آن حضرت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_27",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز جعفر طیار",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_28",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال زوال روز جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_29",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال عصر جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_30",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات ابوالحسن ضراب اصفهانی",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_31",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت رسول (ص) در روز شنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_32",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت امیرالمومنین (ع) در یکشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_33",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت زهرا (س) در روز یکشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_34",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام حسن (ع) در روز دوشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_35",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام حسین (ع) در روز دوشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_36",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام زین العابدین, امام باقر, امام صادق (ع) در روز سه شنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_37",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام موسی کاظم, امام رضا, امام جواد و امام هادی(ع) در روز چهارشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_38",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام حسن عسگری (ع) در روز پنجشنبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_39",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام زمان (ع) در روز جمعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_40",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای صباح",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_41",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای کمیل",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_42",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای عشرات",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_43",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای سمات",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_44",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای مشلول",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_45",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای یستشیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_46",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای مجیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_47",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای عدیله",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_48",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای جوشن کبیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_49",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای جوشن صغیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_50",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای سیفی صغیر معروف به دعای قاموس",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_51",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آیات اسم اعظم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_52",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای توسل",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_53",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای توسل دیگر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_54",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای فرج",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_55",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای آزاد شدن از زندان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_56",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای نور",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_57",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "حرز امام زین العابدین (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_58",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای مقاتل بن سلیمان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_59",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعایی که جبرئیل به پیغمیر(ص) آموخت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_60",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای سریع الاجابه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_61",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای یامن تحل که حضرت هادی فرموده: آل محمد این دعا را هنگام بلا می خواندند",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_62",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای فرج امام زمان (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_63",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای امام زمان (ع) اللهم ارزقنا توفیق الطاعه و بعد المعصیه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_64",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای حضرت حجت (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_65",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "استغاثه به امام زمان (ع) الکامل التام",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_66",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات اول: راز و نیاز توبه کنندگان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_67",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات دوم: راز و نیاز شاکیان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_68",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات سوم: راز و نیاز ترسیدگان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_69",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات چهارم: راز و نیاز امیدواران",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_70",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات پنجم: راز و نیاز دلدادگان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_71",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات ششم: راز و نیاز شاکران",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_72",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات هفتم: راز و نیاز فرمانبران خدا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_73",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات هشتم: راز و نیاز ارادتمندان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_74",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات نهم: راز و نیاز شیفتگان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_75",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات دهم: راز و نیاز توسل جویان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_76",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات یازدهم: راز و نیاز نیازمندان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_77",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات دوازدهم: راز و نیاز عارفان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_78",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات سیزدهم: راز و نیاز ذاکرین",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_79",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات چهاردهم: راز و نیاز پناه جویان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_80",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات پانزدهم: راز و نیاز پارسایان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_81",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات منظوم , منسوب حضرت امیر المومنین (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_82",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت و اعمال ماه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_83",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مشترکه ماه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_84",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاهای هر روز ماه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_85",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت رجبیه (الحمد الله الذی اشهدنا)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_86",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "سایر اعمال ماه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_87",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال لیله الرغائب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_88",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مخصوص روزها و شبهای ماه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_89",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز اول ماه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_90",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز سلمان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_91",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "ایام البیض رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_92",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب و روز نیمه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_93",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "عمل و دعای ام داود",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_94",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب مبعث",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_95",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کلام ابن بطوطه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_96",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تتمه اعمال شب مبعث",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_97",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز مبعث",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_98",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت ماه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_99",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مشترکه ماه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_100",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات هر روز شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_101",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات ائمه (ع) در ماه شعبان و مناجات شعبانیه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_102",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مخصوصه ماه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_103",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "خبری شریف در فضیلت روز اول شعبان مشتمل بر فوائد کثیره",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_104",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز سوم شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_105",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت و اعمال شب نیمه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_106",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "روز نیمه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_107",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای شب آخر ماه شعبان و شب اول رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_108",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "خطبه حضرت رسول (ص) در فضیلت ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_109",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب و روز ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_110",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای حج",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_111",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای افتتاح",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_112",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال و نماز شب های ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_113",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کیفیت هزار رکعت نماز در ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_114",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال سحرهای ماه مبارک",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_115",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای سحر معروف",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_116",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "ابوحمزه ثمالی",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_117",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای سحر دیگر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_118",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مختصرترین دعاهای سحر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_119",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تسبیحات در سحر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_120",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال و دعاهای روزهای ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_121",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تسبیحات و صلوات هر روز ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_122",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب اول و رویت هلال ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_123",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای هللال صحیفه مکرمه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_124",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "بقیه اعمال شب اول",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_125",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز اول ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_126",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب سیزدهم ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_127",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب نیمه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_128",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب هفدهم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_129",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب های قدر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_130",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب نوزدهم رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_131",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب بیست ویکم رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_132",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شبهای دهه ی آخر ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_133",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "بقیه اعمال شب بیست و یکم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_134",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و دوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_135",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مخصوصه شب بیست و سوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_136",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و سوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_137",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و چهارم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_138",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و پنجم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_139",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و ششم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_140",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای شب بیست وهفتم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_141",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و هشتم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_142",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاى شب بيست و نهم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_143",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب آخر ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_144",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب سی ام",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_145",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای روز سی ام ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_146",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نمازهای شب های ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_147",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای مختصر هر روز ماه رمضان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_148",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب اول ماه شوال",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_149",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز و دعای شب عید فطر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_150",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز عید فطر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_151",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آداب و کیفیت نماز",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_152",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز روز یک شنبه آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_153",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت شب نیمه آن و زیارت امام رضا (ع) در بیست و سوم آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_154",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت شب و روز دحوالارض و اعمال آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_155",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال دهه اول آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_156",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دو رکعت نماز مشتمل بر آیه (و واعد ناموسی)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_157",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز اول آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_158",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب عرفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_159",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز عرفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_160",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای امام حسین (ع) در روز عرفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_161",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب و روز عید قربان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_162",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب وروز عید غدیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_163",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز روز عید غدیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_164",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صیغه عقد اخوت در روز غدیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_165",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت و اعمال روز مباهله",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_166",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز آخر ذی الحجه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_167",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب و روز اول ماه محرم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_168",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال شب عاشورا و روز آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_169",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "بیان آنکه روز عاشورا روز شوم است",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_170",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "وجوه تبرک بنی امیه به روز عاشورا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_171",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "در مجهول بودن دعایی که مشتمل است بر فضیلت روز عاشورا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_172",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال آخر روز عاشورا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_173",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "بیان نحوست ماه صفر و راه رفع آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_174",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "روز اربعین",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_175",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "روز بیست و هشتم صفر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_176",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "شب و روز اول و روز هشتم و نهم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_177",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز دوازدهم تا هفدهم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_178",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روز هفدهم روز مولود حضرت رسول",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_179",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال ماه ربیع الثانی وجمادی الاول",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_180",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال ماه جمادی الاخر و چهار رکعت نماز",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_181",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "روز سوم وفات حضرت فاطمه(ع) و اعمال آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_182",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "روز بیستم ولادت حضرت زهرا(ع) و اعمال آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_183",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال هر ماه نو و نماز اول آن ماه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_184",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال عيد نوروز",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_185",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال ماههای رومی",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_186",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آداب گرفتن آب نیسان وخواص آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_190",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آداب زیارت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_191",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کلامی در زیارت زنها و مذمت مزاحمت ایشان با نامحرمان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_192",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اذن دخول حرمهای شریفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_193",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اذن دخول دیگر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_194",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت زیارت حضرت رسول(ص) و حضرت فاطمه(ع) و ائمه بقیع(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_195",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کیفیت زیارت حضرت رسول(ص) در مدینه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_196",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال روضه منوره",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_197",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت فاطمه(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_198",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت رسول(ص) از راه دور",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_199",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت رسول(ص) و ائمه هدی(ع) در روزهای جمعه از راه دور",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_200",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات بر حضرت رسول(ص) و فضیلت آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_201",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت ائمه بقیع(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_202",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "قطعه ای از قصیده ازری",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_203",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جناب فاطمه بنت اسد(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_204",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت حمزه(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_205",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت زیارت حضرت حمزه(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_206",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت شهدای احد",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_207",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مساجد معظمه در مدینه(مانند مسجد قباو..)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_208",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت وداع حضرت رسول(ص)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_209",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تکالیف زوار در مدینه طیبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_210",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت زیارت حضرت امیرالمومنین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_211",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "ظاهرشدن قبر آن حضرت در زمان هارون",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_212",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "قصه احمی من مجیر الجراد",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_213",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کیفیت زیارت آن حضرت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_214",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت اول",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_215",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "قطعه ای از قصیده ازریه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_216",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعاهای بعد از زیارت حضرت(ع) و بعد از نمازهای فریضه و نافله در نجف اشرف",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_217",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت سر امام حسین(ع) نزد قبر امیرالمومنین(ع) و در مسجد حنانه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_218",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت دوم ( امین الله)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_219",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت سوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_220",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت چهارم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_221",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت پنجم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_222",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت ششم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_223",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت هفتم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_224",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آمدن حضرت امام زین العابدین(ع) به زیارت امیرالمومنین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_225",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت وداع حضرت امیرالمومنین",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_226",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت روز غدیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_227",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت دیگر روز غدیر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_228",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امیرالمومنین(ع) در روز میلاد پیغمبر(ص)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_229",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "در اتحاد حضرت امیرالمومنین(ع) با پیغمبر(ص)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_230",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت شب و روز مبعث",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_231",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت مسجد کوفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_232",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مسجد كوفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_233",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال دكّة القضاء و بيت الطشت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_234",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "انجام نماز و دعا در وسط مسجد",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_235",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال ستون هفتم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_236",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال ستون پنجم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_237",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال ستون سوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_238",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "نماز حاجت در مقام نوح(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_239",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مناجات حضرت امیر(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_240",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کیفیت نماز حاجت در مسجد کوفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_241",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جناب مسلم بن عقیل(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_242",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جناب هانی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_243",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مسجد سهله",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_244",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مسجد زید",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_245",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اعمال مسجد صعصعه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_246",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت امام حسین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_247",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آداب مخصوص زیارت امام حسین علیه السلام",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_248",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای حرم امام حسین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_249",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات بر امام حسین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_250",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "در اعمال حرم امام حسین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_251",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای وداع امام حسین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_252",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کیفیت زیارت امام حسین و حضرت عباس(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_253",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت اول",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_254",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت دوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_255",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زيارت سوم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_256",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زيارت چهارم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_257",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زيارت پنجم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_258",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت ششم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_259",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت هفتم(وارث)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_260",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "بیان آنچه به زیارت وارث زیاد شده",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_261",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "در مجعولیت دعای حبی و امثال آن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_262",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "طعن بر مداخله کردن نا اهلان در کتب حدیث و اخبار و ادعیه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_263",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت عباس (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_264",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مرثیه ام البنین مادر حضرت عباس(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_265",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت مخصوصه حضرت امام حسین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_266",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اول:زیارت اول رجب،نیمه رجب و نیمه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_267",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دوم:زیارت نیمه رجب",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_268",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "سوم:زیارت نیمه شعبان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_269",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "چهارم:زیارت شبهای قدر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_270",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "پنجم:زیارت آن حضرت در عید فطر و قربان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_271",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "ششم:زیارت آن حضرت در روز عرفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_272",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "هفتم:زیارت عاشورا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_273",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "متن زیارت عاشورای معروفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_274",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای صفوان معروف به دعای علقمه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_275",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "خبر صفوان در فضیلت زیارت عاشورا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_276",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فوائد مداومت به زیارت عاشورا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_277",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت عاشورای غیر معروفه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_278",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "هشتم:زیارت اربعین",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_279",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اوقات شریفه ی زیارت امام حسین (ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_280",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فواید و آداب تربت مقدسه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_281",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضيلت و كيفيت زيارت كاظمين",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_282",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام موسی کاظم(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_283",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات بر امام موسی کاظم(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_284",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت مختص امام محمد تقی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_285",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت مشترک کاظمین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_286",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "حکایت حاجی علی بغدادی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_287",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تاریخ و فضیلت مسجد براثا",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_288",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت نواب اربعه(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_289",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت شیخ کلینی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_290",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضائل و زیارت جناب سلمان(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_291",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "مرور حضرت امیر (ع) به طاق کسری",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_292",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جناب حذیفه در مدائن",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_293",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت زیارت امام رضا(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_294",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "کیفیت زیارت امام رضا(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_295",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای بعد از زیارت امام رضا(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_296",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "وداع آن حضرت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_297",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت نماز جعفر در حرم آن حضرت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_298",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "ورود آن حضرت به قم در سفر خراسان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_299",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "پیاده رفتن شاه عباس به مشهد",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_300",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صورت کتیبه قبّه مطهّر حضرت رضا(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_301",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "اشعار جامی در مدح آن حضرت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_302",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امامین عسکریین(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_303",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام علی النقی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_304",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت امام حسن عسگری(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_305",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت والده حضرت قائم(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_306",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جناب حکیمه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_307",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "جلالت حسین فرزند حضرت هادی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_308",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت و جلالت سید محمد فرزند امام هادی(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_309",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "آداب سرداب مطهر",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_310",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارتهای حضرت صاحب الامر(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_311",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات برآن حضرت",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_312",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای ندبه",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_313",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت حجة(ع) بعد از نماز صبح",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_314",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای عهد",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_315",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعا برای امام عصر(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_316",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جامعه همه امامان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_317",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جامعه صغیره",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_318",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جامعه کبیره",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_319",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "حکایت سیّد رشتی و تشرف او خدمت امام عصر(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_320",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت جامعه(زیارت سوم)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_321",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "دعای بعد از زیارت امامان(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_322",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "صلوات بر حجج طاهره",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_323",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت زیارت قبور پیامبران(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_324",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "كيفيت زيارت پيامبران(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_325",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت زیارت امامزادگان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_326",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "فضیلت و کیفیت زیارت حضرت معصومه(ع) در قم",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_327",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت عبدالعظیم(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_328",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت حضرت امامزاده حمزه(ع)",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_329",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "زیارت قبور مومنان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_330",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "تاکید فرستادن هدیه برای مردگان",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  },
+  {
+    "id": "mafatih_331",
+    "title_ur": "",
+    "title_en": "",
+    "title_fa": "عبرت گرفتن از اموات",
+    "reference": "مفاتیح الجنان",
+    "benefits_ur": "",
+    "is_downloaded": 0
+  }
+]

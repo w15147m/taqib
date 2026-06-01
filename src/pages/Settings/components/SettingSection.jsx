@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {MinusIcon, PlusIcon} from 'react-native-heroicons/outline';
-import ArabicText from '../../../common/components/ArabicText';
-import UrduText from '../../../common/components/UrduText';
 
 const SettingSection = ({
   title,
@@ -42,18 +40,20 @@ const SettingSection = ({
       </View>
 
       {/* Full-width Preview */}
-      <View className="w-full bg-slate-50 dark:bg-slate-900/40 py-3 px-4 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[70px] justify-center">
+      <View className="w-full mt-2">
         {isActive ? (
           isArabic ? (
-            <ArabicText className="text-slate-800 dark:text-slate-100 leading-relaxed">
+            <Text
+              style={{fontSize}}
+              className="font-quran-content text-slate-800 dark:text-slate-100 text-center leading-relaxed">
               {previewText}
-            </ArabicText>
+            </Text>
           ) : (
-            <UrduText
-              style={styles.urduTextPreview}
+            <Text
+              style={{fontSize}}
               className="text-slate-700 dark:text-slate-300 font-semibold text-right leading-relaxed">
               {previewText}
-            </UrduText>
+            </Text>
           )
         ) : (
           <Text className="text-slate-400 dark:text-slate-600 text-xs italic text-center font-quran-header">
@@ -71,12 +71,6 @@ const styles = StyleSheet.create({
   },
   containerInactive: {
     opacity: 0.3,
-  },
-  urduTextPreview: {
-    backgroundColor: 'transparent',
-    borderWidth: 0,
-    padding: 0,
-    marginVertical: 0,
   },
 });
 

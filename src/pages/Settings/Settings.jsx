@@ -13,10 +13,12 @@ import useLocation from '../../common/hooks/useLocation';
 import Header from '../../common/components/Header';
 import useSettingsLogic from './hooks/useSettingsLogic';
 import SettingSection from './components/SettingSection';
+import {useAlert} from '../../context/AlertContext';
 
 const Settings = () => {
   const {isDarkMode} = useTheme();
   const {locationName, resetLocation} = useLocation();
+  const {showToast} = useAlert();
   const {
     showTranslation,
     showArabic,
@@ -25,6 +27,11 @@ const Settings = () => {
     adjustFontSize,
     resetSettings,
   } = useSettingsLogic();
+
+  const handleResetSettings = () => {
+    resetSettings();
+    showToast('Your settings are reset now', 'success');
+  };
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
@@ -91,7 +98,7 @@ const Settings = () => {
         {/* Reset Settings Button */}
         <View className="mt-12 items-center">
           <TouchableOpacity
-            onPress={resetSettings}
+            onPress={handleResetSettings}
             activeOpacity={0.7}
             className="flex-row items-center justify-center border border-indigo-600 dark:border-indigo-400 rounded-2xl py-4 px-8 w-full max-w-xs bg-transparent">
             <ArrowPathIcon

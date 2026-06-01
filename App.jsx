@@ -2,12 +2,12 @@ import React from 'react';
 import {StatusBar, View} from 'react-native';
 import {AuthProvider} from './src/context/AuthContext';
 import {AlertProvider} from './src/context/AlertContext';
-import AlertModal from './src/components/AlertModal';
-import Toast from './src/components/Toast';
+import AlertModal from './src/common/components/AlertModal';
+import Toast from './src/common/components/Toast';
 import AppNavigator from './src/navigation/AppNavigator';
 import {ThemeProvider, useTheme} from './src/context/ThemeContext';
 import {SettingsProvider} from './src/context/SettingsContext';
-import {AppInitializer} from './src/components/AppInitializer';
+import {AppInitializer} from './src/common/components/AppInitializer';
 
 const MainApp = () => {
   const {isDarkMode} = useTheme();

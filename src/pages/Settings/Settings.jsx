@@ -30,7 +30,7 @@ const Settings = () => {
 
   const handleResetSettings = () => {
     resetSettings();
-    showToast('Your settings are reset now', 'success');
+    showToast('آپ کی سیٹنگز ری سیٹ ہو گئی ہیں۔', 'success');
   };
 
   return (

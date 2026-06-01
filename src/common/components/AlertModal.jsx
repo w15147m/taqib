@@ -13,7 +13,7 @@ import {
   XCircleIcon, 
   InformationCircleIcon 
 } from 'react-native-heroicons/solid';
-import { useAlert } from '../context/AlertContext';
+import { useAlert } from '../../context/AlertContext';
 
 const { width } = Dimensions.get('window');
 

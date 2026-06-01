@@ -2,10 +2,10 @@ import React, {useEffect, useState, useRef} from 'react';
 import {View, StatusBar, Animated, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {runMigrations} from '../db/client';
-import {useTheme} from '../context/ThemeContext';
-import {useSettings} from '../context/SettingsContext';
-import textTaqeebatImage from '../assets/images/parts/text_taqeebat.png';
+import {runMigrations} from '../../db/client';
+import {useTheme} from '../../context/ThemeContext';
+import {useSettings} from '../../context/SettingsContext';
+import textTaqeebatImage from '../../assets/images/parts/text_taqeebat.png';
 
 export const AppInitializer = ({children}) => {
   const [isDbReady, setIsDbReady] = useState(false);
@@ -35,7 +35,7 @@ export const AppInitializer = ({children}) => {
           const {
             seedEssentialData,
             seedBackgroundData,
-          } = require('../db/seeds');
+          } = require('../../db/seeds');
 
           await seedEssentialData();
 

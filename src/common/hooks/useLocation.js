@@ -73,35 +73,45 @@ const useLocation = () => {
   }, []);
 
   const getLocation = useCallback(async () => {
-    setLoading(true);
-    setError(null);
+    return new Promise(async (resolve, reject) => {
+      setLoading(true);
+      setError(null);
 
-    const hasPermission = await requestPermission();
+      const hasPermission = await requestPermission();
 
-    if (!hasPermission) {
-      setError('Location permission denied.');
-      setLoading(false);
-      return;
-    }
-
-    Geolocation.getCurrentPosition(
-      position => {
-        const {latitude, longitude, accuracy} = position.coords;
-        setLocation({latitude, longitude, accuracy});
-        reverseGeocode(latitude, longitude);
+      if (!hasPermission) {
+        setError('Location permission denied.');
         setLoading(false);
-      },
-      err => {
-        setError(err.message);
-        setLoading(false);
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 15000,
-        maximumAge: 10000,
-        showLocationDialog: true,
-      },
-    );
+        reject(new Error('Location permission denied.'));
+        return;
+      }
+
+      Geolocation.getCurrentPosition(
+        async position => {
+          const {latitude, longitude, accuracy} = position.coords;
+          setLocation({latitude, longitude, accuracy});
+          try {
+            await reverseGeocode(latitude, longitude);
+            setLoading(false);
+            resolve();
+          } catch (e) {
+            setLoading(false);
+            resolve(); // Still resolve so coordinates are set
+          }
+        },
+        err => {
+          setError(err.message);
+          setLoading(false);
+          reject(err);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 15000,
+          maximumAge: 10000,
+          showLocationDialog: true,
+        },
+      );
+    });
   }, [requestPermission, reverseGeocode]);
 
   // Load saved location on mount, or fetch if not available
@@ -189,6 +199,7 @@ const useLocation = () => {
     } catch (err) {
       setError(err.message || 'Error resetting location');
       setLoading(false);
+      throw err;
     }
   }, [getLocation]);
 

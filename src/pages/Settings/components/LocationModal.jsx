@@ -33,12 +33,10 @@ const LocationModal = ({
           onPress={onSelectGPS}
           disabled={loading}
           activeOpacity={0.7}
-          className="w-full flex-row items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800/60">
-          {loading ? (
-            <ActivityIndicator size="small" color="#10b981" />
-          ) : (
-            <ArrowPathIcon size={20} color={isDarkMode ? '#34d399' : '#059669'} />
-          )}
+          className="w-full flex-row items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800/60 min-h-[76px]">
+          <View className="justify-center min-w-[20px]">
+            {loading && <ActivityIndicator size="small" color={isDarkMode ? '#34d399' : '#059669'} />}
+          </View>
           <View className="flex-1 items-end pr-4">
             <Text className="text-base font-bold text-slate-800 dark:text-slate-100">
               موجودہ لوکیشن (GPS)

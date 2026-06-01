@@ -92,18 +92,19 @@ const Settings = () => {
 
         {/* Location Section */}
         <View className="py-6 border-b border-slate-100 dark:border-slate-900 w-full">
-          {/* Location Info & Refresh Button Row */}
-          <View className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[80px] flex-row justify-between items-center px-6">
-            {/* Refresh/Reset button with ArrowPathIcon */}
-            <TouchableOpacity
-              onPress={() => setModalVisible(true)}
-              activeOpacity={0.7}
-              className="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 items-center justify-center bg-white dark:bg-slate-900 shadow-sm">
+          {/* Location Info & Refresh Button Row (Entire Card Clickable) */}
+          <TouchableOpacity
+            onPress={() => setModalVisible(true)}
+            activeOpacity={0.7}
+            className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[80px] flex-row justify-between items-center px-6">
+            
+            {/* Refresh/Reset Icon Container */}
+            <View className="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 items-center justify-center bg-white dark:bg-slate-900 shadow-sm">
               <ArrowPathIcon
                 size={18}
                 color={isDarkMode ? '#34d399' : '#059669'}
               />
-            </TouchableOpacity>
+            </View>
 
             {/* Current City Name */}
             <View className="flex-1 items-end pr-4">
@@ -114,7 +115,7 @@ const Settings = () => {
                 {locationName || 'دستیاب نہیں ہے'}
               </Text>
             </View>
-          </View>
+          </TouchableOpacity>
         </View>
 
         {/* Reset Settings Button */}

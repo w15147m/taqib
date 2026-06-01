@@ -45,8 +45,8 @@ const Settings = () => {
     }
   };
 
-  const handleSelectCity = async (city) => {
-    const success = await geocodeCity(city);
+  const handleSelectCity = async (city, lat, lon) => {
+    const success = await geocodeCity(city, lat, lon);
     if (success) {
       showToast('شہر کی لوکیشن تبدیل کر دی گئی ہے', 'success');
       setModalVisible(false);

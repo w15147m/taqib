@@ -18,15 +18,10 @@ const SettingSection = ({
   return (
     <View
       style={isActive ? styles.containerActive : styles.containerInactive}
-      className="py-6 border-b border-slate-100 dark:border-slate-900 w-full">
-      <View className="items-center mb-4">
-        <Text className="text-slate-700 dark:text-slate-300 text-xl font-quran-header font-bold">
-          {title}
-        </Text>
-      </View>
+      className="py-4 border-b border-slate-100 dark:border-slate-900 w-full">
 
       {/* Full-width Adjuster Controls */}
-      <View className="flex-row justify-between items-center w-full px-8 mb-6">
+      <View className="flex-row justify-between items-center w-full px-8 mb-3">
         <TouchableOpacity
           onPress={onDecrement}
           disabled={!isActive}
@@ -47,7 +42,7 @@ const SettingSection = ({
       </View>
 
       {/* Full-width Preview */}
-      <View className="w-full bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[90px] justify-center">
+      <View className="w-full bg-slate-50 dark:bg-slate-900/40 py-3 px-4 rounded-2xl border border-slate-100 dark:border-slate-900 min-h-[70px] justify-center">
         {isActive ? (
           isArabic ? (
             <ArabicText className="text-slate-800 dark:text-slate-100 leading-relaxed">

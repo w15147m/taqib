@@ -5,7 +5,7 @@ import migrations from "../../drizzle/migrations";
 
 // Open the database
 const sqlite = SQLite.openDatabase({
-  name: "MyData_v6.db", // Bumped to force a fresh schema creation with the new migration
+  name: "MyData_v7.db", // Bumped to force a fresh schema creation with the new migration
   location: "default",
 });
 

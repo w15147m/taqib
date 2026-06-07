@@ -23,12 +23,12 @@ const contentList = [
   { id: 'ziyarat_imam_reza', category_id: 'ziyarat', title_ur: 'زیارتِ امام رضاؑ', title_en: 'Ziyarat of Imam Reza (as)', is_downloaded: 0 },
   { id: 'ziyarat_imam_mahdi', category_id: 'ziyarat', title_ur: 'زیارتِ امام مہدی (عج)', title_en: 'Ziyarat of Imam Mahdi (aj)', is_downloaded: 0 },
 
-  // Namaz — bundled locally, available immediately
-  { id: 'namaz_ghafilah', category_id: 'namaz', title_ur: 'نمازِ غفیلہ', title_en: 'Namaz-e-Ghafilah', is_downloaded: 1 },
-  { id: 'namaz_tahajjud', category_id: 'namaz', title_ur: 'نمازِ تہجد', title_en: 'Namaz-e-Tahajjud', is_downloaded: 1 },
-  { id: 'namaz_wahshat', category_id: 'namaz', title_ur: 'نمازِ وحشت', title_en: 'Namaz-e-Wahshat', is_downloaded: 1 },
-  { id: 'namaz_ayat', category_id: 'namaz', title_ur: 'نمازِ آیات', title_en: 'Namaz-e-Ayat', is_downloaded: 1 },
-  { id: 'namaz_janazah', category_id: 'namaz', title_ur: 'نمازِ جنازہ', title_en: 'Namaz-e-Janazah', is_downloaded: 1 },
+  // Namaz — fetched from GitHub
+  { id: 'namaz_ghafilah', category_id: 'namaz', title_ur: 'نمازِ غفیلہ', title_en: 'Namaz-e-Ghafilah', is_downloaded: 0 },
+  { id: 'namaz_tahajjud', category_id: 'namaz', title_ur: 'نمازِ تہجد', title_en: 'Namaz-e-Tahajjud', is_downloaded: 0 },
+  { id: 'namaz_wahshat', category_id: 'namaz', title_ur: 'نمازِ وحشت', title_en: 'Namaz-e-Wahshat', is_downloaded: 0 },
+  { id: 'namaz_ayat', category_id: 'namaz', title_ur: 'نمازِ آیات', title_en: 'Namaz-e-Ayat', is_downloaded: 0 },
+  { id: 'namaz_janazah', category_id: 'namaz', title_ur: 'نمازِ جنازہ', title_en: 'Namaz-e-Janazah', is_downloaded: 0 },
 ];
 
 export const seedContents = async () => {
@@ -43,7 +43,7 @@ export const seedContents = async () => {
           category_id: item.category_id,
           title_ur: item.title_ur,
           title_en: item.title_en,
-          is_downloaded: 1, // Seeding local packaged files
+          is_downloaded: item.is_downloaded,
         });
         console.log(`Seeded content metadata: ${item.id}`);
       }

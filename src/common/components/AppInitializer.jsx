@@ -25,7 +25,7 @@ export const AppInitializer = ({children}) => {
         await runMigrations();
 
         // Check if database has been seeded
-        const isSeeded = await AsyncStorage.getItem('db_seeded_v1');
+        const isSeeded = await AsyncStorage.getItem('db_seeded_v7');
 
         if (isSeeded === 'true') {
           // Already seeded, essential data ready
@@ -40,7 +40,7 @@ export const AppInitializer = ({children}) => {
           await seedEssentialData();
 
           // Mark as seeded so we don't run essential seeding again
-          await AsyncStorage.setItem('db_seeded_v1', 'true');
+          await AsyncStorage.setItem('db_seeded_v7', 'true');
 
           // DB is ready
           setIsDbReady(true);

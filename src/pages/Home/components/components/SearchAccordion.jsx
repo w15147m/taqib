@@ -9,7 +9,7 @@ import {
   UIManager,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {ChevronDownIcon, ChevronUpIcon} from 'react-native-heroicons/solid';
+import {MagnifyingGlassIcon} from 'react-native-heroicons/solid';
 import {useTheme} from '../../../../context/ThemeContext';
 import primaryData from '../../../../db/primaryAccordion.json';
 import {db} from '../../../../db/client';
@@ -126,12 +126,8 @@ const SearchAccordion = ({handleLayout, handleOpen}) => {
         onPress={toggleAccordion}
         activeOpacity={0.8}
         className="flex-row justify-between items-center bg-[#bce5ea] dark:bg-slate-900 px-6 py-4 rounded-2xl border border-slate-200/50 dark:border-slate-800">
-        {/* Chevron Icon */}
-        {isOpen ? (
-          <ChevronUpIcon size={20} color={iconColor} />
-        ) : (
-          <ChevronDownIcon size={20} color={iconColor} />
-        )}
+        {/* Search Icon */}
+        <MagnifyingGlassIcon size={20} color={iconColor} />
 
         {/* Search Input */}
         <TextInput

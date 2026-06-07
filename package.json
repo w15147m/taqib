@@ -14,7 +14,10 @@
     "inspect-all-sections": "node scratch/inspect_all_sections.js",
     "extract-all-contents": "node scratch/extract_all_contents.js",
     "extract-content-items": "node scratch/extract_content_items.js",
-    "extract-all-items": "node scratch/extract_all_items.js"
+    "extract-all-items": "node scratch/extract_all_items.js",
+    "test-translation": "node scratch/test_translation.js",
+    "test-batch-translation": "node scratch/test_batch_translation.js",
+    "translate-farsi-to-urdu": "node scratch/translate_farsi_to_urdu.js"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

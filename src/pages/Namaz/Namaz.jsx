@@ -6,18 +6,11 @@ import {
   Text,
   ActivityIndicator,
   TouchableOpacity,
-  TextInput,
   StyleSheet,
 } from 'react-native';
-import {
-  MapPinIcon,
-  CalendarIcon,
-  ClockIcon,
-} from 'react-native-heroicons/outline';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useTheme} from '../../context/ThemeContext';
 import Header from '../../common/components/Header';
-import BaseModal from '../../common/components/BaseModal';
 import useLocation from '../../common/hooks/useLocation';
 import {calculatePrayerTimes, getNextPrayer} from '../../utils/prayerTimes';
 import {
@@ -25,6 +18,11 @@ import {
   toUrduDigits,
   HIJRI_MONTHS_UR,
 } from '../../utils/eventsData';
+
+// Child Components
+import LocationCard from './components/LocationCard';
+import NamazList from './components/NamazList';
+import EditTimeModal from './components/EditTimeModal';
 
 const OFFSETS_STORAGE_KEY = 'namaz_prayer_offsets';
 
@@ -42,8 +40,6 @@ const Namaz = () => {
 
   const [editModalVisible, setEditModalVisible] = useState(false);
   const [editingPrayer, setEditingPrayer] = useState(null);
-  const [customHours, setCustomHours] = useState('');
-  const [customMinutes, setCustomMinutes] = useState('');
 
   // Load offsets on mount
   useEffect(() => {
@@ -102,9 +98,6 @@ const Namaz = () => {
 
   const handleEditPress = useCallback(prayer => {
     setEditingPrayer(prayer);
-    const [hours, minutes] = (prayer.time || '12:00').split(':');
-    setCustomHours(hours);
-    setCustomMinutes(minutes);
     setEditModalVisible(true);
   }, []);
 
@@ -130,7 +123,7 @@ const Namaz = () => {
     return diff;
   };
 
-  const handleSaveOffset = async () => {
+  const handleSaveOffset = async (customHours, customMinutes) => {
     if (!editingPrayer) {
       return;
     }
@@ -195,54 +188,14 @@ const Namaz = () => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
-        {/* Date and Location Header Card */}
-        <View className="mx-6 my-3 p-5 bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800 rounded-3xl shadow-sm">
-          <View className="flex-row justify-between items-start mb-4">
-            {/* Left side: Dates */}
-            <View className="items-start flex-1 pr-2">
-              <View className="flex-row items-center mb-1">
-                <CalendarIcon
-                  size={16}
-                  color={isDarkMode ? '#94a3b8' : '#64748b'}
-                  className="mr-1.5"
-                />
-                <Text className="text-sm font-bold text-slate-800 dark:text-slate-200">
-                  {hijriDateStr}
-                </Text>
-              </View>
-              <Text className="text-xs text-slate-400 dark:text-slate-500 text-left">
-                {gregorianDateStr}
-              </Text>
-            </View>
-
-            {/* Right side: Location Info */}
-            <View className="items-end">
-              <View className="flex-row items-center mb-1 bg-emerald-50 dark:bg-emerald-950/30 px-3 py-1 rounded-full border border-emerald-100/50 dark:border-emerald-900/30">
-                <MapPinIcon size={14} color="#10b981" className="mr-1" />
-                <Text className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                  {locationName || 'لوکیشن تلاش کریں'}
-                </Text>
-              </View>
-            </View>
-          </View>
-
-          {/* Next Prayer Banner */}
-          {nextPrayer && (
-            <View className="bg-[#bce5ea] dark:bg-indigo-950/20 border border-slate-200/20 dark:border-indigo-900/25 p-4 rounded-2xl flex-row justify-between items-center">
-              <View className="bg-emerald-500/10 dark:bg-emerald-500/20 px-3 py-1 rounded-full">
-                <Text className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-                  اگلی نماز
-                </Text>
-              </View>
-              <View className="flex-row items-center">
-                <ClockIcon size={18} color="#059669" className="mr-2" />
-                <Text className="text-base font-bold text-slate-800 dark:text-slate-200 font-quran-header">
-                  {`${nextPrayer.nameUr} ${toUrduDigits(nextPrayer.time)}`}
-                </Text>
-              </View>
-            </View>
-          )}
-        </View>
+        {/* Location & Upcoming Prayer Info Card */}
+        <LocationCard
+          hijriDateStr={hijriDateStr}
+          gregorianDateStr={gregorianDateStr}
+          locationName={locationName}
+          nextPrayer={nextPrayer}
+          isDarkMode={isDarkMode}
+        />
 
         {/* Loading/Error State or Timings List */}
         {loading ? (
@@ -268,98 +221,24 @@ const Namaz = () => {
             </TouchableOpacity>
           </View>
         ) : (
-          /* Prayer Timings List */
-          <View className="mx-6 mt-2">
-            {prayerList.map(prayer => {
-              return (
-                <TouchableOpacity
-                  key={prayer.key}
-                  onPress={() => handleEditPress(prayer)}
-                  activeOpacity={0.7}
-                  className="flex-row justify-between items-center px-6 py-4 mb-3 rounded-2xl border bg-white dark:bg-slate-900 border-slate-100/50 dark:border-slate-800/50">
-                  {/* Left: Timing */}
-                  <View className="flex-row items-center">
-                    <Text className="text-lg font-bold font-quran-header text-slate-800 dark:text-slate-200">
-                      {prayer.time ? toUrduDigits(prayer.time) : '--:--'}
-                    </Text>
-                  </View>
-
-                  {/* Right: Prayer name in Urdu */}
-                  <Text className="text-base font-bold font-quran-header text-right flex-1 text-slate-800 dark:text-slate-200">
-                    {prayer.nameUr}
-                  </Text>
-                </TouchableOpacity>
-              );
-            })}
-          </View>
+          /* Prayer Timings List component */
+          <NamazList
+            prayerList={prayerList}
+            onEditPress={handleEditPress}
+            toUrduDigits={toUrduDigits}
+          />
         )}
       </ScrollView>
 
-      {/* Edit Custom Prayer Time Modal */}
-      <BaseModal
+      {/* Edit Custom Prayer Time Modal component */}
+      <EditTimeModal
         visible={editModalVisible}
         onClose={() => setEditModalVisible(false)}
-        title={`${editingPrayer ? editingPrayer.nameUr : ''} کا وقت تبدیل کریں`}
-        maxWidth={400}
-        footer={
-          <View className="flex-row justify-between items-center gap-3">
-            <TouchableOpacity
-              onPress={handleResetOffset}
-              activeOpacity={0.7}
-              className="bg-slate-100 dark:bg-slate-800 px-4 py-3 rounded-2xl flex-1 items-center justify-center">
-              <Text className="text-xs font-bold text-slate-600 dark:text-slate-300">
-                اصل وقت
-              </Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              onPress={handleSaveOffset}
-              activeOpacity={0.7}
-              className="bg-indigo-600 dark:bg-indigo-700 px-4 py-3 rounded-2xl flex-1 items-center justify-center">
-              <Text className="text-xs font-bold text-white">محفوظ کریں</Text>
-            </TouchableOpacity>
-          </View>
-        }>
-        <View className="items-center">
-          <Text className="text-sm text-slate-500 dark:text-slate-400 text-center mb-6 leading-6">
-            نماز کا اپنی پسند کا وقت منتخب کرنے کے لیے گھنٹہ اور منٹ درج کریں۔
-          </Text>
-
-          <View className="flex-row items-center gap-3 mb-4">
-            {/* Hour Input */}
-            <View className="items-center">
-              <Text className="text-xs text-slate-400 dark:text-slate-500 mb-1">
-                گھنٹہ
-              </Text>
-              <TextInput
-                keyboardType="numeric"
-                maxLength={2}
-                value={customHours}
-                onChangeText={setCustomHours}
-                className="w-16 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-2xl text-slate-800 dark:text-slate-100 text-center font-bold text-lg"
-              />
-            </View>
-
-            <Text className="text-xl font-bold text-slate-400 dark:text-slate-500 mt-5">
-              :
-            </Text>
-
-            {/* Minute Input */}
-            <View className="items-center">
-              <Text className="text-xs text-slate-400 dark:text-slate-500 mb-1">
-                منٹ
-              </Text>
-              <TextInput
-                keyboardType="numeric"
-                maxLength={2}
-                value={customMinutes}
-                onChangeText={setCustomMinutes}
-                className="w-16 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-2xl text-slate-800 dark:text-slate-100 text-center font-bold text-lg"
-              />
-            </View>
-          </View>
-        </View>
-      </BaseModal>
+        prayer={editingPrayer}
+        onSave={handleSaveOffset}
+        onReset={handleResetOffset}
+        isDarkMode={isDarkMode}
+      />
     </SafeAreaView>
   );
 };

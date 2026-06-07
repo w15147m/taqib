@@ -3,7 +3,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import TabNavigator from './TabNavigator';
 import ProfileDrawer from './ProfileDrawer';
 import EditProfile from '../../pages/Profile/components/EditProfile';
-import Content from '../../pages/Content';
+import Content from '../../pages/Content/Content';
 import About from '../../pages/About';
 import Disclaimer from '../../pages/Disclaimer';
 import Settings from '../../pages/Settings/Settings';

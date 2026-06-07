@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, ActivityIndicator} from 'react-native';
-import {useRoute} from '@react-navigation/native';
-import Header from '../common/components/Header';
-import ArabicText from '../common/components/ArabicText';
-import UrduText from '../common/components/UrduText';
-import { db } from '../db/client';
-import { contents, content_items, content_item_explanations } from '../db/schema';
+import { SafeAreaView, ScrollView, StyleSheet, ActivityIndicator } from 'react-native';
+import { useRoute } from '@react-navigation/native';
+import Header from '../../common/components/Header';
+import ArabicText from '../../common/components/ArabicText';
+import UrduText from '../../common/components/UrduText';
+import { db } from '../../db/client';
+import { contents, content_items, content_item_explanations } from '../../db/schema';
 import { eq, asc } from 'drizzle-orm';
-import primaryData from '../db/primaryAccordion.json';
+import primaryData from '../../db/primaryAccordion.json';
+import ArabicContentFlow from './components/ArabicContentFlow';
 
 const Content = () => {
   const route = useRoute();
-  const {id, title} = route.params || {};
+  const { id, title } = route.params || {};
 
   const [loading, setLoading] = useState(true);
   const [content, setContent] = useState(null);
@@ -80,10 +81,10 @@ const Content = () => {
                 position: content_item_explanations.position,
                 sequence_number: content_item_explanations.sequence_number,
               })
-              .from(content_item_explanations)
-              .innerJoin(content_items, eq(content_item_explanations.item_id, content_items.id))
-              .where(eq(content_items.content_id, targetId))
-              .orderBy(asc(content_item_explanations.sequence_number));
+                .from(content_item_explanations)
+                .innerJoin(content_items, eq(content_item_explanations.item_id, content_items.id))
+                .where(eq(content_items.content_id, targetId))
+                .orderBy(asc(content_item_explanations.sequence_number));
 
               const itemsWithDetails = items.map(item => {
                 const itemExplanations = explanations.filter(e => e.item_id === item.id);
@@ -131,33 +132,8 @@ const Content = () => {
         <ArabicText className="text-slate-800 dark:text-slate-200 leading-[58px]">
           بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِیمِ
         </ArabicText>
-        
-        {contentItems.map((item, idx) => {
-          return (
-            <React.Fragment key={item.id || idx}>
-              {/* Render before explanations */}
-              {item.beforeExplanations.map((exp, expIdx) => (
-                <UrduText key={`before-${item.id}-${expIdx}`}>
-                  {exp.explanation_text}
-                </UrduText>
-              ))}
 
-              {/* Render Arabic Text */}
-              {item.arabic_text ? (
-                <ArabicText className="text-slate-800 dark:text-slate-200 my-4 leading-[58px]">
-                  {item.arabic_text}
-                </ArabicText>
-              ) : null}
-
-              {/* Render after explanations */}
-              {item.afterExplanations.map((exp, expIdx) => (
-                <UrduText key={`after-${item.id}-${expIdx}`}>
-                  {exp.explanation_text}
-                </UrduText>
-              ))}
-            </React.Fragment>
-          );
-        })}
+        <ArabicContentFlow contentItems={contentItems} />
       </ScrollView>
     </SafeAreaView>
   );

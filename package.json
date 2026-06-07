@@ -13,7 +13,8 @@
     "extract-section-1": "node scratch/extract_section_1.js",
     "inspect-all-sections": "node scratch/inspect_all_sections.js",
     "extract-all-contents": "node scratch/extract_all_contents.js",
-    "extract-content-items": "node scratch/extract_content_items.js"
+    "extract-content-items": "node scratch/extract_content_items.js",
+    "extract-all-items": "node scratch/extract_all_items.js"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

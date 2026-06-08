@@ -104,7 +104,7 @@ const Header = ({title, showSearchIcon = false}) => {
     return (
       <View style={styles.headerContainer}>
         {/* Search input field with border */}
-        <View className="flex-row items-center bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 px-4 py-2 rounded-2xl flex-1 mr-3">
+        <View className="flex-row items-center bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 px-4 py-1 rounded-2xl flex-1 mr-3">
           <MagnifyingGlassIcon
             size={20}
             color={isDarkMode ? '#94a3b8' : '#64748b'}

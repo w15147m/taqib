@@ -11,7 +11,7 @@ const Monasibat = () => {
   const {isDarkMode} = useTheme();
   const {
     selectedDate,
-    displayedHijriMonth,
+    headerTitle,
     handleMonthChange,
     handleDayPress,
     monthlyEventsList,
@@ -56,7 +56,7 @@ const Monasibat = () => {
 
         {/* Monthly Events List */}
         <MonthlyEventsList
-          displayedHijriMonth={displayedHijriMonth}
+          headerTitle={headerTitle}
           monthlyEventsList={monthlyEventsList}
         />
       </ScrollView>

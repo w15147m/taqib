@@ -4,22 +4,40 @@ import {
   toUrduDigits,
   HIJRI_MONTHS_UR,
   SHIA_EVENTS,
+  getEventForHijriDate,
 } from '../../../utils/eventsData';
+
+const GREGORIAN_MONTHS_UR = [
+  'جنوری',
+  'فروری',
+  'مارچ',
+  'اپریل',
+  'مئی',
+  'جون',
+  'جولائی',
+  'اگست',
+  'ستمبر',
+  'اکتوبر',
+  'نومبر',
+  'دسمبر',
+];
 
 export const useMonasibat = () => {
   const [selectedDate, setSelectedDate] = useState(
     new Date().toISOString().split('T')[0],
   );
-  const [displayedHijriMonth, setDisplayedHijriMonth] = useState(
-    getHijriDate(new Date()).month,
-  );
+  const [displayedGregorian, setDisplayedGregorian] = useState({
+    year: new Date().getFullYear(),
+    month: new Date().getMonth() + 1,
+  });
 
   const selectedHijri = getHijriDate(new Date(selectedDate));
 
   const handleMonthChange = useCallback(gMonth => {
-    const midDate = new Date(gMonth.year, gMonth.month - 1, 15);
-    const hijri = getHijriDate(midDate);
-    setDisplayedHijriMonth(hijri.month);
+    setDisplayedGregorian({
+      year: gMonth.year,
+      month: gMonth.month,
+    });
   }, []);
 
   const handleDayPress = useCallback(dateString => {
@@ -32,37 +50,92 @@ export const useMonasibat = () => {
     HIJRI_MONTHS_UR[todayHijri.month - 1]
   } ${toUrduDigits(todayHijri.year)}ھ`;
 
-  // Filter events of the current displayed Hijri month
-  const monthlyEventsList = Object.keys(SHIA_EVENTS)
-    .filter(key => key.startsWith(`${displayedHijriMonth}_`))
-    .map(key => {
-      const dayNum = parseInt(key.split('_')[1], 10);
-      const isToday =
-        displayedHijriMonth === todayHijri.month && dayNum === todayHijri.day;
-      return {
-        day: dayNum,
-        isToday,
-        ...SHIA_EVENTS[key],
-      };
-    })
-    .sort((a, b) => {
-      if (a.isToday) {
-        return -1;
+  const getDaysInMonth = (y, m) => new Date(y, m, 0).getDate();
+  const daysInMonth = getDaysInMonth(displayedGregorian.year, displayedGregorian.month);
+
+  const startHijri = getHijriDate(
+    new Date(displayedGregorian.year, displayedGregorian.month - 1, 1),
+  );
+  const endHijri = getHijriDate(
+    new Date(displayedGregorian.year, displayedGregorian.month, 0),
+  );
+
+  const startMonthName = HIJRI_MONTHS_UR[startHijri.month - 1];
+  const endMonthName = HIJRI_MONTHS_UR[endHijri.month - 1];
+
+  const headerTitle =
+    startHijri.month === endHijri.month
+      ? startMonthName
+      : `${startMonthName} اور ${endMonthName}`;
+
+  // Filter events of the current displayed Gregorian month that are upcoming
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const monthlyEventsList = [];
+  for (let day = 1; day <= daysInMonth; day++) {
+    const date = new Date(
+      displayedGregorian.year,
+      displayedGregorian.month - 1,
+      day,
+    );
+    const dateCopy = new Date(date);
+    dateCopy.setHours(0, 0, 0, 0);
+
+    // Only show events that are today or in the future
+    if (dateCopy >= today) {
+      const hijri = getHijriDate(date);
+      const event = getEventForHijriDate(hijri.month, hijri.day);
+      if (event) {
+        const isToday = dateCopy.getTime() === today.getTime();
+        const gregDayUr = toUrduDigits(date.getDate());
+        const gregMonthUr = GREGORIAN_MONTHS_UR[date.getMonth()];
+        const gregorianDateStr = `${gregDayUr} ${gregMonthUr}`;
+
+        const diffTime = dateCopy.getTime() - today.getTime();
+        const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+
+        let countdownText = '';
+        if (isToday) {
+          countdownText = 'آج';
+        } else if (diffDays === 1) {
+          countdownText = 'کل';
+        } else {
+          countdownText = `${toUrduDigits(diffDays)} دن باقی ہیں`;
+        }
+
+        monthlyEventsList.push({
+          day: hijri.day,
+          month: hijri.month,
+          isToday,
+          gregorianDateStr,
+          countdownText,
+          ...event,
+        });
       }
-      if (b.isToday) {
-        return 1;
-      }
-      return a.day - b.day;
-    });
+    }
+  }
+
+  // Sort monthlyEventsList so "Today" is at the top, while keeping others chronological
+  monthlyEventsList.sort((a, b) => {
+    if (a.isToday) {
+      return -1;
+    }
+    if (b.isToday) {
+      return 1;
+    }
+    return 0;
+  });
 
   return {
     selectedDate,
     selectedHijri,
-    displayedHijriMonth,
+    headerTitle,
     todayHijriStr,
     handleMonthChange,
     handleDayPress,
     monthlyEventsList,
   };
 };
+
 export default useMonasibat;

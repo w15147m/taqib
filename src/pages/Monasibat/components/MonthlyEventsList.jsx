@@ -117,9 +117,16 @@ const MonthlyEventsList = ({headerTitle, monthlyEventsList}) => {
             </Text>
 
             {/* English Title */}
-            <Text className="text-sm text-slate-500 dark:text-slate-400 text-center mb-6">
+            <Text className="text-sm text-slate-500 dark:text-slate-400 text-center mb-4">
               {selectedEvent.title}
             </Text>
+
+            {/* Description Text */}
+            {selectedEvent.description && (
+              <Text className="text-sm text-slate-600 dark:text-slate-350 text-center mb-6 leading-6 px-4 font-quran-header">
+                {selectedEvent.description}
+              </Text>
+            )}
 
             {/* Dates Card */}
             <View className="w-full bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800/60 p-4 rounded-2xl mb-4">

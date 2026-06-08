@@ -5,10 +5,8 @@ import useAutoScroll from '../../common/hooks/useAutoScroll';
 import UpcomingEventsCard from './components/UpcomingEventsCard';
 import Accordions from './components/Accordions';
 import useLocation from '../../common/hooks/useLocation';
-import useSearchState from '../../common/hooks/useSearchState';
 
 const Home = () => {
-  const {isSearching, toggleSearch} = useSearchState();
   const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
 
   // Trigger location fetch automatically on first app load if not saved
@@ -16,28 +14,19 @@ const Home = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
+      {/* Sticky Top Header with search enabled */}
+      <Header title="تَعْقِیبَاتِ نَمَاز" showSearchIcon={true} />
+
       <ScrollView
         ref={scrollViewRef}
         className="flex-1"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
-        {/* Reusable Header */}
-        <Header
-          title="تَعْقِیبَاتِ نَمَاز"
-          showSearchIcon={true}
-          isSearching={isSearching}
-          onSearchPress={toggleSearch}
-        />
-
         {/* Upcoming Events Card */}
-        {!isSearching && <UpcomingEventsCard />}
+        <UpcomingEventsCard />
 
         {/* Accordions child component (isolated logic) */}
-        <Accordions
-          handleLayout={handleLayout}
-          handleOpen={handleOpen}
-          isSearching={isSearching}
-        />
+        <Accordions handleLayout={handleLayout} handleOpen={handleOpen} />
       </ScrollView>
     </SafeAreaView>
   );

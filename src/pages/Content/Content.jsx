@@ -121,8 +121,8 @@ const Content = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAFC] dark:bg-slate-950">
-      {/* Reusable Header */}
-      <Header title={displayTitle} />
+      {/* Reusable Header with search icon */}
+      <Header title={displayTitle} showSearchIcon={true} />
 
       {/* Content Scroll View */}
       <ScrollView

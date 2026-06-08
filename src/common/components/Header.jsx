@@ -19,7 +19,7 @@ const Header = ({ title, showSearchIcon = false, isSearching = false, onSearchPr
       <View className="flex-row items-center">
         {showSearchIcon && (
           <TouchableOpacity
-            className="p-2 rounded-xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800 mr-2"
+            className="p-2 mr-2"
             onPress={onSearchPress}>
             {isSearching ? (
               <XMarkIcon size={24} color={isDarkMode ? '#f8fafc' : '#1e293b'} />

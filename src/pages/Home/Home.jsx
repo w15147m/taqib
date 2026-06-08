@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import Header from '../../common/components/Header';
 import useAutoScroll from '../../common/hooks/useAutoScroll';
 import UpcomingEventsCard from './components/UpcomingEventsCard';
 import Accordions from './components/Accordions';
 import useLocation from '../../common/hooks/useLocation';
+import useSearchState from '../../common/hooks/useSearchState';
 
 const Home = () => {
-  const [isSearching, setIsSearching] = useState(false);
+  const {isSearching, toggleSearch} = useSearchState();
   const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
 
   // Trigger location fetch automatically on first app load if not saved
@@ -25,7 +26,7 @@ const Home = () => {
           title="تَعْقِیبَاتِ نَمَاز"
           showSearchIcon={true}
           isSearching={isSearching}
-          onSearchPress={() => setIsSearching(!isSearching)}
+          onSearchPress={toggleSearch}
         />
 
         {/* Upcoming Events Card */}

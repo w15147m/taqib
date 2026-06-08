@@ -29,7 +29,7 @@ const Header = ({ title, showSearchIcon = false, isSearching = false, onSearchPr
           </TouchableOpacity>
         )}
         <TouchableOpacity
-          className="p-2 rounded-xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800"
+          className="p-2"
           onPress={() => navigation.openDrawer()}>
           <Bars3Icon size={24} color={isDarkMode ? '#f8fafc' : '#1e293b'} />
         </TouchableOpacity>

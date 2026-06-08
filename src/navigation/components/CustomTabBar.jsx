@@ -71,18 +71,11 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
         const activeTextColor = isDarkMode ? '#818cf8' : '#4f46e5';
         const inactiveTextColor = isDarkMode ? '#64748b' : '#94a3b8';
 
-        const activeBg = isDarkMode
-          ? 'rgba(67,56,202,0.25)'
-          : 'rgba(238,242,255,0.9)';
-
         return (
           <TouchableOpacity
             key={index}
             onPress={onPress}
-            style={[
-              styles.tabItem,
-              {backgroundColor: isFocused ? activeBg : 'transparent'},
-            ]}>
+            style={styles.tabItem}>
             <Icon size={24} color={iconColor} />
             <Text
               style={[
@@ -104,8 +97,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
-    paddingVertical: 8,
-    paddingBottom: 14,
+    paddingVertical: 4,
+    paddingBottom: 8,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
     position: 'absolute',
@@ -129,7 +122,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 6,
+    paddingVertical: 2,
     paddingHorizontal: 8,
     borderRadius: 12,
   },

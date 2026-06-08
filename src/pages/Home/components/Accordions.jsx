@@ -4,10 +4,16 @@ import SearchAccordion from './components/SearchAccordion';
 import PrimaryAccordion from './components/PrimaryAccordion';
 import SecondaryAccordion from './components/SecondaryAccordion';
 
-const Accordions = ({handleLayout, handleOpen}) => {
+const Accordions = ({handleLayout, handleOpen, isSearching}) => {
   return (
     <View className="mt-4">
-      <SearchAccordion handleLayout={handleLayout} handleOpen={handleOpen} />
+      {isSearching && (
+        <SearchAccordion
+          handleLayout={handleLayout}
+          handleOpen={handleOpen}
+          autoFocus={true}
+        />
+      )}
       <PrimaryAccordion handleLayout={handleLayout} handleOpen={handleOpen} />
       <SecondaryAccordion handleLayout={handleLayout} handleOpen={handleOpen} />
     </View>

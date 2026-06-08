@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import Header from '../../common/components/Header';
 import useAutoScroll from '../../common/hooks/useAutoScroll';
@@ -7,6 +7,7 @@ import Accordions from './components/Accordions';
 import useLocation from '../../common/hooks/useLocation';
 
 const Home = () => {
+  const [isSearching, setIsSearching] = useState(false);
   const {scrollViewRef, handleLayout, handleOpen} = useAutoScroll(12);
 
   // Trigger location fetch automatically on first app load if not saved
@@ -20,13 +21,22 @@ const Home = () => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
         {/* Reusable Header */}
-        <Header title="تَعْقِیبَاتِ نَمَاز" />
+        <Header
+          title="تَعْقِیبَاتِ نَمَاز"
+          showSearchIcon={true}
+          isSearching={isSearching}
+          onSearchPress={() => setIsSearching(!isSearching)}
+        />
 
         {/* Upcoming Events Card */}
-        <UpcomingEventsCard />
+        {!isSearching && <UpcomingEventsCard />}
 
         {/* Accordions child component (isolated logic) */}
-        <Accordions handleLayout={handleLayout} handleOpen={handleOpen} />
+        <Accordions
+          handleLayout={handleLayout}
+          handleOpen={handleOpen}
+          isSearching={isSearching}
+        />
       </ScrollView>
     </SafeAreaView>
   );

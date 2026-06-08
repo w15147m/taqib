@@ -23,7 +23,7 @@ if (
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-const SearchAccordion = ({handleLayout, handleOpen}) => {
+const SearchAccordion = ({handleLayout, handleOpen, autoFocus = false}) => {
   const navigation = useNavigation();
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -131,6 +131,7 @@ const SearchAccordion = ({handleLayout, handleOpen}) => {
 
         {/* Search Input */}
         <TextInput
+          autoFocus={autoFocus}
           placeholder="تلاش کریں..."
           placeholderTextColor={isDarkMode ? '#94a3b8' : '#64748b'}
           value={searchQuery}

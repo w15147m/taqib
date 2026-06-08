@@ -32,42 +32,44 @@ const BaseModal = ({
       animationType="fade"
       onRequestClose={onClose}
     >
-      <TouchableWithoutFeedback onPress={onClose}>
-        <View style={styles.overlay}>
-          <TouchableWithoutFeedback onPress={(e) => e.stopPropagation()}>
-            <KeyboardAvoidingView
-              behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-              className="w-full px-4"
-              style={{ maxWidth }}
-            >
-              <View className="bg-white dark:bg-slate-900 rounded-[32px] overflow-hidden shadow-2xl border border-slate-50 dark:border-slate-800">
-                {/* Header */}
-                <View className="px-6 py-5 border-b border-slate-50 dark:border-slate-800 flex-row items-center justify-between">
-                  <Text className="text-xl font-black text-slate-900 dark:text-white">{title}</Text>
-                  <TouchableOpacity 
-                    onPress={onClose}
-                    className="p-1.5 bg-slate-50 dark:bg-slate-800 rounded-full"
-                  >
-                    <XMarkIcon size={20} color={isDarkMode ? "#94a3b8" : "#64748b"} />
-                  </TouchableOpacity>
-                </View>
+      <View style={styles.overlay}>
+        {/* Backdrop overlay */}
+        <TouchableWithoutFeedback onPress={onClose}>
+          <View style={StyleSheet.absoluteFill} />
+        </TouchableWithoutFeedback>
 
-                {/* Content */}
-                <View className="p-6">
-                  {children}
-                </View>
+        {/* Modal content container */}
+        <KeyboardAvoidingView
+          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+          className="w-full px-4"
+          style={{ maxWidth }}
+        >
+          <View className="bg-white dark:bg-slate-900 rounded-[32px] overflow-hidden shadow-2xl border border-slate-50 dark:border-slate-800">
+            {/* Header */}
+            <View className="px-6 py-5 border-b border-slate-50 dark:border-slate-800 flex-row items-center justify-between">
+              <Text className="text-xl font-black text-slate-900 dark:text-white">{title}</Text>
+              <TouchableOpacity 
+                onPress={onClose}
+                className="p-1.5 bg-slate-50 dark:bg-slate-800 rounded-full"
+              >
+                <XMarkIcon size={20} color={isDarkMode ? "#94a3b8" : "#64748b"} />
+              </TouchableOpacity>
+            </View>
 
-                {/* Optional Footer */}
-                {footer && (
-                  <View className="px-6 pb-6 pt-2">
-                    {footer}
-                  </View>
-                )}
+            {/* Content */}
+            <View className="p-6">
+              {children}
+            </View>
+
+            {/* Optional Footer */}
+            {footer && (
+              <View className="px-6 pb-6 pt-2">
+                {footer}
               </View>
-            </KeyboardAvoidingView>
-          </TouchableWithoutFeedback>
-        </View>
-      </TouchableWithoutFeedback>
+            )}
+          </View>
+        </KeyboardAvoidingView>
+      </View>
     </Modal>
   );
 };

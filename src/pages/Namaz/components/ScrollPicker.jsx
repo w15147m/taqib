@@ -61,6 +61,7 @@ const ScrollPicker = ({items, value, onChange, isDarkMode}) => {
 
       <ScrollView
         ref={scrollViewRef}
+        style={styles.scrollView}
         showsVerticalScrollIndicator={false}
         nestedScrollEnabled={true}
         scrollEventThrottle={16}
@@ -97,6 +98,10 @@ const styles = StyleSheet.create({
     width: 70,
     overflow: 'hidden',
     position: 'relative',
+  },
+  scrollView: {
+    height: '100%',
+    width: '100%',
   },
   scrollContent: {
     paddingVertical: 0,

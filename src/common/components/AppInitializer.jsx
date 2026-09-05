@@ -2,13 +2,12 @@ import React, {useEffect, useState, useRef} from 'react';
 import {View, StatusBar, Animated, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {runMigrations} from '../../db/client';
 import {useTheme} from '../../context/ThemeContext';
 import {useSettings} from '../../context/SettingsContext';
 import textTaqeebatImage from '../../assets/images/parts/text_taqeebat.png';
 
 export const AppInitializer = ({children}) => {
-  const [isDbReady, setIsDbReady] = useState(false);
+  const [isDbReady, setIsDbReady] = useState(true);
   const [isAnimationFinished, setIsAnimationFinished] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const {themeLoading} = useTheme();
@@ -16,48 +15,6 @@ export const AppInitializer = ({children}) => {
 
   const scaleAnim = useRef(new Animated.Value(1)).current;
   const opacityAnim = useRef(new Animated.Value(1)).current;
-
-  // Run database migrations and seeding
-  useEffect(() => {
-    const initialize = async () => {
-      try {
-        // Run database migrations
-        await runMigrations();
-
-        // Check if database has been seeded
-        const isSeeded = await AsyncStorage.getItem('db_seeded_v7');
-
-        if (isSeeded === 'true') {
-          // Already seeded, essential data ready
-          setIsDbReady(true);
-        } else {
-          // First launch: seed essential data while keeping native splash screen visible
-          const {
-            seedEssentialData,
-            seedBackgroundData,
-          } = require('../../db/seeds');
-
-          await seedEssentialData();
-
-          // Mark as seeded so we don't run essential seeding again
-          await AsyncStorage.setItem('db_seeded_v7', 'true');
-
-          // DB is ready
-          setIsDbReady(true);
-
-          // Seed large background data asynchronously
-          seedBackgroundData().catch(error => {
-            console.error('Error seeding background data:', error);
-          });
-        }
-      } catch (error) {
-        console.error('Initialization error:', error);
-        setIsDbReady(true);
-      }
-    };
-
-    initialize();
-  }, []);
 
   // Dismiss native splash dialog early (after 150ms) to show the identical static React Native view
   useEffect(() => {

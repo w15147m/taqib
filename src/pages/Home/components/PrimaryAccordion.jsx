@@ -1,14 +1,13 @@
 import React from 'react';
 import {View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import Accordion from '../../../../common/components/Accordion';
-import primaryData from '../../../../db/primaryAccordion.json';
+import Accordion from '../../../common/components/Accordion';
+import primaryData from '../../../db/primaryAccordion.json';
 
-const PrimaryAccordion = ({handleLayout, handleOpen}) => {
+const PrimaryAccordion = () => {
   const navigation = useNavigation();
-  const {categories, contents} = primaryData;
+  const {categories = [], contents = []} = primaryData;
 
-  // Join the static data in memory to match the accordion render structure
   const formatted = categories.map(cat => {
     const catContents = contents.filter(c => c.category_id === cat.id);
     const items = catContents.map(c => ({
@@ -29,13 +28,11 @@ const PrimaryAccordion = ({handleLayout, handleOpen}) => {
       {formatted.map(category => (
         <View
           key={category.id}
-          onLayout={e => handleLayout(category.id, e)}
-          className={`mx-6 ${category.id === 'namaz' ? 'mb-2' : 'mb-1'}`}>
+          className="mx-6 mb-1">
           <Accordion
             title={category.title}
             items={category.items}
             defaultOpen={category.defaultOpen}
-            onOpen={() => handleOpen(category.id)}
             onItemPress={item =>
               navigation.navigate('Content', {
                 id: item.id,

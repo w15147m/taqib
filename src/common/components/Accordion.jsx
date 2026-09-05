@@ -47,14 +47,14 @@ const Accordion = ({
         onPress={toggleAccordion}
         activeOpacity={0.8}
         className="flex-row justify-between items-center bg-[#bce5ea] dark:bg-slate-900 px-6 py-4 rounded-2xl border border-slate-200/50 dark:border-slate-800">
-        {/* Chevron Icon (renders on the left) */}
+        {/* Chevron Icon */}
         {isOpen ? (
           <ChevronUpIcon size={20} color={iconColor} />
         ) : (
           <ChevronDownIcon size={20} color={iconColor} />
         )}
 
-        {/* Title (renders on the right) */}
+        {/* Title */}
         <Text className="font-quran-header text-xl text-right text-black dark:text-white flex-1 pl-4">
           {title}
         </Text>
@@ -65,7 +65,7 @@ const Accordion = ({
         <View className="mt-2 bg-white dark:bg-slate-900 border border-slate-100/70 dark:border-slate-800 rounded-2xl divide-y divide-slate-100/50 dark:divide-slate-800/50">
           {items.map((item, index) => (
             <TouchableOpacity
-              key={index}
+              key={item.id || index}
               activeOpacity={0.7}
               onPress={() => onItemPress && onItemPress(item)}
               className="px-6 py-4 flex-row justify-between items-center">

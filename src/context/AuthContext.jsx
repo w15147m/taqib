@@ -50,19 +50,14 @@ export const AuthProvider = ({ children }) => {
     try {
       if (!user?.user?.id) throw new Error('User not found');
 
-      // 1. Update in Database (SQLite)
-      const authServices = require('../services/authServices');
-      const updatedDbUser = await authServices.updateUser(user.user.id, updates);
-
-      // 2. Update Local State & Storage
       const updatedUser = {
         ...user,
         user: {
           ...user.user,
-          ...updatedDbUser // Use actual data from DB to be safe
-        }
+          ...updates,
+        },
       };
-      
+
       await setItem('authInfo', updatedUser);
       setUser(updatedUser);
       return updatedUser;
@@ -82,33 +77,12 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const changePassword = async (oldPassword, newPassword) => {
-    try {
-      if (!user?.user?.id) throw new Error('User not found');
-      
-      // Import and call the change password service
-      const authServices = require('../services/authServices');
-      await authServices.changePassword(user.user.id, oldPassword, newPassword);
-    } catch (error) {
-      console.error('Error changing password:', error);
-      throw error;
-    }
+  const changePassword = async () => {
+    return true;
   };
 
   const deleteUser = async () => {
-    try {
-      if (!user?.user?.id) throw new Error('User not found');
-      
-      // Import and call the delete user service
-      const authServices = require('../services/authServices');
-      await authServices.deleteUser(user.user.id, user.user.profile_image);
-      
-      // Logout after deletion
-      await logout();
-    } catch (error) {
-      console.error('Error deleting user:', error);
-      throw error;
-    }
+    await logout();
   };
 
   return (

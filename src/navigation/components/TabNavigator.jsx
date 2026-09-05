@@ -2,28 +2,22 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   HomeIcon,
-  UserIcon,
   CalendarIcon,
   SparklesIcon,
-  ClockIcon,
 } from 'react-native-heroicons/outline';
 import {
   HomeIcon as HomeIconSolid,
-  UserIcon as UserIconSolid,
   CalendarIcon as CalendarIconSolid,
   SparklesIcon as SparklesIconSolid,
-  ClockIcon as ClockIconSolid,
 } from 'react-native-heroicons/solid';
 import Svg, {Circle, Path} from 'react-native-svg';
 
 // Custom Components & Pages
 import CustomTabBar from './CustomTabBar';
 import Home from '../../pages/Home/Home';
-import Profile from '../../pages/Profile/Profile';
 import Monasibat from '../../pages/Monasibat/Monasibat';
 import Tasbih from '../../pages/Tasbih/Tasbih';
 import Qibla from '../../pages/Qibla/Qibla';
-import Namaz from '../../pages/Namaz/Namaz';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,8 +28,6 @@ const CalendarIconOutline = props => <CalendarIcon {...props} />;
 const CalendarIconSolidComp = props => <CalendarIconSolid {...props} />;
 const SparklesIconOutline = props => <SparklesIcon {...props} />;
 const SparklesIconSolidComp = props => <SparklesIconSolid {...props} />;
-const ClockIconOutline = props => <ClockIcon {...props} />;
-const ClockIconSolidComp = props => <ClockIconSolid {...props} />;
 
 const CompassIconOutline = ({color, size = 24}) => (
   <Svg
@@ -63,9 +55,6 @@ const CompassIconSolidComp = ({color, size = 24}) => (
   </Svg>
 );
 
-const UserIconOutline = props => <UserIcon {...props} />;
-const UserIconSolidComp = props => <UserIconSolid {...props} />;
-
 const TabBarComponent = props => <CustomTabBar {...props} />;
 
 const TabNavigator = () => {
@@ -82,16 +71,6 @@ const TabNavigator = () => {
           title: 'ہوم',
           tabBarIcon: HomeIconOutline,
           tabBarIconActive: HomeIconSolidComp,
-        }}
-      />
-
-      <Tab.Screen
-        name="Namaz"
-        component={Namaz}
-        options={{
-          title: 'نماز',
-          tabBarIcon: ClockIconOutline,
-          tabBarIconActive: ClockIconSolidComp,
         }}
       />
 
@@ -122,17 +101,6 @@ const TabNavigator = () => {
           title: 'مناسبات',
           tabBarIcon: CalendarIconOutline,
           tabBarIconActive: CalendarIconSolidComp,
-        }}
-      />
-
-      <Tab.Screen
-        name="ProfileTab"
-        component={Profile}
-        options={{
-          title: 'Profile',
-          tabBarIcon: UserIconOutline,
-          tabBarIconActive: UserIconSolidComp,
-          tabBarItemStyle: {display: 'none'},
         }}
       />
     </Tab.Navigator>

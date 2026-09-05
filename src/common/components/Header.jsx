@@ -17,8 +17,6 @@ import {useTheme} from '../../context/ThemeContext';
 import HeaderText from './HeaderText';
 import useSearchState from '../hooks/useSearchState';
 import primaryData from '../../db/primaryAccordion.json';
-import {db} from '../../db/client';
-import {contents} from '../../db/schema';
 
 const Header = ({title, showSearchIcon = false}) => {
   const navigation = useNavigation();
@@ -31,40 +29,12 @@ const Header = ({title, showSearchIcon = false}) => {
 
   useEffect(() => {
     if (isSearching && allItems.length === 0) {
-      const loadItems = async () => {
-        // 1. Get primary (static) items
-        const primaryItems = (primaryData.contents || []).map(c => ({
-          id: c.id,
-          title_ur: c.title_ur,
-          title_en: c.title_en,
-        }));
-
-        // 2. Get DB items
-        let dbItems = [];
-        try {
-          const conts = await db.select().from(contents);
-          dbItems = conts.map(c => ({
-            id: c.id,
-            title_ur: c.title_ur,
-            title_en: c.title_en,
-          }));
-        } catch (error) {
-          console.error('Error loading search items in Header:', error);
-        }
-
-        // 3. Combine and de-duplicate
-        const combined = [...primaryItems];
-        const seenIds = new Set(primaryItems.map(item => item.id));
-        for (const item of dbItems) {
-          if (!seenIds.has(item.id)) {
-            combined.push(item);
-            seenIds.add(item.id);
-          }
-        }
-        setAllItems(combined);
-      };
-
-      loadItems();
+      const primaryItems = (primaryData.contents || []).map(c => ({
+        id: c.id,
+        title_ur: c.title_ur,
+        title_en: c.title_en,
+      }));
+      setAllItems(primaryItems);
     }
   }, [isSearching, allItems.length]);
 
